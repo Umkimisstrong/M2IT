@@ -29,30 +29,55 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnSearch = new Button();
+            rtxForeCast = new RichTextBox();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Location = new Point(12, 12);
+            panel1.Controls.Add(rtxForeCast);
+            panel1.Location = new Point(12, 91);
             panel1.Name = "panel1";
-            panel1.Size = new Size(476, 335);
+            panel1.Size = new Size(551, 335);
             panel1.TabIndex = 0;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(39, 26);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(487, 47);
+            btnSearch.TabIndex = 1;
+            btnSearch.Text = "날씨 조회";
+            btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // rtxForeCast
+            // 
+            rtxForeCast.Location = new Point(3, 3);
+            rtxForeCast.Name = "rtxForeCast";
+            rtxForeCast.Size = new Size(543, 313);
+            rtxForeCast.TabIndex = 0;
+            rtxForeCast.Text = "";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(500, 359);
+            ClientSize = new Size(575, 438);
+            Controls.Add(btnSearch);
             Controls.Add(panel1);
             Name = "Form2";
             Text = "Form2";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
+        private Button btnSearch;
+        private RichTextBox rtxForeCast;
     }
 }

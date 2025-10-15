@@ -32,14 +32,15 @@
             panel3 = new Panel();
             panel4 = new Panel();
             grdContents = new DataGridView();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            btnAdd = new Button();
-            txtContent = new TextBox();
             CONTENT = new DataGridViewTextBoxColumn();
             WRITER = new DataGridViewTextBoxColumn();
             DATE = new DataGridViewTextBoxColumn();
             CHECK = new DataGridViewCheckBoxColumn();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            btnAdd = new Button();
+            txtContent = new TextBox();
+            btnForeCast = new Button();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -93,49 +94,6 @@
             grdContents.Size = new Size(792, 377);
             grdContents.TabIndex = 0;
             // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.HighlightText;
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(4, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(792, 65);
-            panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.HighlightText;
-            panel2.Controls.Add(btnAdd);
-            panel2.Controls.Add(txtContent);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(792, 65);
-            panel2.TabIndex = 2;
-            // 
-            // btnAdd
-            // 
-            btnAdd.BackColor = Color.Sienna;
-            btnAdd.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
-            btnAdd.ForeColor = SystemColors.ControlLightLight;
-            btnAdd.Location = new Point(690, 11);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 36);
-            btnAdd.TabIndex = 1;
-            btnAdd.Text = "추가";
-            btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // txtContent
-            // 
-            txtContent.BackColor = Color.PeachPuff;
-            txtContent.BorderStyle = BorderStyle.FixedSingle;
-            txtContent.Font = new Font("맑은 고딕", 13F);
-            txtContent.Location = new Point(8, 11);
-            txtContent.Name = "txtContent";
-            txtContent.Size = new Size(676, 36);
-            txtContent.TabIndex = 0;
-            // 
             // CONTENT
             // 
             CONTENT.DataPropertyName = "CONTENT";
@@ -170,6 +128,62 @@
             CHECK.SortMode = DataGridViewColumnSortMode.Automatic;
             CHECK.Width = 125;
             // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.HighlightText;
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(4, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(792, 65);
+            panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.HighlightText;
+            panel2.Controls.Add(btnForeCast);
+            panel2.Controls.Add(btnAdd);
+            panel2.Controls.Add(txtContent);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(792, 65);
+            panel2.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.Sienna;
+            btnAdd.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
+            btnAdd.ForeColor = SystemColors.ControlLightLight;
+            btnAdd.Location = new Point(586, 11);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(94, 36);
+            btnAdd.TabIndex = 1;
+            btnAdd.Text = "추가";
+            btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // txtContent
+            // 
+            txtContent.BackColor = Color.PeachPuff;
+            txtContent.BorderStyle = BorderStyle.FixedSingle;
+            txtContent.Font = new Font("맑은 고딕", 13F);
+            txtContent.Location = new Point(8, 11);
+            txtContent.Name = "txtContent";
+            txtContent.Size = new Size(572, 36);
+            txtContent.TabIndex = 0;
+            // 
+            // btnForeCast
+            // 
+            btnForeCast.BackColor = SystemColors.HotTrack;
+            btnForeCast.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
+            btnForeCast.ForeColor = SystemColors.ControlLightLight;
+            btnForeCast.Location = new Point(686, 11);
+            btnForeCast.Name = "btnForeCast";
+            btnForeCast.Size = new Size(94, 36);
+            btnForeCast.TabIndex = 2;
+            btnForeCast.Text = "날씨";
+            btnForeCast.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -202,5 +216,6 @@
         private DataGridViewTextBoxColumn WRITER;
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewCheckBoxColumn CHECK;
+        private Button btnForeCast;
     }
 }

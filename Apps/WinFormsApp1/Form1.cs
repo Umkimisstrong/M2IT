@@ -20,9 +20,14 @@ namespace WinFormsApp1
             this.txtContent.KeyDown += TxtContent_KeyDown;
             this.btnAdd.Click += BtnAdd_Click;
             this.grdContents.CellClick += GrdContents_CellClick;
+            this.btnForeCast.Click += BtnForeCast_Click;
         }
 
-      
+        private void BtnForeCast_Click(object? sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.ShowDialog();
+        }
 
         private void initDesign()
         {
