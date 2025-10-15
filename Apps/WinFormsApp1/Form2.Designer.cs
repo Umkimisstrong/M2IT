@@ -35,9 +35,9 @@
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Location = new Point(99, 54);
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(270, 227);
+            panel1.Size = new Size(476, 335);
             panel1.TabIndex = 0;
             // 
             // Form2

@@ -5,51 +5,109 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
+        private DataTable contentDt;
+
         public Form1()
         {
             InitializeComponent();
             initEvent();
         }
 
+        
         private void initEvent()
         {
             this.Load += Form1_Load;
-            this.btnClick.Click += BtnClick_Click;
+            this.txtContent.KeyDown += TxtContent_KeyDown;
+            this.btnAdd.Click += BtnAdd_Click;
+            this.grdContents.CellClick += GrdContents_CellClick;
         }
 
-        private void BtnClick_Click(object? sender, EventArgs e)
+      
+
+        private void initDesign()
         {
-            //printTxt();
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            grdContents.RowHeadersVisible = false;
+        }
+
+        private void GrdContents_CellClick(object? sender, DataGridViewCellEventArgs e)
+        {
+            int rowIdx = e.RowIndex;
+            if (grdContents.DataSource != null && grdContents.Rows[rowIdx] != null && grdContents.Rows[rowIdx].Cells["CONTENT"].Value != null)
+            {
+                bool checkedValue = false;
+                bool.TryParse(grdContents.Rows[rowIdx].Cells["CHECK"].Value.ToString(), out checkedValue);
+                contentDt.Rows[rowIdx]["CHECK"] = checkedValue;
+            }
+        }
+
+        private void BtnAdd_Click(object? sender, EventArgs e)
+        {
+            AddContent();
         }
 
         private void Form1_Load(object? sender, EventArgs e)
         {
+            initVariables();
+            initDesign();
+        }
+        private void initVariables()
+        {
+            contentDt = new DataTable();
+            contentDt.Columns.Add(new DataColumn("CONTENT"));
+            contentDt.Columns.Add(new DataColumn("WRITER"));
+            contentDt.Columns.Add(new DataColumn("DATE"));
+            contentDt.Columns.Add(new DataColumn("CHECK"));
+        }
+
+        private void TxtContent_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                AddContent();
+            }
+        }
+
+        private void AddContent()
+        {
+
+            if (ValidateContent())
+            {
+                SetContentData();
+                RefreshContent();
+            }
             
         }
 
-        private void printTxt()
+        private bool ValidateContent()
         {
+            if (string.IsNullOrWhiteSpace(txtContent.Text))
+            {
+                MessageBox.Show("내용을 작성해주세요.", "주의");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
-            StringBuilder sb = new StringBuilder();
-            sb.Append("123");
-            sb.Append("+");
-            sb.Append("3");
-            sb.Append("=");
-            sb.ToString();
-            // 123+3=
-            string SA = "123" + "+" + "3" + "=";
-            SA.ToString();
-            // 123+3=
+        private void SetContentData()
+        {
+            //grdContents.DataSource = null;
 
-            List<string> list = new List<string>();
-            list.Add("!");
-            DataTable dt = new DataTable();
-
+            DataRow row = contentDt.NewRow();
+            row["CONTENT"] = txtContent.Text;
+            row["WRITER"] = "김상기";
+            row["DATE"] = DateTime.Now.ToString("HH:mm:ss");
+            row["CHECK"] = false;
+            contentDt.Rows.Add(row);
             
-            this.txtPrint.Text = sb.ToString();
+            grdContents.DataSource = contentDt;
+        }
 
+        private void RefreshContent()
+        { 
+            txtContent.Clear();
         }
 
 
