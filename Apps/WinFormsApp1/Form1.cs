@@ -57,9 +57,13 @@ namespace WinFormsApp1
             this.grdContents.CellClick += GrdContents_CellClick;
             this.grdContents.MouseDown += GrdContents_MouseDown;
             this.btnForeCast.Click += BtnForeCast_Click;
+            this.btnClose.Click += BtnClose_Click;
+            this.btnHide.Click += BtnHide_Click;
             this.FormClosing += Form1_FormClosing;
+
         }
 
+       
 
         /// <summary>
         /// initVariables : 변수 초기화
@@ -82,8 +86,32 @@ namespace WinFormsApp1
         private void initDesign()
         {
             grdContents.RowHeadersVisible = false;
-            
+            grdContents.ScrollBars = ScrollBars.Vertical;
+            this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+            this.FormBorderStyle = FormBorderStyle.None;
+
         }
+
+        /// <summary>
+        /// BtnHide_Click : 최소화 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnHide_Click(object? sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        /// <summary>
+        /// BtnClose_Click : 폼 닫기 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnClose_Click(object? sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
         /// <summary>
         /// BtnForeCast_Click : 날씨 버튼 클릭

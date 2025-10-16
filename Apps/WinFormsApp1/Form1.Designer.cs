@@ -41,12 +41,16 @@
             btnForeCast = new Button();
             btnAdd = new Button();
             txtContent = new TextBox();
+            panel5 = new Panel();
+            btnClose = new Button();
+            btnHide = new Button();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdContents).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // pnlBaseBody
@@ -66,9 +70,9 @@
             panel3.BackColor = SystemColors.HighlightText;
             panel3.Controls.Add(panel4);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(4, 69);
+            panel3.Location = new Point(4, 94);
             panel3.Name = "panel3";
-            panel3.Size = new Size(792, 377);
+            panel3.Size = new Size(792, 352);
             panel3.TabIndex = 2;
             // 
             // panel4
@@ -78,7 +82,7 @@
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(792, 377);
+            panel4.Size = new Size(792, 352);
             panel4.TabIndex = 2;
             // 
             // grdContents
@@ -92,7 +96,7 @@
             grdContents.Name = "grdContents";
             grdContents.RowHeadersVisible = false;
             grdContents.RowHeadersWidth = 51;
-            grdContents.Size = new Size(792, 377);
+            grdContents.Size = new Size(792, 352);
             grdContents.TabIndex = 0;
             // 
             // CONTENT
@@ -136,19 +140,20 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(792, 65);
+            panel1.Size = new Size(792, 90);
             panel1.TabIndex = 1;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.HighlightText;
+            panel2.Controls.Add(panel5);
             panel2.Controls.Add(btnForeCast);
             panel2.Controls.Add(btnAdd);
             panel2.Controls.Add(txtContent);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(792, 65);
+            panel2.Size = new Size(792, 90);
             panel2.TabIndex = 2;
             // 
             // btnForeCast
@@ -156,7 +161,7 @@
             btnForeCast.BackColor = SystemColors.HotTrack;
             btnForeCast.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
             btnForeCast.ForeColor = SystemColors.ControlLightLight;
-            btnForeCast.Location = new Point(686, 11);
+            btnForeCast.Location = new Point(686, 39);
             btnForeCast.Name = "btnForeCast";
             btnForeCast.Size = new Size(94, 36);
             btnForeCast.TabIndex = 2;
@@ -168,7 +173,7 @@
             btnAdd.BackColor = Color.Sienna;
             btnAdd.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
             btnAdd.ForeColor = SystemColors.ControlLightLight;
-            btnAdd.Location = new Point(586, 11);
+            btnAdd.Location = new Point(586, 39);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 36);
             btnAdd.TabIndex = 1;
@@ -180,10 +185,45 @@
             txtContent.BackColor = Color.PeachPuff;
             txtContent.BorderStyle = BorderStyle.FixedSingle;
             txtContent.Font = new Font("맑은 고딕", 13F);
-            txtContent.Location = new Point(8, 11);
+            txtContent.Location = new Point(8, 39);
             txtContent.Name = "txtContent";
             txtContent.Size = new Size(572, 36);
             txtContent.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.NavajoWhite;
+            panel5.Controls.Add(btnHide);
+            panel5.Controls.Add(btnClose);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(792, 26);
+            panel5.TabIndex = 3;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Salmon;
+            btnClose.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
+            btnClose.ForeColor = SystemColors.ControlLightLight;
+            btnClose.Location = new Point(763, -1);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(28, 28);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            // 
+            // btnHide
+            // 
+            btnHide.BackColor = Color.Salmon;
+            btnHide.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
+            btnHide.ForeColor = SystemColors.ControlLightLight;
+            btnHide.Location = new Point(738, -1);
+            btnHide.Name = "btnHide";
+            btnHide.Size = new Size(28, 28);
+            btnHide.TabIndex = 4;
+            btnHide.Text = "ㅡ";
+            btnHide.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -200,6 +240,7 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -218,5 +259,8 @@
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewCheckBoxColumn CHECK;
         private Button btnForeCast;
+        private Panel panel5;
+        private Button btnClose;
+        private Button btnHide;
     }
 }
