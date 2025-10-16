@@ -1,4 +1,5 @@
 using System.Data;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml;
 
@@ -11,7 +12,11 @@ namespace WinFormsApp1
         /// </summary>
         private DataTable contentDt;
         private string appRootPath;
-        
+
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
 
         /// <summary>
         /// Form1 : CheckList Form 
@@ -60,10 +65,20 @@ namespace WinFormsApp1
             this.btnClose.Click += BtnClose_Click;
             this.btnHide.Click += BtnHide_Click;
             this.FormClosing += Form1_FormClosing;
+            this.pnlTitleBar.MouseDown += PnlTitleBar_MouseDown;
 
         }
 
-       
+        private void PnlTitleBar_MouseDown(object? sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, 0xA1, 0x2, 0);
+            }
+        }
+
+
 
         /// <summary>
         /// initVariables : 변수 초기화

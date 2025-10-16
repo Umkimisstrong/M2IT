@@ -4,14 +4,14 @@
     <content>Daily CheckList App 만들기</content>
     <writer>김상기</writer>
     <date>13:10:57</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>1</idx>
     <content>점심먹기</content>
     <writer>김상기</writer>
     <date>13:11:23</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>2</idx>

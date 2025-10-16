@@ -38,19 +38,19 @@
             CHECK = new DataGridViewCheckBoxColumn();
             panel1 = new Panel();
             panel2 = new Panel();
+            pnlTitleBar = new Panel();
+            btnHide = new Button();
+            btnClose = new Button();
             btnForeCast = new Button();
             btnAdd = new Button();
             txtContent = new TextBox();
-            panel5 = new Panel();
-            btnClose = new Button();
-            btnHide = new Button();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdContents).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            panel5.SuspendLayout();
+            pnlTitleBar.SuspendLayout();
             SuspendLayout();
             // 
             // pnlBaseBody
@@ -146,7 +146,7 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.HighlightText;
-            panel2.Controls.Add(panel5);
+            panel2.Controls.Add(pnlTitleBar);
             panel2.Controls.Add(btnForeCast);
             panel2.Controls.Add(btnAdd);
             panel2.Controls.Add(txtContent);
@@ -155,6 +155,41 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(792, 90);
             panel2.TabIndex = 2;
+            // 
+            // pnlTitleBar
+            // 
+            pnlTitleBar.BackColor = Color.NavajoWhite;
+            pnlTitleBar.Controls.Add(btnHide);
+            pnlTitleBar.Controls.Add(btnClose);
+            pnlTitleBar.Dock = DockStyle.Top;
+            pnlTitleBar.Location = new Point(0, 0);
+            pnlTitleBar.Name = "pnlTitleBar";
+            pnlTitleBar.Size = new Size(792, 26);
+            pnlTitleBar.TabIndex = 3;
+            // 
+            // btnHide
+            // 
+            btnHide.BackColor = Color.Salmon;
+            btnHide.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
+            btnHide.ForeColor = SystemColors.ControlLightLight;
+            btnHide.Location = new Point(736, -1);
+            btnHide.Name = "btnHide";
+            btnHide.Size = new Size(28, 28);
+            btnHide.TabIndex = 4;
+            btnHide.Text = "ㅡ";
+            btnHide.UseVisualStyleBackColor = false;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Salmon;
+            btnClose.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
+            btnClose.ForeColor = SystemColors.ControlLightLight;
+            btnClose.Location = new Point(763, -1);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(28, 28);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
             // 
             // btnForeCast
             // 
@@ -190,41 +225,6 @@
             txtContent.Size = new Size(572, 36);
             txtContent.TabIndex = 0;
             // 
-            // panel5
-            // 
-            panel5.BackColor = Color.NavajoWhite;
-            panel5.Controls.Add(btnHide);
-            panel5.Controls.Add(btnClose);
-            panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(792, 26);
-            panel5.TabIndex = 3;
-            // 
-            // btnClose
-            // 
-            btnClose.BackColor = Color.Salmon;
-            btnClose.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
-            btnClose.ForeColor = SystemColors.ControlLightLight;
-            btnClose.Location = new Point(763, -1);
-            btnClose.Name = "btnClose";
-            btnClose.Size = new Size(28, 28);
-            btnClose.TabIndex = 3;
-            btnClose.Text = "X";
-            btnClose.UseVisualStyleBackColor = false;
-            // 
-            // btnHide
-            // 
-            btnHide.BackColor = Color.Salmon;
-            btnHide.Font = new Font("맑은 고딕", 7F, FontStyle.Bold);
-            btnHide.ForeColor = SystemColors.ControlLightLight;
-            btnHide.Location = new Point(738, -1);
-            btnHide.Name = "btnHide";
-            btnHide.Size = new Size(28, 28);
-            btnHide.TabIndex = 4;
-            btnHide.Text = "ㅡ";
-            btnHide.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -240,7 +240,7 @@
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel5.ResumeLayout(false);
+            pnlTitleBar.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -259,7 +259,7 @@
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewCheckBoxColumn CHECK;
         private Button btnForeCast;
-        private Panel panel5;
+        private Panel pnlTitleBar;
         private Button btnClose;
         private Button btnHide;
     }
