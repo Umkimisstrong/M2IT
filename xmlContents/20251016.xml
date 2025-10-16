@@ -1,86 +1,23 @@
 <root>
   <item>
     <idx>0</idx>
-    <content>Daily CheckList App 만들기</content>
-    <writer>김상기</writer>
-    <date>13:10:57</date>
-    <check>True</check>
-  </item>
-  <item>
-    <idx>1</idx>
-    <content>점심먹기</content>
-    <writer>김상기</writer>
-    <date>13:11:23</date>
-    <check>True</check>
-  </item>
-  <item>
-    <idx>2</idx>
-    <content>커피사기</content>
-    <writer>김상기</writer>
-    <date>13:11:25</date>
-    <check>True</check>
-  </item>
-  <item>
-    <idx>3</idx>
     <content>일일메모남기기</content>
     <writer>김상기</writer>
     <date>13:11:38</date>
     <check>True</check>
   </item>
   <item>
-    <idx>4</idx>
-    <content>GitCommit 하기</content>
+    <idx>1</idx>
+    <content>토의하기</content>
     <writer>김상기</writer>
-    <date>13:11:42</date>
+    <date>14:00:33</date>
     <check>True</check>
   </item>
   <item>
-    <idx>5</idx>
-    <content>출근도장찍기</content>
+    <idx>2</idx>
+    <content>내용작성</content>
     <writer>김상기</writer>
-    <date>13:11:54</date>
-    <check>True</check>
-  </item>
-  <item>
-    <idx>6</idx>
-    <content>퇴근도장찍기</content>
-    <writer>김상기</writer>
-    <date>13:11:56</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>7</idx>
-    <content>출근인사하기</content>
-    <writer>김상기</writer>
-    <date>13:32:48</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>8</idx>
-    <content>퇴근인사하기</content>
-    <writer>김상기</writer>
-    <date>13:32:51</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>9</idx>
-    <content>독서하기</content>
-    <writer>김상기</writer>
-    <date>13:32:53</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>10</idx>
-    <content>30분이상 걷기</content>
-    <writer>김상기</writer>
-    <date>13:32:56</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>11</idx>
-    <content>돈보내기</content>
-    <writer>김상기</writer>
-    <date>13:33:00</date>
+    <date>14:06:00</date>
     <check>False</check>
   </item>
 </root>
