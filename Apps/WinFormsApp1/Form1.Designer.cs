@@ -38,9 +38,9 @@
             CHECK = new DataGridViewCheckBoxColumn();
             panel1 = new Panel();
             panel2 = new Panel();
+            btnForeCast = new Button();
             btnAdd = new Button();
             txtContent = new TextBox();
-            btnForeCast = new Button();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -83,6 +83,7 @@
             // 
             // grdContents
             // 
+            grdContents.AllowUserToAddRows = false;
             grdContents.BackgroundColor = Color.Tan;
             grdContents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdContents.Columns.AddRange(new DataGridViewColumn[] { CONTENT, WRITER, DATE, CHECK });
@@ -150,6 +151,18 @@
             panel2.Size = new Size(792, 65);
             panel2.TabIndex = 2;
             // 
+            // btnForeCast
+            // 
+            btnForeCast.BackColor = SystemColors.HotTrack;
+            btnForeCast.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
+            btnForeCast.ForeColor = SystemColors.ControlLightLight;
+            btnForeCast.Location = new Point(686, 11);
+            btnForeCast.Name = "btnForeCast";
+            btnForeCast.Size = new Size(94, 36);
+            btnForeCast.TabIndex = 2;
+            btnForeCast.Text = "날씨";
+            btnForeCast.UseVisualStyleBackColor = false;
+            // 
             // btnAdd
             // 
             btnAdd.BackColor = Color.Sienna;
@@ -171,18 +184,6 @@
             txtContent.Name = "txtContent";
             txtContent.Size = new Size(572, 36);
             txtContent.TabIndex = 0;
-            // 
-            // btnForeCast
-            // 
-            btnForeCast.BackColor = SystemColors.HotTrack;
-            btnForeCast.Font = new Font("맑은 고딕", 12F, FontStyle.Bold);
-            btnForeCast.ForeColor = SystemColors.ControlLightLight;
-            btnForeCast.Location = new Point(686, 11);
-            btnForeCast.Name = "btnForeCast";
-            btnForeCast.Size = new Size(94, 36);
-            btnForeCast.TabIndex = 2;
-            btnForeCast.Text = "날씨";
-            btnForeCast.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
