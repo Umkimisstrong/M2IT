@@ -20,4 +20,11 @@
     <date>14:06:00</date>
     <check>False</check>
   </item>
+  <item>
+    <idx>3</idx>
+    <content>추가된내용</content>
+    <writer>김상기</writer>
+    <date>14:12:46</date>
+    <check>False</check>
+  </item>
 </root>
