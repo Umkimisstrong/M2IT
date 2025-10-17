@@ -48,11 +48,11 @@
             txtKorShort = new TextBox();
             txtEng = new TextBox();
             pnlTitleBar = new Panel();
+            label1 = new Label();
             btnHide = new Button();
             btnClose = new Button();
             btnAdd = new Button();
             txtKor = new TextBox();
-            label1 = new Label();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -187,7 +187,7 @@
             btnRefresh.Margin = new Padding(2);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(63, 27);
-            btnRefresh.TabIndex = 13;
+            btnRefresh.TabIndex = 10;
             btnRefresh.Text = "Clear";
             btnRefresh.UseVisualStyleBackColor = false;
             // 
@@ -200,7 +200,7 @@
             txtSearchEngShort.Margin = new Padding(2);
             txtSearchEngShort.Name = "txtSearchEngShort";
             txtSearchEngShort.Size = new Size(110, 31);
-            txtSearchEngShort.TabIndex = 12;
+            txtSearchEngShort.TabIndex = 8;
             // 
             // txtSearchKorShort
             // 
@@ -211,7 +211,7 @@
             txtSearchKorShort.Margin = new Padding(2);
             txtSearchKorShort.Name = "txtSearchKorShort";
             txtSearchKorShort.Size = new Size(110, 31);
-            txtSearchKorShort.TabIndex = 11;
+            txtSearchKorShort.TabIndex = 7;
             // 
             // txtSearchEng
             // 
@@ -222,7 +222,7 @@
             txtSearchEng.Margin = new Padding(2);
             txtSearchEng.Name = "txtSearchEng";
             txtSearchEng.Size = new Size(110, 31);
-            txtSearchEng.TabIndex = 10;
+            txtSearchEng.TabIndex = 6;
             // 
             // txtSearchKor
             // 
@@ -233,7 +233,7 @@
             txtSearchKor.Margin = new Padding(2);
             txtSearchKor.Name = "txtSearchKor";
             txtSearchKor.Size = new Size(110, 31);
-            txtSearchKor.TabIndex = 9;
+            txtSearchKor.TabIndex = 5;
             // 
             // btnSearch
             // 
@@ -244,7 +244,7 @@
             btnSearch.Margin = new Padding(2);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(73, 27);
-            btnSearch.TabIndex = 8;
+            btnSearch.TabIndex = 9;
             btnSearch.Text = "검색";
             btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -257,7 +257,7 @@
             txtEngShort.Margin = new Padding(2);
             txtEngShort.Name = "txtEngShort";
             txtEngShort.Size = new Size(110, 31);
-            txtEngShort.TabIndex = 6;
+            txtEngShort.TabIndex = 3;
             // 
             // txtKorShort
             // 
@@ -268,7 +268,7 @@
             txtKorShort.Margin = new Padding(2);
             txtKorShort.Name = "txtKorShort";
             txtKorShort.Size = new Size(110, 31);
-            txtKorShort.TabIndex = 5;
+            txtKorShort.TabIndex = 2;
             // 
             // txtEng
             // 
@@ -279,7 +279,7 @@
             txtEng.Margin = new Padding(2);
             txtEng.Name = "txtEng";
             txtEng.Size = new Size(110, 31);
-            txtEng.TabIndex = 4;
+            txtEng.TabIndex = 1;
             // 
             // pnlTitleBar
             // 
@@ -294,6 +294,15 @@
             pnlTitleBar.Size = new Size(615, 20);
             pnlTitleBar.TabIndex = 3;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(8, 2);
+            label1.Name = "label1";
+            label1.Size = new Size(67, 15);
+            label1.TabIndex = 6;
+            label1.Text = "> 용어사전";
+            // 
             // btnHide
             // 
             btnHide.BackColor = Color.Salmon;
@@ -303,7 +312,8 @@
             btnHide.Margin = new Padding(2);
             btnHide.Name = "btnHide";
             btnHide.Size = new Size(22, 21);
-            btnHide.TabIndex = 4;
+            btnHide.TabIndex = 99;
+            btnHide.TabStop = false;
             btnHide.Text = "ㅡ";
             btnHide.UseVisualStyleBackColor = false;
             // 
@@ -316,7 +326,8 @@
             btnClose.Margin = new Padding(2);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(22, 21);
-            btnClose.TabIndex = 3;
+            btnClose.TabIndex = 98;
+            btnClose.TabStop = false;
             btnClose.Text = "X";
             btnClose.UseVisualStyleBackColor = false;
             // 
@@ -329,7 +340,7 @@
             btnAdd.Margin = new Padding(2);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(73, 27);
-            btnAdd.TabIndex = 1;
+            btnAdd.TabIndex = 4;
             btnAdd.Text = "추가";
             btnAdd.UseVisualStyleBackColor = false;
             // 
@@ -343,15 +354,6 @@
             txtKor.Name = "txtKor";
             txtKor.Size = new Size(110, 31);
             txtKor.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(8, 2);
-            label1.Name = "label1";
-            label1.Size = new Size(67, 15);
-            label1.TabIndex = 6;
-            label1.Text = "> 용어사전";
             // 
             // Form2
             // 

@@ -8,20 +8,48 @@
   </item>
   <item>
     <idx>1</idx>
+    <kor>사용자 경험</kor>
+    <eng>User Experience</eng>
+    <kor_short>UX</kor_short>
+    <eng_short>UX</eng_short>
+  </item>
+  <item>
+    <idx>2</idx>
+    <kor>사용자 인터페이스</kor>
+    <eng>User Interface</eng>
+    <kor_short>UI</kor_short>
+    <eng_short>UI</eng_short>
+  </item>
+  <item>
+    <idx>3</idx>
     <kor>애플리케이션 프로그래밍 인터페이스</kor>
     <eng>Application Programming Interface</eng>
     <kor_short>에이피아이</kor_short>
     <eng_short>API</eng_short>
   </item>
   <item>
-    <idx>2</idx>
+    <idx>4</idx>
+    <kor>정보시스템서비스관리</kor>
+    <eng>Information System Service Management</eng>
+    <kor_short>ITSM</kor_short>
+    <eng_short>ITSM</eng_short>
+  </item>
+  <item>
+    <idx>5</idx>
     <kor>제안요청서</kor>
     <eng>Request for Proposal</eng>
     <kor_short>제안요청서</kor_short>
     <eng_short>RFP</eng_short>
   </item>
   <item>
-    <idx>3</idx>
+    <idx>6</idx>
+    <kor>진단검사의학과 정보 시스템</kor>
+    <eng>Laboratory Information System</eng>
+    <kor_short>진검</kor_short>
+    <eng_short>LIS</eng_short>
+  </item>
+  <item>
+    <idx>7</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
