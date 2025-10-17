@@ -6,6 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Rutinus.Command;
 
 namespace Rutinus.ViewModels
 {
@@ -31,11 +33,7 @@ namespace Rutinus.ViewModels
             });
         }
 
-        [RelayCommand]
-        private void AddRoutine()
-        {
-            // 루틴 추가 로직
-        }
+   
 
     }
 }

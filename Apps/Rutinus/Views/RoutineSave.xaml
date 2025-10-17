@@ -50,7 +50,7 @@
 
             <!-- 저장 버튼 -->
             <Button Text="루틴 저장"
-                    Command="{Binding SaveCommand}" />
+                    Command="{Binding ButtonCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 
