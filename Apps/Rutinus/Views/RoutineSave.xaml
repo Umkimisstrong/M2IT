@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+             x:Class="Rutinus.RoutineSave"
+             x:DataType="viewmodels:RoutineViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,30"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <!-- 루틴 이름 -->
+            <Label Text="루틴 이름" />
+            <Entry Placeholder="예: 하체 루틴"
+                   Text="{Binding RoutineName}" />
+
+            <!-- 운동 부위 선택 -->
+            <!--<Label Text="운동 부위" />-->
+            <Picker Title="운동 부위 선택"
+                    ItemsSource="{Binding BodyParts}"
+                    SelectedItem="{Binding SelectedBodyPart}" />
+
+            <!-- 날짜 선택 -->
+            <Label Text="시작 날짜" />
+            <DatePicker Date="{Binding StartDate}" />
+
+            <!-- 운동 설명 -->
+            <Label Text="설명" />
+            <Editor Placeholder="루틴에 대한 설명을 입력하세요"
+                    AutoSize="TextChanges"
+                    Text="{Binding Description}" />
+
+            <!-- 무게 설정 -->
+            <Label Text="기본 중량 설정 (kg)" />
+            <Stepper Minimum="0" Maximum="200" Increment="2"
+                     Value="{Binding DefaultWeight}" />
+            <Label Text="{Binding DefaultWeight, StringFormat='선택된 중량: {0}kg'}" />
+
+            <!-- 알림 설정 -->
+            <HorizontalStackLayout>
+                <Label Text="알림 받기" VerticalOptions="Center" />
+                <Switch IsToggled="{Binding ReceiveNotifications}" />
+            </HorizontalStackLayout>
+
+            <!-- 저장 버튼 -->
+            <Button Text="루틴 저장"
+                    Command="{Binding SaveCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

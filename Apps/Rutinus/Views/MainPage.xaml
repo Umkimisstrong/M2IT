@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rutinus.MainPage">
+
+    <ScrollView
+        MaximumHeightRequest="600"
+        MaximumWidthRequest="300">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            MaximumWidthRequest="600">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                Text="Routinus"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="루티너스 &#10;루틴을 만들어 진행해보세요"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="루틴만들기" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="루틴 생성하기" 
+                Clicked="OnRoutineCreate_Click"
+                MaximumWidthRequest="300"
+                />
+            <Button
+                x:Name="btnTodayExcercise"
+                Text="오늘의 운동 기록" 
+                Clicked="OnTodayExcercise_Click"
+                MaximumWidthRequest="300"
+                />
+            <Button
+                x:Name="btnHistory"
+                Text="히스토리 보기" 
+                Clicked="OnHistory_Click"
+                MaximumWidthRequest="300"
+                />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

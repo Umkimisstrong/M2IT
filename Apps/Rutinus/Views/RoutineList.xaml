@@ -1,0 +1,37 @@
+﻿<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+    x:Class="Rutinus.RoutineList"
+    x:DataType="viewmodels:RoutineListViewModel"
+    Title="">
+
+    <VerticalStackLayout Padding="30,10" Spacing="10">
+
+        <Button Text="루틴 생성하기" Clicked="ToolbarItem_Clicked" MaximumWidthRequest="200" HorizontalOptions="End"  />
+
+        <CollectionView ItemsSource="{Binding Routines}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnRoutineSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="viewmodels:RoutineViewModel">
+                    <Border Stroke="Gray"
+                            StrokeThickness="1"
+                            Background="#FFF"
+                            StrokeShape="RoundRectangle 8"
+                            Padding="10"
+                            Margin="5">
+
+                        <VerticalStackLayout>
+                            <Label Text="{Binding RoutineName}" FontSize="20" />
+                            <Label Text="{Binding Description}" FontSize="14" TextColor="Gray" />
+                            <Label Text="{Binding BodyPart}" FontSize="14" TextColor="Gray" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
