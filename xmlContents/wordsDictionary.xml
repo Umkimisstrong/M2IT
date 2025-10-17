@@ -1,0 +1,30 @@
+<root>
+  <item>
+    <idx>0</idx>
+    <kor>병원정보시스템</kor>
+    <eng>Hospital Information System</eng>
+    <kor_short>HIS</kor_short>
+    <eng_short>HIS</eng_short>
+  </item>
+  <item>
+    <idx>1</idx>
+    <kor>애플리케이션 프로그래밍 인터페이스</kor>
+    <eng>Application Programming Interface</eng>
+    <kor_short>에이피아이</kor_short>
+    <eng_short>API</eng_short>
+  </item>
+  <item>
+    <idx>2</idx>
+    <kor>제안요청서</kor>
+    <eng>Request for Proposal</eng>
+    <kor_short>제안요청서</kor_short>
+    <eng_short>RFP</eng_short>
+  </item>
+  <item>
+    <idx>3</idx>
+    <kor>킥오프</kor>
+    <eng>Kick Off</eng>
+    <kor_short>킥오프</kor_short>
+    <eng_short>Kick Off</eng_short>
+  </item>
+</root>

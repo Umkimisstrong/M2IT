@@ -360,6 +360,7 @@ namespace WinFormsApp1
                                 i++;
                             }
                             grdContents.DataSource = contentDt;
+                            grdContents.ClearSelection();
                         }
                         
                     }
