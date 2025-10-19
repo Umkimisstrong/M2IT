@@ -11,6 +11,10 @@ namespace WinFormsApp1
         /// contentDt : 전역 DataTable 변수
         /// </summary>
         private DataTable contentDt;
+
+        /// <summary>
+        /// appRootPath : 어플리케이션의 root 경로
+        /// </summary>
         private string appRootPath;
 
         [DllImport("user32.dll")]
@@ -69,6 +73,11 @@ namespace WinFormsApp1
 
         }
 
+        /// <summary>
+        /// PnlTitleBar_MouseDown : 타이틀바의 마우스 다운 이벤트
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PnlTitleBar_MouseDown(object? sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -315,7 +324,7 @@ namespace WinFormsApp1
             xml.LoadXml(sb.ToString());
             xml.Save(folderPath + "\\" + fileNm);
         }
-
+         
         /// <summary>
         /// SetXmlDataForContent : xml 정보를 생성한다.
         /// </summary>
