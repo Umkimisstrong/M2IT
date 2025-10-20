@@ -1,10 +1,15 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Rutinus.Entities;
+using Rutinus.Models;
+using Rutinus.Services;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using static Rutinus.Services.ApiClient;
 
 namespace Rutinus.ViewModels
 {
@@ -47,17 +52,32 @@ namespace Rutinus.ViewModels
         /// <summary>
         /// OnButtonClicked : 버튼 클릭시 실행되는 메소드
         /// </summary>
-        private void OnButtonClicked()
+        private async void OnButtonClicked()
         {
             // ViewModel 에서는 UI 선언된 변수를 그대로 사용할 수 있다.
             // 사용 시 입력된 값을 가져온다.
             // 
-            System.Diagnostics.Debug.WriteLine(routineName);
-            System.Diagnostics.Debug.WriteLine(description);
-            System.Diagnostics.Debug.WriteLine(startDate);
-            System.Diagnostics.Debug.WriteLine(defaultWeight);
-            System.Diagnostics.Debug.WriteLine(selectedBodyPart);
 
+            ApiClient _api = new();
+
+            try
+            {
+                RoutineModel request = new RoutineModel();
+                request.routineName = routineName;
+                request.defaultWeight = defaultWeight;
+                request.selectedBodyPart = selectedBodyPart;
+                request.startDate = startDate;
+                request.bodyParts = new List<string>();
+                request.bodyPart = selectedBodyPart;
+                request.description = description;
+                request.receiveNotifications = receiveNotifications;
+                RoutineEntity entity = await _api.SaveRoutine(request);
+
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex.Message);
+            }
 
         }
     }

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "새 프로필",
+    "Projects": [
+      {
+        "Path": "..\\RutinusApi\\RutinusApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Rutinus.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

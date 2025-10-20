@@ -1,16 +1,8 @@
-﻿using Rutinus.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Models
+﻿namespace RutinusApi.Entities
 {
-    public class RoutineModel
+    public class RoutineEntity
     {
-        List<RoutineEntity> routineEntityList { get; set; }
-        RoutineEntity routineEntity { get; set; }
+        public string routineId { get; set; }
         public string routineName { get; set; }
         public string description { get; set; }
         public DateTime startDate { get; set; }
@@ -19,5 +11,6 @@ namespace Rutinus.Models
         public List<string> bodyParts { get; set; }
         public string selectedBodyPart { get; set; }
         public string bodyPart { get; set; }
+        
     }
 }
