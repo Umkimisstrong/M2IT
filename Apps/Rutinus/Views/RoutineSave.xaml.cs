@@ -12,10 +12,5 @@ namespace Rutinus
             BindingContext = new RoutineViewModel();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-          
-        }
-
     }
 }

@@ -2,14 +2,8 @@
 using Rutinus.Entities;
 using Rutinus.Models;
 using Rutinus.Services;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using static Rutinus.Services.ApiClient;
 
 namespace Rutinus.ViewModels
 {
@@ -18,11 +12,8 @@ namespace Rutinus.ViewModels
         [ObservableProperty] string routineName;
         [ObservableProperty] string description;
         [ObservableProperty] DateTime startDate = DateTime.Today;
-
         [ObservableProperty] double defaultWeight = 20;
-
         [ObservableProperty] bool receiveNotifications = true;
-
         [ObservableProperty] List<string> bodyParts = new() { "가슴", "등", "하체", "어깨", "팔" };
         [ObservableProperty] string selectedBodyPart;
         [ObservableProperty] string bodyPart;
@@ -58,7 +49,7 @@ namespace Rutinus.ViewModels
             // 사용 시 입력된 값을 가져온다.
             // 
 
-            ApiClient _api = new();
+            RoutineService _api = new RoutineService();
 
             try
             {
@@ -72,6 +63,8 @@ namespace Rutinus.ViewModels
                 request.description = description;
                 request.receiveNotifications = receiveNotifications;
                 RoutineEntity entity = await _api.SaveRoutine(request);
+
+                await Shell.Current.GoToAsync("///RoutineList");
 
             }
             catch (Exception ex)

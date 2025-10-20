@@ -10,7 +10,8 @@
 
         private async void OnRoutineCreate_Click(object? sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RoutineList());
+            //await Navigation.PushAsync(new RoutineList());
+            await Shell.Current.GoToAsync("///RoutineList");
         }
 
        

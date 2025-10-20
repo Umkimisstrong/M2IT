@@ -28,7 +28,9 @@ namespace Rutinus
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RoutineSave());
+            //await Navigation.PushAsync(new RoutineSave());
+            await Shell.Current.GoToAsync("///RoutineSave");
+
         }
     }
 }

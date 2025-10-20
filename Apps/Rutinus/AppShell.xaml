@@ -6,9 +6,20 @@
     xmlns:local="clr-namespace:Rutinus"
     Title="Rutinus">
 
+    <!-- App.Shell 을 사용하여 Navigating 할 수 있게 한다. -->
     <ShellContent
-        Title=""
+        Title="홈"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        Title="루틴 목록"
+        ContentTemplate="{DataTemplate local:RoutineList}"
+        Route="RoutineList"
+        />
+    <ShellContent
+        Title="루틴 저장"
+        ContentTemplate="{DataTemplate local:RoutineSave}"
+        Route="RoutineSave"
+        />
 
 </Shell>
