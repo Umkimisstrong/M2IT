@@ -20,4 +20,11 @@
     <date>09:00:15</date>
     <check>True</check>
   </item>
+  <item>
+    <idx>3</idx>
+    <content>maui, asp.net core 연동</content>
+    <writer>김상기</writer>
+    <date>10:34:21</date>
+    <check>True</check>
+  </item>
 </root>
