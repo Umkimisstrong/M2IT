@@ -12,41 +12,14 @@ namespace Rutinus.Entities
     /// </summary>
     public class RoutineEntity
     {
-        /// <summary>
-        /// routineId : 루틴 id
-        /// </summary>
-        public string routineId { get; set; }
-        /// <summary>
-        /// routineName : 루틴명
-        /// </summary>
-        public string routineName {get; set;}
-        /// <summary>
-        /// description : 설명
-        /// </summary>
-        public string description {get; set;}
-        /// <summary>
-        /// startDate : 시작일
-        /// </summary>
-        public DateTime startDate {get; set;}
-        /// <summary>
-        /// defaultWeight : 기본중량
-        /// </summary>
-        public double defaultWeight {get; set;}
-        /// <summary>
-        /// receiveNotifications : 알림받기여부
-        /// </summary>
-        public bool receiveNotifications {get; set;}
-        /// <summary>
-        /// bodyParts : 부위 목록
-        /// </summary>
-        public List<string> bodyParts {get; set;}
-        /// <summary>
-        /// selectedBodyPart : 선택한 부위
-        /// </summary>
-        public string selectedBodyPart {get; set;}
-        /// <summary>
-        /// bodyPart : 부위
-        /// </summary>
-        public string bodyPart { get; set; }
+        public int ROUTINE_ID { get; set; }
+        public string ROUTINE_NM { get; set; }
+        public string ROUTINE_DESC { get; set; }
+        public string ROUTINE_PART { get; set; }
+        public string ROUTINE_ALERT_YN { get; set; }
+        public string ROUTINE_CREATE_ID { get; set; }
+        public DateTime ROUTINE_CREATE_DT { get; set; }
+        public string ROUTINE_UPDATE_ID { get; set; }
+        public DateTime ROUTINE_UPDATE_DT { get; set; }
     }
 }

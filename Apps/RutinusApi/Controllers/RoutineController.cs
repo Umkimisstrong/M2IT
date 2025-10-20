@@ -1,35 +1,82 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RutinusApi.Models;
 using RutinusApi.Entities;
+using RutinusApi.Global;
+using RutinusApi.Models;
+using RutinusApi.Repositories;
+using RutinusApi.Tables;
+using System.Linq;
+
 namespace RutinusApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class RoutineController : ControllerBase
     {
+        private readonly RoutineRepository _repo;
+        public RoutineController(RoutineRepository repo)
+        {
+            _repo = repo;
+        }
+
+        [HttpGet("getroutines")]
+        public async Task<ActionResult<IEnumerable<RoutineDto>>> GetRoutines(string createId)
+        {
+            var entities =  _repo.GetRoutines(createId);
+
+            // Entity → Model 변환
+            var models = entities.Select(e => new RoutineDto
+            {
+                RoutineId = e.RoutineId,
+                RoutineName = e.RoutineName,
+                RoutineDescription = e.RoutineDescription,
+                RoutinePart = e.RoutinePart,
+                AlertYn = e.AlertYn
+            }).ToList();
+
+            return Ok(models);
+        }
 
         [HttpPost("saveroutine")]
-        public IActionResult SaveRoutine([FromBody] RoutineModel request)
+        public async Task<IActionResult> SaveRoutineAsync([FromBody] RoutineDto request)
         {
-            if (string.IsNullOrEmpty(request.routineName))
+            RoutineEntity entity = new RoutineEntity() 
             {
-                return BadRequest("루틴 이름은 필수입니다.");
+                RoutineName = request.RoutineName,
+                RoutinePart = "PART_003",
+                RoutineDescription = request.RoutineDescription,
+                AlertYn = request.AlertYn,
+                CreatedAt = DateTime.Now,
+                CreatedBy = "KIMSANGKI",
+                UpdatedAt = DateTime.Now,
+                UpdatedBy = "KIMSANGKI"
+
+            };
+            int result = await _repo.InsertRoutineAsync(entity);
+            string ResultMessage = "";
+            bool isSuccess = false;
+            if (result > 0)
+            {
+                ResultMessage = "루틴이 저장되었습니다.";
+                isSuccess = true;
+            }
+            else
+            {
+                ResultMessage = "루틴이 저장되지 않았습니다.";
+                isSuccess = false;
             }
 
-            
-            RoutineEntity entity = new RoutineEntity();
-            entity.routineId = Guid.NewGuid().ToString();
-            entity.routineName = request.routineName;
-            entity.defaultWeight = request.defaultWeight;
-            entity.bodyParts = request.bodyParts;
-            entity.bodyPart = request.bodyPart;
-            entity.description = request.description;
-            entity.receiveNotifications = request.receiveNotifications;
-            entity.selectedBodyPart = request.selectedBodyPart;
-            entity.startDate = request.startDate;
-
             return Ok(
-                entity
+                new ApiResponse<RoutineDto>
+                {
+                    Success = isSuccess,
+                    Message = ResultMessage,
+                    Data = new RoutineDto
+                    {
+                        RoutineId = 0,
+                        RoutineName = request.RoutineName,
+                        RoutinePart = request.RoutinePart
+                    }
+                }
             );
 
         }

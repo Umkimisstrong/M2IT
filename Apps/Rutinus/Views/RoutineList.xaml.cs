@@ -1,36 +1,39 @@
-﻿using Rutinus.ViewModels;
+﻿using Rutinus.Models;
+using Rutinus.ViewModels;
 using System.Threading.Tasks;
 
 namespace Rutinus
 {
     public partial class RoutineList : ContentPage
     {
-        int count = 0;
-
+        private RoutineListViewModel _viewModel;
         public RoutineList()
         {
             InitializeComponent();
-            BindingContext = new RoutineListViewModel();
+            _viewModel = new RoutineListViewModel();
+            BindingContext = _viewModel;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            _viewModel.RefreshCommand.Execute(null);
         }
 
         private async void OnRoutineSelected(object sender, SelectionChangedEventArgs e)
         {
-            var selected = e.CurrentSelection.FirstOrDefault() as RoutineViewModel;
+            var selected = e.CurrentSelection.FirstOrDefault();
             if (selected is not null)
             {
-                // 페이지 이동 또는 상세 보기 처리
-                await DisplayAlert("루틴 선택", $"{selected.RoutineName} 루틴을 선택했습니다", "확인");
-
-                // 선택 초기화 (선택된 상태 유지 안 하도록)
+                await DisplayAlert("루틴 선택", "선택한 루틴을 확인했습니다.", "확인");
                 ((CollectionView)sender).SelectedItem = null;
             }
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new RoutineSave());
             await Shell.Current.GoToAsync("///RoutineSave");
-
         }
     }
 }

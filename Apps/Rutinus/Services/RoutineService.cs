@@ -20,15 +20,49 @@ namespace Rutinus.Services
         /// <param name="request"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public async Task<RoutineEntity> SaveRoutine(RoutineModel request)
+        public async Task<ApiResponse<RoutineModel>> SaveRoutine(RoutineModel request)
         {
             var response = await _http.PostAsJsonAsync("/api/routine/saveroutine", request);
-            if (!response.IsSuccessStatusCode)
+            var result = new ApiResponse<RoutineModel>();
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadFromJsonAsync<RoutineModel>();
+                result.Success = true;
+                result.Message = "Success";
+                result.Data = data;
+            }
+            else
+            {
+                result.Success = false;
+                result.Message = $"Error: {response.StatusCode}";
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 루틴 목록 조회
+        /// </summary>
+        public async Task<ApiResponse<List<RoutineModel>>> GetRoutineListAsync(string createId)
+        {
+            var response = await _http.GetAsync($"/api/routine/getroutines?createId={createId}");
+
+            var result = new ApiResponse<List<RoutineModel>>();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var list = await response.Content.ReadFromJsonAsync<List<RoutineModel>>();
+                result.Success = true;
+                result.Data = list ?? new List<RoutineModel>();
+                result.Message = "Success";
+            }
+            else
             {
                 var error = await response.Content.ReadAsStringAsync();
-                throw new Exception($"저장 실패: {error}");
+                result.Success = false;
+                result.Message = $"Error: {response.StatusCode}, {error}";
             }
-            return await response.Content.ReadFromJsonAsync<RoutineEntity>(); ;
+
+            return result;
         }
     }
 }

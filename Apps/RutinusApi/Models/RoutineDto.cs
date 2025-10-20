@@ -1,19 +1,13 @@
-﻿using Rutinus.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RutinusApi.Entities;
 
-namespace Rutinus.Models
+namespace RutinusApi.Models
 {
-    public class RoutineModel
+    public class RoutineDto
     {
         public int RoutineId { get; set; }
         public string RoutineName { get; set; } = "";
         public string RoutineDescription { get; set; } = "";
         public string RoutinePart { get; set; } = "";
-        public bool AlertEnabled => AlertYn == "Y";
         public string AlertYn { get; set; } = "N";
     }
 }

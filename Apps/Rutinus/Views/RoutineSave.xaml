@@ -34,7 +34,7 @@
             <Label Text="설명" />
             <Editor Placeholder="루틴에 대한 설명을 입력하세요"
                     AutoSize="TextChanges"
-                    Text="{Binding Description}" />
+                    Text="{Binding RoutineDescription}" />
 
             <!-- 무게 설정 -->
             <Label Text="기본 중량 설정 (kg)" />
@@ -45,12 +45,12 @@
             <!-- 알림 설정 -->
             <HorizontalStackLayout>
                 <Label Text="알림 받기" VerticalOptions="Center" />
-                <Switch IsToggled="{Binding ReceiveNotifications}" />
+                <Switch IsToggled="{Binding AlertEnabled}" />
             </HorizontalStackLayout>
 
             <!-- 저장 버튼 -->
             <Button Text="루틴 저장"
-                    Command="{Binding ButtonCommand}" />
+                    Command="{Binding SaveCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 
