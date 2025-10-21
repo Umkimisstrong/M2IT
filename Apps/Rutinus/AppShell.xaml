@@ -21,5 +21,9 @@
         ContentTemplate="{DataTemplate local:RoutineSave}"
         Route="RoutineSave"
         />
-
+    <ShellContent
+        Title=""
+        ContentTemplate="{DataTemplate local:TrainingSaveList}"
+        Route="TrainingSaveList"
+    />
 </Shell>

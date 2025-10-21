@@ -38,5 +38,24 @@ namespace RutinusApi.Controllers
             return Ok(models);
         }
 
+        /// <summary>
+        /// GetCodeValueRuleItemsAsync : 부위코드로 코드밸류 아이템 가져오기
+        /// </summary>
+        /// <param name="bodyPartCd">부위코드</param>
+        /// <returns></returns>
+        [HttpGet("getcodevalueRuleItem")]
+        public async Task<ActionResult<IEnumerable<CodeDto>>> GetCodeValueRuleItemsAsync(string bodyPartCd)
+        {
+            var entities = _repo.GetCodeValueRuleItems(bodyPartCd);
+
+            // Entity → Model 변환
+            var models = entities.Select(e => new CodeDto
+            {
+                Cd = e.Cd,
+                CdNm = e.CdNm,
+            }).ToList();
+
+            return Ok(models);
+        }
     }
 }

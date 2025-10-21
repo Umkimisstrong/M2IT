@@ -36,5 +36,33 @@ namespace Rutinus.Services
 
             return result;
         }
+
+        /// <summary>
+        /// GetCodeValueRuleItemAsync : 룰 코드밸류(드랍다운콤보박스용)
+        /// </summary>
+        /// <param name="bodyPartCd">부위코드</param>
+        /// <returns></returns>
+        public async Task<ApiResponse<List<CodeModel>>> GetCodeValueRuleItemAsync(string bodyPartCd)
+        {
+            var response = await _http.GetAsync($"/api/code/getcodevalueruleitem?bodyPartCd={bodyPartCd}");
+
+            var result = new ApiResponse<List<CodeModel>>();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var list = await response.Content.ReadFromJsonAsync<List<CodeModel>>();
+                result.Success = true;
+                result.Data = list ?? new List<CodeModel>();
+                result.Message = "Success";
+            }
+            else
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                result.Success = false;
+                result.Message = $"Error: {response.StatusCode}, {error}";
+            }
+
+            return result;
+        }
     }
 }

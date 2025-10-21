@@ -16,6 +16,7 @@ namespace RutinusApi.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CodeEntity>().HasKey(ur => new { ur.SysCd, ur.DivCd, ur.Cd });
+            modelBuilder.Entity<RuleEntity>().HasKey(ur => new { ur.BodyPartCd, ur.RtnCd });
 
             base.OnModelCreating(modelBuilder);
         }
@@ -24,5 +25,9 @@ namespace RutinusApi.Data
         public DbSet<RoutineEntity> Routines { get; set; }
         // 코드
         public DbSet<CodeEntity> Codes { get; set; }
+        // 룰
+        public DbSet<RuleEntity> Rules { get; set; }
+        // 훈련종목
+        public DbSet<TrainingEntity> Trainings { get; set; }
     }
 }

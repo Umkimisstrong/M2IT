@@ -44,5 +44,30 @@ namespace RutinusApi.Repositories
 
             return query.ToList<CodeDto>();
         }
+
+        /// <summary>
+        /// GetCodeValueRuleItems : 부위코드로 훈련 종목을 Cd 와 Value 형태로 가져온다.
+        /// </summary>
+        /// <param name="bodyPartCd">부위코드</param>
+        /// <returns></returns>
+        public List<CodeDto> GetCodeValueRuleItems(string bodyPartCd)
+        {
+            var query = from outerItem in _context.Rules
+                        join innerItemCodes1 in _context.Codes
+                        on outerItem.RtnCd equals innerItemCodes1.Cd
+                        join innerItemCodes2 in _context.Codes
+                        on outerItem.BodyPartCd equals innerItemCodes2.Cd
+                        where outerItem.BodyPartCd == bodyPartCd
+                           && innerItemCodes1.SysCd == "RTN_CD"
+                           && innerItemCodes2.SysCd == "CMM"
+                           && innerItemCodes2.DivCd == "BODY_PART"
+                        select new CodeDto
+                        {
+                            Cd = outerItem.RtnCd,
+                            CdNm = innerItemCodes1.CdNm,
+                        };
+
+            return query.ToList<CodeDto>();
+        }
     }
 }

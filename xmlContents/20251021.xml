@@ -4,6 +4,13 @@
     <content>MAUI Api 설계</content>
     <writer>김상기</writer>
     <date>08:48:59</date>
-    <check>False</check>
+    <check>True</check>
+  </item>
+  <item>
+    <idx>1</idx>
+    <content>routine CRUD</content>
+    <writer>김상기</writer>
+    <date>14:55:37</date>
+    <check>True</check>
   </item>
 </root>

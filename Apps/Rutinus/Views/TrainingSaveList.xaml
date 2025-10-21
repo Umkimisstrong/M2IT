@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+    xmlns:models="clr-namespace:Rutinus.Models"
+    xmlns:local="clr-namespace:Rutinus"
+    x:Class="Rutinus.TrainingSaveList"
+    x:DataType="viewmodels:TrainingSaveListViewModel">
+
+    <ScrollView Padding="20">
+        <!-- ScrollView로 감싸기 -->
+        <VerticalStackLayout Spacing="20">
+
+            <Label Text="루틴에 등록할 종목 추가" FontSize="20" />
+
+            <Button Text="+ 종목 추가"
+                    Command="{Binding AddExerciseCommand}"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    HorizontalOptions="Start" />
+
+            <CollectionView ItemsSource="{Binding ExerciseInputs}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:TrainingModel">
+                        <Border Stroke="Gray" StrokeThickness="1" Margin="0,10">
+                            <VerticalStackLayout Padding="10" Spacing="10">
+
+                                <!-- 종목 Picker -->
+                                <Picker Title="운동 종목 선택"
+                                        ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type local:TrainingSaveList}}, Path=BindingContext.ExerciseOptions}"
+                                        SelectedItem="{Binding SelectedExercise}"
+                                        ItemDisplayBinding="{Binding Name}" />
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="중량" />
+                                    <Stepper Minimum="0" Maximum="300" Increment="2"
+                                             Value="{Binding TrainingWeight}" />
+                                    <Label Text="{Binding TrainingWeight}" />
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="반복" />
+                                    <Stepper Minimum="1" Maximum="30" Increment="1"
+                                             Value="{Binding TrainingReps}" />
+                                    <Label Text="{Binding TrainingReps}" />
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="세트" />
+                                    <Stepper Minimum="1" Maximum="10" Increment="1"
+                                             Value="{Binding TrainingSet}" />
+                                    <Label Text="{Binding TrainingSet}" />
+                                </HorizontalStackLayout>
+
+                                <Entry Placeholder="명칭 입력" Text="{Binding TrainingNm}" />
+                                <Editor Placeholder="설명 입력" Text="{Binding TrainingDesc}" />
+
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="저장" 
+                    Command="{Binding SaveCommand}"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    <!-- ScrollView로 감싸기 -->
+</ContentPage>

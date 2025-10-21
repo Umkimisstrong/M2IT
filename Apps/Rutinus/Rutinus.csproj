@@ -66,6 +66,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\TrainingSaveList.xaml.cs">
+	    <DependentUpon>TrainingSaveList.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\RoutineSave.xaml.cs">
 	    <DependentUpon>RoutineSave.xaml</DependentUpon>
 	  </Compile>
@@ -75,6 +78,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\TrainingSaveList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\RoutineSave.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

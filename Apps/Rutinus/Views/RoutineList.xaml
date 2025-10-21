@@ -114,7 +114,10 @@
                                 <Label Text="{Binding RoutineDescription}" FontSize="14" TextColor="Gray" />
 
                                 <HorizontalStackLayout HorizontalOptions="End" Spacing="5">
-                                    <Button Text="종목등록" MaximumWidthRequest="150" BackgroundColor="#0baf4d"/>
+                                    <Button Text="종목등록" MaximumWidthRequest="150" BackgroundColor="#0baf4d"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RoutineListViewModel}}, Path=TraingAddCommand}"
+                                            CommandParameter="{Binding RoutineId}"/>
+                                    
                                     <Button Text="수정" MaximumWidthRequest="100" BackgroundColor="#2196f3"
                                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RoutineListViewModel}}, Path=EditCommand }"
                                             CommandParameter="{Binding RoutineId}"/>

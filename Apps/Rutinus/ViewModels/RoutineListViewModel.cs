@@ -31,6 +31,8 @@ namespace Rutinus.ViewModels
         public ICommand EditCommand { get; }
         public ICommand DeleteCommand { get; }
 
+        public ICommand TraingAddCommand { get; }
+
 
         /* 생성자 */
         public RoutineListViewModel()
@@ -41,8 +43,7 @@ namespace Rutinus.ViewModels
             RefreshCommand = new AsyncRelayCommand(LoadRoutinesAsync);
             EditCommand = new Command<int>(OnEditRoutine);
             DeleteCommand = new Command<int>(DeleteRoutinesAsync);
-
-
+            TraingAddCommand = new Command<int>(OnTrainingAdd);
         }
 
         /// <summary>
@@ -140,6 +141,16 @@ namespace Rutinus.ViewModels
             {
 
             }
+        }
+
+        /// <summary>
+        /// OnEditRoutine : 수정 버튼 클릭 커맨드
+        /// </summary>
+        /// <param name="routineId">루틴아이디</param>
+        private async void OnTrainingAdd(int routineId)
+        {
+            // 네비게이션으로 루틴 수정 페이지로 이동, routineId 전달
+            await Shell.Current.GoToAsync($"///TrainingSaveList?routineId={routineId}");
         }
         #endregion
 
