@@ -13,7 +13,8 @@
         <Button Text="루틴 생성하기"
                 Clicked="ToolbarItem_Clicked"
                 MaximumWidthRequest="200"
-                HorizontalOptions="End" />
+                HorizontalOptions="End" 
+                BackgroundColor="#2196f3"/>
 
         <!-- ✅ Pull-to-Refresh -->
         <RefreshView
@@ -34,9 +35,18 @@
                                 Padding="10"
                                 Margin="5">
                             <VerticalStackLayout>
-                                <Label Text="{Binding RoutineName}" FontSize="20" />
+
+                                <HorizontalStackLayout HorizontalOptions="Start" Spacing="5">
+                                    <Label Text="{Binding RoutineName}" FontSize="20" />
+                                    <Label Text="{Binding RoutinePartName}" FontSize="14" TextColor="Gray" />
+                                </HorizontalStackLayout>
                                 <Label Text="{Binding RoutineDescription}" FontSize="14" TextColor="Gray" />
-                                <Label Text="{Binding RoutinePart}" FontSize="14" TextColor="Gray" />
+                                <HorizontalStackLayout HorizontalOptions="End" Spacing="5">
+                                    <Button Text="종목등록" MaximumWidthRequest="150" BackgroundColor="#0baf4d"/>
+                                    <Button Text="수정" MaximumWidthRequest="100" BackgroundColor="#2196f3"/>
+                                    <Button Text="삭제" MaximumWidthRequest="100" BackgroundColor="#b05da5"/>
+                                </HorizontalStackLayout>
+
                             </VerticalStackLayout>
                         </Border>
                     </DataTemplate>

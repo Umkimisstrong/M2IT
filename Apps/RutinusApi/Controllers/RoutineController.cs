@@ -30,6 +30,7 @@ namespace RutinusApi.Controllers
                 RoutineName = e.RoutineName,
                 RoutineDescription = e.RoutineDescription,
                 RoutinePart = e.RoutinePart,
+                RoutinePartName = e.RoutinePartName,
                 AlertYn = e.AlertYn
             }).ToList();
 

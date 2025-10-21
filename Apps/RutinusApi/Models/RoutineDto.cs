@@ -9,5 +9,7 @@ namespace RutinusApi.Models
         public string RoutineDescription { get; set; } = "";
         public string RoutinePart { get; set; } = "";
         public string AlertYn { get; set; } = "N";
+
+        public string RoutinePartName { get; set; } = "";
     }
 }

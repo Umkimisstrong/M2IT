@@ -27,8 +27,8 @@
                     SelectedItem="{Binding SelectedBodyPart}" />
 
             <!-- 날짜 선택 -->
-            <Label Text="시작 날짜" />
-            <DatePicker Date="{Binding StartDate}" />
+            <!--<Label Text="시작 날짜" />
+            <DatePicker Date="{Binding StartDate}" />-->
 
             <!-- 운동 설명 -->
             <Label Text="설명" />
@@ -37,10 +37,10 @@
                     Text="{Binding RoutineDescription}" />
 
             <!-- 무게 설정 -->
-            <Label Text="기본 중량 설정 (kg)" />
+            <!--<Label Text="기본 중량 설정 (kg)" />
             <Stepper Minimum="0" Maximum="200" Increment="2"
                      Value="{Binding DefaultWeight}" />
-            <Label Text="{Binding DefaultWeight, StringFormat='선택된 중량: {0}kg'}" />
+            <Label Text="{Binding DefaultWeight, StringFormat='선택된 중량: {0}kg'}" />-->
 
             <!-- 알림 설정 -->
             <HorizontalStackLayout>
@@ -50,7 +50,9 @@
 
             <!-- 저장 버튼 -->
             <Button Text="루틴 저장"
-                    Command="{Binding SaveCommand}" />
+                    Command="{Binding SaveCommand}" 
+                    BackgroundColor="#2196f3"
+                    MaximumWidthRequest="250"/>
         </VerticalStackLayout>
     </ScrollView>
 

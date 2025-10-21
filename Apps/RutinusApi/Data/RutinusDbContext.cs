@@ -12,6 +12,14 @@ namespace RutinusApi.Data
         
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CodeEntity>().HasKey(ur => new { ur.SysCd, ur.DivCd, ur.Cd });
+
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<RoutineEntity> Routines { get; set; }
+        public DbSet<CodeEntity> Codes { get; set; }
     }
 }

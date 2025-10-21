@@ -13,6 +13,7 @@ namespace Rutinus.Models
         public string RoutineName { get; set; } = "";
         public string RoutineDescription { get; set; } = "";
         public string RoutinePart { get; set; } = "";
+        public string RoutinePartName { get; set; } = "";
         public bool AlertEnabled => AlertYn == "Y";
         public string AlertYn { get; set; } = "N";
     }

@@ -5,6 +5,8 @@
            AND DIV_CD = 'BODY_PART'
 	;
 
+SELECT * FROM tb_rtn_routine;
+
 -- 01. ROUTINE LIST
 		SELECT A.ROUTINE_ID
 			 , A.ROUTINE_NM

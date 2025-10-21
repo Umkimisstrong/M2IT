@@ -16,13 +16,13 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
-            <Label
+            <!--<Label
                 Text="Routinus"
                 Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                SemanticProperties.HeadingLevel="Level1" />-->
 
             <Label
-                Text="루티너스 &#10;루틴을 만들어 진행해보세요"
+                Text="나만의 루틴 만들기"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="루틴만들기" />
@@ -32,18 +32,22 @@
                 Text="루틴 생성하기" 
                 Clicked="OnRoutineCreate_Click"
                 MaximumWidthRequest="300"
+                BackgroundColor="#2196f3"
                 />
             <Button
                 x:Name="btnTodayExcercise"
                 Text="오늘의 운동 기록" 
                 Clicked="OnTodayExcercise_Click"
                 MaximumWidthRequest="300"
+                BackgroundColor="DimGray"
                 />
             <Button
                 x:Name="btnHistory"
                 Text="히스토리 보기" 
                 Clicked="OnHistory_Click"
                 MaximumWidthRequest="300"
+                BackgroundColor="DimGray"
+                
                 />
             
         </VerticalStackLayout>
