@@ -8,69 +8,76 @@
   </item>
   <item>
     <idx>1</idx>
+    <kor>깃 허브</kor>
+    <eng>Git Hub</eng>
+    <kor_short>깃</kor_short>
+    <eng_short>Git</eng_short>
+  </item>
+  <item>
+    <idx>2</idx>
     <kor>다중 플랫폼 앱</kor>
     <eng>Multi Platform App UI</eng>
     <kor_short>마우이</kor_short>
     <eng_short>MAUI</eng_short>
   </item>
   <item>
-    <idx>2</idx>
+    <idx>3</idx>
     <kor>병원정보시스템</kor>
     <eng>Hospital Information System</eng>
     <kor_short>히스(에이치아이에스)</kor_short>
     <eng_short>HIS</eng_short>
   </item>
   <item>
-    <idx>3</idx>
+    <idx>4</idx>
     <kor>사용자 경험</kor>
     <eng>User Experience</eng>
     <kor_short>유엑스</kor_short>
     <eng_short>UX</eng_short>
   </item>
   <item>
-    <idx>4</idx>
+    <idx>5</idx>
     <kor>사용자 인터페이스</kor>
     <eng>User Interface</eng>
     <kor_short>유아이</kor_short>
     <eng_short>UI</eng_short>
   </item>
   <item>
-    <idx>5</idx>
+    <idx>6</idx>
     <kor>애플리케이션 프로그래밍 인터페이스</kor>
     <eng>Application Programming Interface</eng>
     <kor_short>에이피아이</kor_short>
     <eng_short>API</eng_short>
   </item>
   <item>
-    <idx>6</idx>
+    <idx>7</idx>
     <kor>정보시스템서비스관리</kor>
     <eng>Information System Service Management</eng>
     <kor_short>아이티에스엠</kor_short>
     <eng_short>ITSM</eng_short>
   </item>
   <item>
-    <idx>7</idx>
+    <idx>8</idx>
     <kor>정보화 전략 계획</kor>
     <eng>Information Strategy Planning</eng>
     <kor_short>아이에스피</kor_short>
     <eng_short>ISP</eng_short>
   </item>
   <item>
-    <idx>8</idx>
+    <idx>9</idx>
     <kor>제안요청서</kor>
     <eng>Request for Proposal</eng>
     <kor_short>제안요청서</kor_short>
     <eng_short>RFP</eng_short>
   </item>
   <item>
-    <idx>9</idx>
+    <idx>10</idx>
     <kor>진단검사의학과 정보 시스템</kor>
     <eng>Laboratory Information System</eng>
     <kor_short>진검</kor_short>
     <eng_short>LIS</eng_short>
   </item>
   <item>
-    <idx>10</idx>
+    <idx>11</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
