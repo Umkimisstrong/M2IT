@@ -24,7 +24,8 @@
             <!--<Label Text="운동 부위" />-->
             <Picker Title="운동 부위 선택"
                     ItemsSource="{Binding BodyParts}"
-                    SelectedItem="{Binding SelectedBodyPart}" />
+                    SelectedItem="{Binding SelectedBodyPart}" 
+                    ItemDisplayBinding="{Binding Name  }" />
 
             <!-- 날짜 선택 -->
             <!--<Label Text="시작 날짜" />

@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RutinusApi.Entities
 {
+    /// <summary>
+    /// CodeEntity : 코드 테이블
+    /// </summary>
     [Table("tb_cmm_code")]
     public class CodeEntity
     {

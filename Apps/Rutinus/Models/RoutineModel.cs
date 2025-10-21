@@ -1,12 +1,8 @@
-﻿using Rutinus.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Models
+﻿namespace Rutinus.Models
 {
+    /// <summary>
+    /// RoutineModel : 루틴 테이블과 매치
+    /// </summary>
     public class RoutineModel
     {
         public int RoutineId { get; set; }

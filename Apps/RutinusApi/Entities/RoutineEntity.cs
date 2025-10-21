@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RutinusApi.Entities
 {
+    /// <summary>
+    /// RoutineEntity : 루틴 테이블
+    /// </summary>
     [Table("tb_rtn_routine")]
     public class RoutineEntity
     {

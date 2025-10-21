@@ -1,14 +1,13 @@
-﻿using MySqlConnector;
+﻿using Microsoft.EntityFrameworkCore;
 using RutinusApi.Data;
 using RutinusApi.Entities;
 using RutinusApi.Models;
-using RutinusApi.Tables;
 using System.Data;
 
 namespace RutinusApi.Repositories
 {
     /// <summary>
-    /// RoutineRepository : 루틴 관련 Repo
+    /// RoutineRepository : 루틴 작업 저장소
     /// </summary>
     public class RoutineRepository
     {
@@ -48,12 +47,31 @@ namespace RutinusApi.Repositories
                         };
 
             return query.ToList<RoutineDto>();
-            // LINQ 사용 — EF Core 가 SQL로 자동 변환
-            /*return _context.Routines
-                           .Where(r => r.CreatedBy == createId)
-                           .OrderByDescending(r => r.CreatedAt)
-                           .ToList();
-            */
+        }
+
+        /// <summary>
+        /// GetRoutine : 루틴 단건 조회
+        /// </summary>
+        /// <param name="routineId">루틴 아이디</param>
+        /// <returns></returns>
+        public RoutineDto GetRoutine(int routineId)
+        {
+            var query = (from outerItem in _context.Routines
+                        join innerItem in _context.Codes
+                        on outerItem.RoutinePart equals innerItem.Cd
+                        where innerItem.SysCd == "CMM" && innerItem.DivCd == "BODY_PART"
+                           && outerItem.RoutineId == routineId
+                        select new RoutineDto
+                        {
+                            RoutineId = outerItem.RoutineId,
+                            RoutineName = outerItem.RoutineName,
+                            RoutineDescription = outerItem.RoutineDescription,
+                            RoutinePart = outerItem.RoutinePart,
+                            AlertYn = outerItem.AlertYn,
+                        }).FirstOrDefault();
+
+            return query;
+           
         }
 
         /// <summary>
@@ -65,6 +83,35 @@ namespace RutinusApi.Repositories
         {
             _context.Routines.Add(entity);
             return await _context.SaveChangesAsync();
+        }
+        /// <summary>
+        /// UpdateRoutineAsync : 루틴 수정
+        /// </summary>
+        /// <param name="entity">루틴 엔티티</param>
+        /// <returns></returns>
+        public async Task<int> UpdateRoutineAsync(RoutineEntity entity)
+        {
+            return await _context.Routines
+                        .Where(r => r.RoutineId == entity.RoutineId)
+                        .ExecuteUpdateAsync(setters => setters
+                                            .SetProperty(r => r.RoutineName, r=>entity.RoutineName)
+                                            .SetProperty(r => r.RoutineDescription, r => entity.RoutineDescription)
+                                            .SetProperty(r => r.RoutinePart, r => entity.RoutinePart)
+                                            .SetProperty(r => r.AlertYn, r => entity.AlertYn)
+                                            .SetProperty(r => r.UpdatedBy, r => entity.UpdatedBy)
+                                            .SetProperty(r => r.UpdatedAt, r => entity.UpdatedAt)
+                                            );
+        }
+        /// <summary>
+        /// DeleteRoutineAsync : 루틴 삭제
+        /// </summary>
+        /// <param name="routineId">루틴 아이디</param>
+        /// <returns></returns>
+        public async Task<int> DeleteRoutineAsync(int routineId)
+        {
+            return await _context.Routines
+                        .Where(r => r.RoutineId == routineId)
+                        .ExecuteDeleteAsync();
         }
     }
 }

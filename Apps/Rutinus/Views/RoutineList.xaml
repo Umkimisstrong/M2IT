@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+ 
+    
+<!--<ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
@@ -16,16 +18,17 @@
                 HorizontalOptions="End" 
                 BackgroundColor="#2196f3"/>
 
-        <!-- ✅ Pull-to-Refresh -->
-        <RefreshView
+         <RefreshView
             IsRefreshing="{Binding IsRefreshing}"
             Command="{Binding RefreshCommand}">
 
             <CollectionView
                 ItemsSource="{Binding Routines}"
                 SelectionMode="Single"
-                SelectionChanged="OnRoutineSelected">
-
+                SelectionChanged="OnRoutineSelected"
+                
+                >
+            
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:RoutineModel">
                         <Border Stroke="Gray"
@@ -43,8 +46,10 @@
                                 <Label Text="{Binding RoutineDescription}" FontSize="14" TextColor="Gray" />
                                 <HorizontalStackLayout HorizontalOptions="End" Spacing="5">
                                     <Button Text="종목등록" MaximumWidthRequest="150" BackgroundColor="#0baf4d"/>
-                                    <Button Text="수정" MaximumWidthRequest="100" BackgroundColor="#2196f3"/>
-                                    <Button Text="삭제" MaximumWidthRequest="100" BackgroundColor="#b05da5"/>
+                                    <Button Text="수정" MaximumWidthRequest="100" BackgroundColor="#2196f3"  
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RoutineListViewModel}}, Path=EditCommand }"
+                                            CommandParameter="{Binding RoutineId}"/>
+                                    <Button Text="삭제" MaximumWidthRequest="100" BackgroundColor="#b05da5" />
                                 </HorizontalStackLayout>
 
                             </VerticalStackLayout>
@@ -56,4 +61,74 @@
         </RefreshView>
 
     </VerticalStackLayout>
+</ContentPage>-->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+    xmlns:models="clr-namespace:Rutinus.Models"
+    x:Class="Rutinus.RoutineList"
+    x:DataType="viewmodels:RoutineListViewModel"
+    >
+
+    <Grid RowDefinitions="Auto,*" Padding="20,10">
+
+        <!-- 상단 버튼: 고정 영역 -->
+        <Button
+            Grid.Row="0"
+            Text="루틴 생성하기"
+            Clicked="ToolbarItem_Clicked"
+            MaximumWidthRequest="200"
+            HorizontalOptions="End"
+            BackgroundColor="#2196f3"
+             Margin="0,0,0,10"/>
+
+        <!-- 아래: 스크롤 가능한 영역 -->
+        <RefreshView
+            Grid.Row="1"
+            IsRefreshing="{Binding IsRefreshing}"
+            Command="{Binding RefreshCommand}">
+
+            <CollectionView
+                ItemsSource="{Binding Routines}"
+                SelectionMode="Single"
+                SelectionChanged="OnRoutineSelected"
+                Margin="0"
+                >
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:RoutineModel">
+                        <Border Stroke="Gray"
+                                StrokeThickness="1"
+                                Background="#FFF"
+                                StrokeShape="RoundRectangle 8"
+                                Padding="10"
+                                Margin="5,5,0,5">
+                            <VerticalStackLayout>
+
+                                <HorizontalStackLayout HorizontalOptions="Start" Spacing="5">
+                                    <Label Text="{Binding RoutineName}" FontSize="20" />
+                                    <Label Text="{Binding RoutinePartName}" FontSize="14" TextColor="Gray" />
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding RoutineDescription}" FontSize="14" TextColor="Gray" />
+
+                                <HorizontalStackLayout HorizontalOptions="End" Spacing="5">
+                                    <Button Text="종목등록" MaximumWidthRequest="150" BackgroundColor="#0baf4d"/>
+                                    <Button Text="수정" MaximumWidthRequest="100" BackgroundColor="#2196f3"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RoutineListViewModel}}, Path=EditCommand }"
+                                            CommandParameter="{Binding RoutineId}"/>
+                                    <Button Text="삭제" MaximumWidthRequest="100" BackgroundColor="#b05da5" 
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:RoutineListViewModel}}, Path=DeleteCommand }"
+                                            CommandParameter="{Binding RoutineId}"/>
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </RefreshView>
+    </Grid>
 </ContentPage>

@@ -1,13 +1,4 @@
-﻿using Rutinus.Entities;
-using Rutinus.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Services
+﻿namespace Rutinus.Services
 {
     /// <summary>
     /// ApiClient : ApiClient 객체

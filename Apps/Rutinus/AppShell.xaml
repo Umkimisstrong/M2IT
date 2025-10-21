@@ -8,16 +8,16 @@
 
     <!-- App.Shell 을 사용하여 Navigating 할 수 있게 한다. -->
     <ShellContent
-        Title="홈"
+        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-        Title="루틴 목록"
+        Title="List"
         ContentTemplate="{DataTemplate local:RoutineList}"
         Route="RoutineList"
         />
     <ShellContent
-        Title="루틴 저장"
+        Title="Make"
         ContentTemplate="{DataTemplate local:RoutineSave}"
         Route="RoutineSave"
         />
