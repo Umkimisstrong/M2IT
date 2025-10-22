@@ -50,37 +50,114 @@
   </item>
   <item>
     <idx>7</idx>
+    <kor>업무 분류 체계</kor>
+    <eng>Work Breakdown Structure</eng>
+    <kor_short>더블유비에스</kor_short>
+    <eng_short>WBS</eng_short>
+  </item>
+  <item>
+    <idx>8</idx>
+    <kor>역할과 책임</kor>
+    <eng>Roles And Responsibilities</eng>
+    <kor_short>알앤알</kor_short>
+    <eng_short>RNR</eng_short>
+  </item>
+  <item>
+    <idx>9</idx>
+    <kor>의료영상저장전송시스템</kor>
+    <eng>Picture Archiving and Communication System</eng>
+    <kor_short>팍스</kor_short>
+    <eng_short>PACS</eng_short>
+  </item>
+  <item>
+    <idx>10</idx>
+    <kor>전자의무기록</kor>
+    <eng>Electronic Medical Record</eng>
+    <kor_short>이엠알</kor_short>
+    <eng_short>EMR</eng_short>
+  </item>
+  <item>
+    <idx>11</idx>
     <kor>정보시스템서비스관리</kor>
     <eng>Information System Service Management</eng>
     <kor_short>아이티에스엠</kor_short>
     <eng_short>ITSM</eng_short>
   </item>
   <item>
-    <idx>8</idx>
+    <idx>12</idx>
     <kor>정보화 전략 계획</kor>
     <eng>Information Strategy Planning</eng>
     <kor_short>아이에스피</kor_short>
     <eng_short>ISP</eng_short>
   </item>
   <item>
-    <idx>9</idx>
+    <idx>13</idx>
     <kor>제안요청서</kor>
     <eng>Request for Proposal</eng>
     <kor_short>제안요청서</kor_short>
     <eng_short>RFP</eng_short>
   </item>
   <item>
-    <idx>10</idx>
+    <idx>14</idx>
     <kor>진단검사의학과 정보 시스템</kor>
     <eng>Laboratory Information System</eng>
     <kor_short>진검</kor_short>
     <eng_short>LIS</eng_short>
   </item>
   <item>
-    <idx>11</idx>
+    <idx>15</idx>
+    <kor>처방 전달 시스템</kor>
+    <eng>Order Communication System</eng>
+    <kor_short>오씨에스</kor_short>
+    <eng_short>OCS</eng_short>
+  </item>
+  <item>
+    <idx>16</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
     <eng_short>Kick Off</eng_short>
+  </item>
+  <item>
+    <idx>17</idx>
+    <kor>프로덕트 오너</kor>
+    <eng>Product Owner</eng>
+    <kor_short>피오</kor_short>
+    <eng_short>PO</eng_short>
+  </item>
+  <item>
+    <idx>18</idx>
+    <kor>프로젝트 관리 사무소</kor>
+    <eng>Project Management Office</eng>
+    <kor_short>피엠오</kor_short>
+    <eng_short>PMO</eng_short>
+  </item>
+  <item>
+    <idx>19</idx>
+    <kor>프로젝트 관리 시스템</kor>
+    <eng>Project Management System</eng>
+    <kor_short>피엠에스</kor_short>
+    <eng_short>PMS</eng_short>
+  </item>
+  <item>
+    <idx>20</idx>
+    <kor>프로젝트 리더</kor>
+    <eng>Project Leader</eng>
+    <kor_short>피엘</kor_short>
+    <eng_short>PL</eng_short>
+  </item>
+  <item>
+    <idx>21</idx>
+    <kor>프로젝트 매니저</kor>
+    <eng>Project Manager</eng>
+    <kor_short>피엠</kor_short>
+    <eng_short>PM</eng_short>
+  </item>
+  <item>
+    <idx>22</idx>
+    <kor>프로젝트 실무자</kor>
+    <eng>Project Assitant</eng>
+    <kor_short>피에이</kor_short>
+    <eng_short>PA</eng_short>
   </item>
 </root>

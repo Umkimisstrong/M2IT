@@ -223,6 +223,7 @@ namespace WinFormsApp1
             contentDt.Columns.Add(new DataColumn("ENG_SHORT"));
 
             appRootPath = "C:\\Users\\KIMSANGKI\\Desktop\\KSK\\998. SOURCE\\M2IT";
+            //appRootPath = Application.StartupPath;
             // "C:\\Users\\KIMSANGKI\\Desktop\\KSK\\998. SOURCE\\M2IT\\Apps\\WinFormsApp1\\bin\\Debug\\net8.0-windows\\"
             // "C:\\Users\\KIMSANGKI\\Desktop\\KSK\\998. SOURCE\\M2IT\\Apps\\WinFormsApp1\\bin\\Release\\net8.0-windows\\"
         }
