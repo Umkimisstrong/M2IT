@@ -4,13 +4,13 @@
     <content>훈련종목 등록 만들기</content>
     <writer>김상기</writer>
     <date>08:57:18</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>1</idx>
     <content>깃 커밋</content>
     <writer>김상기</writer>
     <date>08:57:31</date>
-    <check>False</check>
+    <check>True</check>
   </item>
 </root>
