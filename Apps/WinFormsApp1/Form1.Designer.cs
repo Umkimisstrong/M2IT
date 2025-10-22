@@ -32,19 +32,19 @@
             panel3 = new Panel();
             panel4 = new Panel();
             grdContents = new DataGridView();
-            CONTENT = new DataGridViewTextBoxColumn();
-            WRITER = new DataGridViewTextBoxColumn();
-            DATE = new DataGridViewTextBoxColumn();
-            CHECK = new DataGridViewCheckBoxColumn();
             panel1 = new Panel();
             panel2 = new Panel();
             pnlTitleBar = new Panel();
+            label1 = new Label();
             btnHide = new Button();
             btnClose = new Button();
             btnForeCast = new Button();
             btnAdd = new Button();
             txtContent = new TextBox();
-            label1 = new Label();
+            CONTENT = new DataGridViewTextBoxColumn();
+            WRITER = new DataGridViewTextBoxColumn();
+            DATE = new DataGridViewTextBoxColumn();
+            CHECK = new DataGridViewCheckBoxColumn();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -104,40 +104,6 @@
             grdContents.Size = new Size(616, 264);
             grdContents.TabIndex = 0;
             // 
-            // CONTENT
-            // 
-            CONTENT.DataPropertyName = "CONTENT";
-            CONTENT.HeaderText = "내용";
-            CONTENT.MinimumWidth = 6;
-            CONTENT.Name = "CONTENT";
-            CONTENT.Width = 280;
-            // 
-            // WRITER
-            // 
-            WRITER.DataPropertyName = "WRITER";
-            WRITER.HeaderText = "작성자";
-            WRITER.MinimumWidth = 6;
-            WRITER.Name = "WRITER";
-            WRITER.Width = 125;
-            // 
-            // DATE
-            // 
-            DATE.DataPropertyName = "DATE";
-            DATE.HeaderText = "작성일";
-            DATE.MinimumWidth = 6;
-            DATE.Name = "DATE";
-            DATE.Width = 125;
-            // 
-            // CHECK
-            // 
-            CHECK.DataPropertyName = "CHECK";
-            CHECK.HeaderText = "체크";
-            CHECK.MinimumWidth = 6;
-            CHECK.Name = "CHECK";
-            CHECK.Resizable = DataGridViewTriState.True;
-            CHECK.SortMode = DataGridViewColumnSortMode.Automatic;
-            CHECK.Width = 125;
-            // 
             // panel1
             // 
             panel1.BackColor = SystemColors.HighlightText;
@@ -175,6 +141,15 @@
             pnlTitleBar.Name = "pnlTitleBar";
             pnlTitleBar.Size = new Size(616, 20);
             pnlTitleBar.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 2);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 15);
+            label1.TabIndex = 5;
+            label1.Text = "> 체크리스트";
             // 
             // btnHide
             // 
@@ -239,14 +214,39 @@
             txtContent.Size = new Size(445, 31);
             txtContent.TabIndex = 0;
             // 
-            // label1
+            // CONTENT
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 2);
-            label1.Name = "label1";
-            label1.Size = new Size(79, 15);
-            label1.TabIndex = 5;
-            label1.Text = "> 체크리스트";
+            CONTENT.DataPropertyName = "CONTENT";
+            CONTENT.HeaderText = "내용";
+            CONTENT.MinimumWidth = 6;
+            CONTENT.Name = "CONTENT";
+            CONTENT.Width = 280;
+            // 
+            // WRITER
+            // 
+            WRITER.DataPropertyName = "WRITER";
+            WRITER.HeaderText = "작성자";
+            WRITER.MinimumWidth = 6;
+            WRITER.Name = "WRITER";
+            WRITER.Width = 125;
+            // 
+            // DATE
+            // 
+            DATE.DataPropertyName = "DATE";
+            DATE.HeaderText = "작성일";
+            DATE.MinimumWidth = 6;
+            DATE.Name = "DATE";
+            DATE.Width = 125;
+            // 
+            // CHECK
+            // 
+            CHECK.DataPropertyName = "CHECK";
+            CHECK.HeaderText = "체크";
+            CHECK.MinimumWidth = 6;
+            CHECK.Name = "CHECK";
+            CHECK.Resizable = DataGridViewTriState.True;
+            CHECK.SortMode = DataGridViewColumnSortMode.Automatic;
+            CHECK.Width = 125;
             // 
             // Form1
             // 
@@ -283,10 +283,10 @@
         private Panel pnlTitleBar;
         private Button btnClose;
         private Button btnHide;
+        private Label label1;
         private DataGridViewTextBoxColumn CONTENT;
         private DataGridViewTextBoxColumn WRITER;
         private DataGridViewTextBoxColumn DATE;
         private DataGridViewCheckBoxColumn CHECK;
-        private Label label1;
     }
 }
