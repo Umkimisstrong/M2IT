@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RutinusApi.Entities
 {
+    /// <summary>
+    /// TrainingEntity : 훈련 테이블
+    /// </summary>
     [Table("tb_rtn_training")]
     public class TrainingEntity
     {
@@ -24,13 +27,13 @@ namespace RutinusApi.Entities
         public int TrainingWeight { get; set; }
         [Column("ROUTINE_ID")]
         public int RoutineId {  get; set; }
-        [Column("CREATE_ID")]
+        [Column("TRAINING_CREATE_ID")]
         public string CreatedBy { get; set; } = "";
-        [Column("CREATE_DT")]
+        [Column("TRAINING_CREATE_DT")]
         public DateTime CreatedAt { get; set; }
-        [Column("UPDATE_ID")]
+        [Column("TRAINING_UPDATE_ID")]
         public string UpdatedBy { get; set; } = "";
-        [Column("UPDATE_DT")]
+        [Column("TRAINING_UPDATE_DT")]
         public DateTime UpdatedAt { get; set; }
 
     }

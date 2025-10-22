@@ -2,6 +2,9 @@
 
 namespace RutinusApi.Entities
 {
+    /// <summary>
+    /// RuleEntity : 룰 테이블
+    /// </summary>
     [Table("tb_cmm_rule")]
     public class RuleEntity
     {

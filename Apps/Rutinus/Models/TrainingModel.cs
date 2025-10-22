@@ -2,6 +2,9 @@
 
 namespace Rutinus.Models
 {
+    /// <summary>
+    /// TrainingModel : 훈련 테이블과 매치
+    /// </summary>
     public partial class TrainingModel : ObservableObject
     {
         [ObservableProperty]

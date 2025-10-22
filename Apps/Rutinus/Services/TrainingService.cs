@@ -1,21 +1,19 @@
 ﻿using Rutinus.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Rutinus.Services
 {
+    /// <summary>
+    /// TrainingService : 훈련 서비스
+    /// </summary>
     public class TrainingService : ApiClient
     {
         public TrainingService() { }
 
         /// <summary>
-        /// GetRoutineListAsync : 루틴 목록 조회
+        /// GetTrainingListAsync : 훈련 목록 조회
         /// </summary>
-        /// <param name="createId">작성자</param>
+        /// <param name="routineId">루틴 id</param>
         /// <returns></returns>
         public async Task<ApiResponse<List<TrainingModel>>> GetTrainingListAsync(int routineId)
         {
@@ -37,6 +35,56 @@ namespace Rutinus.Services
                 result.Message = $"Error: {response.StatusCode}, {error}";
             }
 
+            return result;
+        }
+
+        /// <summary>
+        /// SaveTraining : 훈련 저장
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public async Task<ApiResponse<TrainingModel>> SaveTraining(List<TrainingModel> request)
+        {
+            var response = await _http.PostAsJsonAsync("/api/training/savetraining", request);
+            var result = new ApiResponse<TrainingModel>();
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadFromJsonAsync<TrainingModel>();
+                result.Success = true;
+                result.Message = "Success";
+                result.Data = data;
+            }
+            else
+            {
+                result.Success = false;
+                result.Message = $"Error: {response.StatusCode}";
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// DeleteTraining : 훈련 삭제
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        public async Task<ApiResponse<TrainingModel>> DeleteTraining(TrainingModel request)
+        {
+            var response = await _http.PostAsJsonAsync("/api/training/deletetraining", request);
+            var result = new ApiResponse<TrainingModel>();
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadFromJsonAsync<TrainingModel>();
+                result.Success = true;
+                result.Message = "Success";
+                result.Data = data;
+            }
+            else
+            {
+                result.Success = false;
+                result.Message = $"Error: {response.StatusCode}";
+            }
             return result;
         }
     }

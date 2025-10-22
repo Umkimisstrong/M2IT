@@ -1,8 +1,13 @@
-﻿using RutinusApi.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using RutinusApi.Data;
+using RutinusApi.Entities;
 using RutinusApi.Models;
 
 namespace RutinusApi.Repositories
 {
+    /// <summary>
+    /// TrainingRepository : 훈련 작업 저장소
+    /// </summary>
     public class TrainingRepository
     {
         /* DbContext */
@@ -55,5 +60,29 @@ namespace RutinusApi.Repositories
 
             return query.ToList<TrainingDto>();
         }
+
+        /// <summary>
+        /// InsertRoutineAsync : 루틴 입력
+        /// </summary>
+        /// <param name="entity">루틴 엔티티</param>
+        /// <returns></returns>
+        public async Task<int> InsertTrainingAsync(TrainingEntity trainingEntity)
+        {
+            _context.Trainings.Add(trainingEntity);
+            return await _context.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// DeleteTrainingAsync : 트레이닝 삭제
+        /// </summary>
+        /// <param name="routineId">루틴 아이디</param>
+        /// <returns></returns>
+        public async Task<int> DeleteTrainingAsync(int routineId)
+        {
+            return await _context.Trainings
+                        .Where(r => r.RoutineId == routineId)
+                        .ExecuteDeleteAsync();
+        }
+
     }
 }

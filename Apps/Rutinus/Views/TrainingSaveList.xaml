@@ -11,8 +11,12 @@
     <ScrollView Padding="20">
         <!-- ScrollView로 감싸기 -->
         <VerticalStackLayout Spacing="20">
-
-            <Label Text="루틴에 등록할 종목 추가" FontSize="20" />
+            <HorizontalStackLayout>
+                <Label Text="{Binding RoutinNameOfTraining}" FontSize="20" />
+                
+            </HorizontalStackLayout>
+            <!--<Label Text=" 등록할 종목 추가" FontSize="15" />-->
+            
 
             <Button Text="+ 종목 추가"
                     Command="{Binding AddExerciseCommand}"
@@ -33,24 +37,19 @@
                                         ItemDisplayBinding="{Binding Name}" />
 
                                 <HorizontalStackLayout Spacing="10">
-                                    <Label Text="중량" />
-                                    <Stepper Minimum="0" Maximum="300" Increment="2"
+                                    <Label Text="중량" TextColor="Red"/>
+                                    <Stepper Minimum="0" Maximum="300" Increment="5"
                                              Value="{Binding TrainingWeight}" />
-                                    <Label Text="{Binding TrainingWeight}" />
-                                </HorizontalStackLayout>
-
-                                <HorizontalStackLayout Spacing="10">
-                                    <Label Text="반복" />
+                                    <Label Text="{Binding TrainingWeight}" TextColor="Red" FontSize="15" FontAttributes="Bold"/>
+                                    
+                                    <Label Text="반복" TextColor="Green" />
                                     <Stepper Minimum="1" Maximum="30" Increment="1"
-                                             Value="{Binding TrainingReps}" />
-                                    <Label Text="{Binding TrainingReps}" />
-                                </HorizontalStackLayout>
-
-                                <HorizontalStackLayout Spacing="10">
-                                    <Label Text="세트" />
+                                        Value="{Binding TrainingReps}" />
+                                    <Label Text="{Binding TrainingReps}" TextColor="Green" FontSize="15" FontAttributes="Bold"/>
+                                    <Label Text="세트" TextColor="Blue"/>
                                     <Stepper Minimum="1" Maximum="10" Increment="1"
-                                             Value="{Binding TrainingSet}" />
-                                    <Label Text="{Binding TrainingSet}" />
+                                        Value="{Binding TrainingSet}" />
+                                    <Label Text="{Binding TrainingSet}" TextColor="Blue" FontSize="15" FontAttributes="Bold" />
                                 </HorizontalStackLayout>
 
                                 <Entry Placeholder="명칭 입력" Text="{Binding TrainingNm}" />

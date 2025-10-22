@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace RutinusApi.Models
+﻿namespace RutinusApi.Models
 {
+    /// <summary>
+    /// TrainingDto : 통신에 사용될 훈련 모델
+    /// </summary>
     public class TrainingDto
     {
         public int RoutineId { get; set; }

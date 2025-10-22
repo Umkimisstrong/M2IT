@@ -7,7 +7,7 @@ using RutinusApi.Repositories;
 namespace RutinusApi.Controllers
 {
     /// <summary>
-    /// RoutineController : 루틴컨트롤러
+    /// RoutineController : 루틴 컨트롤러
     /// </summary>
     [ApiController]
     [Route("api/[controller]")]

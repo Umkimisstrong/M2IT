@@ -17,7 +17,7 @@ namespace Rutinus.ViewModels
         #region Init
         /* 변수 */
         private RoutineService _service;
-
+        private TrainingService _trainingService;
         /* 관측속성 */
 
         [ObservableProperty]
@@ -52,7 +52,7 @@ namespace Rutinus.ViewModels
         private void InitVariables()
         {
             _service = new RoutineService();
-
+            _trainingService = new TrainingService();
         }
 
         /// <summary>
@@ -127,6 +127,10 @@ namespace Rutinus.ViewModels
                     var response = await _service.DeleteRoutine(request);
                     if (response.Success)
                     {
+                        TrainingModel trainingRequest = new TrainingModel();
+                        trainingRequest.RoutineId = routineId;
+                        await _trainingService.DeleteTraining(trainingRequest);
+
                         await App.Current.MainPage.DisplayAlert("성공", "루틴이 삭제되었습니다.", "확인");
                         _ = LoadRoutinesAsync();
 
