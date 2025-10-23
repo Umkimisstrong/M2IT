@@ -4,34 +4,20 @@
     <content>할일목록추가</content>
     <writer>김상기</writer>
     <date>09:51:35</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>1</idx>
-    <content>밥먹기</content>
+    <content>용어정리</content>
     <writer>김상기</writer>
-    <date>09:51:37</date>
+    <date>13:35:04</date>
     <check>True</check>
   </item>
   <item>
     <idx>2</idx>
-    <content>긴장하기</content>
+    <content>로그인 구현</content>
     <writer>김상기</writer>
-    <date>09:51:39</date>
-    <check>True</check>
-  </item>
-  <item>
-    <idx>3</idx>
-    <content>숨쉬기</content>
-    <writer>김상기</writer>
-    <date>09:51:40</date>
-    <check>False</check>
-  </item>
-  <item>
-    <idx>4</idx>
-    <content>퇴근하기</content>
-    <writer>김상기</writer>
-    <date>09:51:42</date>
+    <date>13:37:54</date>
     <check>False</check>
   </item>
 </root>
