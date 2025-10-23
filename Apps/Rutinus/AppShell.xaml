@@ -4,26 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Rutinus"
-    Title="Rutinus">
+    Title="Rutinus"
+    FlyoutBehavior="Disabled">
 
     <!-- App.Shell 을 사용하여 Navigating 할 수 있게 한다. -->
     <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage"/>
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"/>
     <ShellContent
         Title="List"
         ContentTemplate="{DataTemplate local:RoutineList}"
-        Route="RoutineList"
-        />
+        Route="RoutineList" />
     <ShellContent
         Title="Make"
         ContentTemplate="{DataTemplate local:RoutineSave}"
-        Route="RoutineSave"
-        />
+        Route="RoutineSave" />
     <ShellContent
         Title=""
         ContentTemplate="{DataTemplate local:TrainingSaveList}"
-        Route="TrainingSaveList"
-    />
+        Route="TrainingSaveList"/>
 </Shell>

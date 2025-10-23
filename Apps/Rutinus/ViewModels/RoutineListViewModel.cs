@@ -25,6 +25,7 @@ namespace Rutinus.ViewModels
 
         [ObservableProperty]
         private bool isRefreshing;
+        private string _loginUserId;
 
         /* 커맨드 */
         public IAsyncRelayCommand RefreshCommand { get; }
@@ -51,6 +52,7 @@ namespace Rutinus.ViewModels
         /// </summary>
         private void InitVariables()
         {
+            _loginUserId = ((App)(Application.Current)).CurrentUser.LoginUserId;
             _service = new RoutineService();
             _trainingService = new TrainingService();
         }
@@ -76,7 +78,7 @@ namespace Rutinus.ViewModels
             {
                 IsRefreshing = true;
 
-                var response = await _service.GetRoutineListAsync("KIMSANGKI");
+                var response = await _service.GetRoutineListAsync(_loginUserId);
                 if (response.Success && response.Data != null)
                 {
                     Routines.Clear();

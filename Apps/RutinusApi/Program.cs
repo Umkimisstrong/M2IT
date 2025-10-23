@@ -12,6 +12,8 @@ builder.Services.AddDbContext<RutinusDbContext>(options =>
 builder.Services.AddScoped<RutinusApi.Repositories.CodeRepository>();
 builder.Services.AddScoped<RutinusApi.Repositories.RoutineRepository>();
 builder.Services.AddScoped<RutinusApi.Repositories.TrainingRepository>();
+builder.Services.AddScoped<RutinusApi.Repositories.UserRepository>();
+builder.Services.AddScoped<RutinusApi.Repositories.ScheduleRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

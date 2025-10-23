@@ -20,6 +20,16 @@ namespace Rutinus
             BindingContext = _routineViewModel;
         }
 
+
+        protected override void OnAppearing()
+        {
+            if (!((App)Application.Current).IsUserLoggedIn())
+            {
+                DisplayAlert("알림", "로그인 후 이용 가능합니다.", "확인");
+                Shell.Current.GoToAsync("///LoginPage");
+            }
+        }
+
         protected override async void OnNavigatedTo(NavigatedToEventArgs args)
         {
             base.OnNavigatedTo(args);

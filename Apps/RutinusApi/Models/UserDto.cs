@@ -1,6 +1,6 @@
-﻿namespace Rutinus.Models
+﻿namespace RutinusApi.Models
 {
-    public class UserModel
+    public class UserDto
     {
         public string UserId { get; set; } = string.Empty;
         public string UserNm { get; set; } = string.Empty;
@@ -12,5 +12,6 @@
         public DateTime CreatedAt { get; set; }
         public string UpdatedBy { get; set; } = string.Empty;
         public DateTime? UpdatedAt { get; set; }
+
     }
 }

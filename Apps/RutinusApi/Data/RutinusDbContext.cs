@@ -21,6 +21,8 @@ namespace RutinusApi.Data
             base.OnModelCreating(modelBuilder);
         }
 
+        // 사용자
+        public DbSet<UserEntity> Users { get; set; }
         // 루틴
         public DbSet<RoutineEntity> Routines { get; set; }
         // 코드
@@ -29,5 +31,7 @@ namespace RutinusApi.Data
         public DbSet<RuleEntity> Rules { get; set; }
         // 훈련종목
         public DbSet<TrainingEntity> Trainings { get; set; }
+        // 일정
+        public DbSet<ScheduleEntity> Schedules { get; set; }
     }
 }

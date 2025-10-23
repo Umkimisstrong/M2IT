@@ -11,5 +11,7 @@
         public string RoutinePart { get; set; } = "";
         public string AlertYn { get; set; } = "N";
         public string RoutinePartName { get; set; } = "";
+        public string CreatedBy { get; set; } = "";
+        public string UpdatedBy { get; set; } = "";
     }
 }

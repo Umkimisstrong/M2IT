@@ -51,9 +51,9 @@ namespace RutinusApi.Controllers
                     TrainingWeight = request[i].TrainingWeight,
                     RoutineId = request[i].RoutineId,
                     CreatedAt = DateTime.Now,
-                    CreatedBy = "KIMSANGKI",
+                    CreatedBy = request[i].CreatedBy,
                     UpdatedAt = DateTime.Now,
-                    UpdatedBy = "KIMSANGKI"
+                    UpdatedBy = request[i].UpdatedBy
                 };
                 result += await _repo.InsertTrainingAsync(entity);
 

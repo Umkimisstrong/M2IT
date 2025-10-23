@@ -37,6 +37,7 @@ namespace RutinusApi.Repositories
                         join innerItem in _context.Codes
                         on outerItem.RoutinePart equals innerItem.Cd
                         where innerItem.SysCd == "CMM" && innerItem.DivCd == "BODY_PART"
+                           && outerItem.CreatedBy == createId
                         select new RoutineDto
                         {
                             RoutineId = outerItem.RoutineId,

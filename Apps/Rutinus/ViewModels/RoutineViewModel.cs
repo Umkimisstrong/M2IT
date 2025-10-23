@@ -18,7 +18,7 @@ namespace Rutinus.ViewModels
         private CodeService _codeService;
 
         private int? _routineId; // 내부에서 사용할 ID 저장 (null이면 새로 만들기)
-
+        private string _loginUserId;
         [ObservableProperty]
         private string routineName = string.Empty;
         [ObservableProperty]
@@ -45,12 +45,12 @@ namespace Rutinus.ViewModels
         {
             _service = new RoutineService();
             _codeService = new CodeService();
+            _loginUserId = ((App)Application.Current).CurrentUser != null ? ((App)Application.Current).CurrentUser.LoginUserId : "KIMSANGKI";
         }
 
         private void InitLoad()
         {
             _ = LoadBodyPartsAsync(); // 페이지 진입 시 호출
-
         }
 
         #endregion
@@ -144,9 +144,13 @@ namespace Rutinus.ViewModels
                     RoutineId = (int)(_routineId != null ? _routineId : 0),
                     RoutineName = routineName,
                     RoutinePart = SelectedBodyPart.Code,
-                    RoutineDescription = routineDescription,
-                    AlertYn = alertEnabled ? "Y" : "N"
+                    RoutineDescription = RoutineDescription,
+                    AlertYn = AlertEnabled ? "Y" : "N",
+                    CreatedBy = _loginUserId,
+                    UpdatedBy = _loginUserId
+
                 };
+
 
                 ApiResponse<RoutineModel> result;
                 if (_routineId != null)

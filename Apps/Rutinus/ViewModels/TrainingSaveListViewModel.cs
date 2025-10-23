@@ -25,6 +25,7 @@ namespace Rutinus.ViewModels
         public IAsyncRelayCommand SaveCommand { get; }
 
         private int _routineId;
+        private string _loginUserId;
 
 
         public TrainingSaveListViewModel()
@@ -44,7 +45,8 @@ namespace Rutinus.ViewModels
         public async Task InitializeAsync(int routineId)
         {
             _routineId = routineId;
-            ApiResponse<RoutineModel> result = await _routineService.GetRoutineAsync(routineId);
+            _loginUserId = ((App)Application.Current).CurrentUser != null ? ((App)Application.Current).CurrentUser.LoginUserId : "KIMSANGKI";
+            ApiResponse <RoutineModel> result = await _routineService.GetRoutineAsync(routineId);
             if (result != null && result.Success)
             {
                 _routineModel = result.Data;
@@ -189,6 +191,8 @@ namespace Rutinus.ViewModels
                         return;
                     }
 
+                    ExerciseInputs[i].CreatedBy = _loginUserId;
+                    ExerciseInputs[i].UpdatedBy = _loginUserId;
                     ExerciseInputs[i].RoutineId = _routineId;
                     request.Add(ExerciseInputs[i]);
                 }

@@ -34,7 +34,7 @@ namespace RutinusApi.Entities
         [Column("TRAINING_UPDATE_ID")]
         public string UpdatedBy { get; set; } = "";
         [Column("TRAINING_UPDATE_DT")]
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
     }
 }

@@ -70,9 +70,9 @@ namespace RutinusApi.Controllers
                 RoutineDescription = request.RoutineDescription,
                 AlertYn = request.AlertYn,
                 CreatedAt = DateTime.Now,
-                CreatedBy = "KIMSANGKI",
+                CreatedBy = request.CreatedBy,
                 UpdatedAt = DateTime.Now,
-                UpdatedBy = "KIMSANGKI"
+                UpdatedBy = request.UpdatedBy
 
             };
             int result = await _repo.InsertRoutineAsync(entity);
@@ -121,7 +121,7 @@ namespace RutinusApi.Controllers
                 RoutineDescription = request.RoutineDescription,
                 AlertYn = request.AlertYn,
                 UpdatedAt = DateTime.Now,
-                UpdatedBy = "KIMSANGKI"
+                UpdatedBy = request.UpdatedBy
 
             };
             int result = await _repo.UpdateRoutineAsync(entity);

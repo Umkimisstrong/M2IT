@@ -59,7 +59,7 @@ namespace Rutinus.Models
         private string updatedBy = "";
 
         [ObservableProperty]
-        private DateTime updatedAt;
+        private DateTime? updatedAt;
 
         [ObservableProperty]
         private CodeValueModel? selectedExercise;

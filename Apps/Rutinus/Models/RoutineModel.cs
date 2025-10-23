@@ -12,5 +12,9 @@
         public string RoutinePartName { get; set; } = "";
         public bool AlertEnabled => AlertYn == "Y";
         public string AlertYn { get; set; } = "N";
+
+        public string CreatedBy { get; set; } = "";
+        public string UpdatedBy { get; set; } = "";
+
     }
 }

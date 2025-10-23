@@ -17,6 +17,11 @@ namespace Rutinus
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            if (!((App)Application.Current).IsUserLoggedIn())
+            {
+                DisplayAlert("알림", "로그인 후 이용 가능합니다.", "확인");
+                Shell.Current.GoToAsync("///LoginPage");
+            }
 
             _viewModel.RefreshCommand.Execute(null);
         }

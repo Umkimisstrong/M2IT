@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+             x:Class="Rutinus.LoginPage"
+             x:DataType="viewmodels:LoginViewModel">
+
+    <ScrollView
+        MaximumHeightRequest="600"
+        MaximumWidthRequest="300">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            MaximumWidthRequest="600">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <!--<Label
+                Text="Routinus"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />-->
+
+            <Label
+                Text="로그인하세요 ! "
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="아이디" FontSize="15" VerticalOptions="Center" />
+                <Entry Placeholder="아이디 입력" MinimumWidthRequest="170" Text="{Binding LoginId}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="5">
+                <Label Text="비밀번호" FontSize="15" VerticalOptions="Center" />
+                <Entry Placeholder="비밀번호 입력" MinimumWidthRequest="170" IsPassword="True" Text="{Binding LoginPwd}"/>
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="로그인" 
+                Command="{Binding LoginCommand}"
+                MaximumWidthRequest="300"
+                BackgroundColor="#2196f3"
+                />
+            <Button
+                x:Name="btnTodayExcercise"
+                Text="회원가입" 
+                Command="{Binding SignUpCommand}"
+                MaximumWidthRequest="300"
+                BackgroundColor="#0baf4d"
+                />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
