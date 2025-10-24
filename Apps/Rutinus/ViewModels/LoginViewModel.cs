@@ -3,18 +3,15 @@ using CommunityToolkit.Mvvm.Input;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Rutinus.ViewModels
 {
-    
+    /// <summary>
+    /// LoginViewModel : LoginPage 에서 사용하는 ViewModel
+    /// </summary>
     public partial class LoginViewModel : ObservableObject
     {
+        #region Init
         private UserService _service;
 
         [ObservableProperty]
@@ -22,7 +19,7 @@ namespace Rutinus.ViewModels
         [ObservableProperty]
         public string loginPwd = string.Empty;
 
-        public IAsyncRelayCommand LoginCommand  { get; }
+        public IAsyncRelayCommand LoginCommand { get; }
         public IAsyncRelayCommand SignUpCommand { get; }
         public LoginViewModel()
         {
@@ -30,18 +27,23 @@ namespace Rutinus.ViewModels
             LoginCommand = new AsyncRelayCommand(OnLoginAsync);
             SignUpCommand = new AsyncRelayCommand(OnSignUpAsync);
         }
-
         private void InitVariables()
         {
             _service = new UserService();
-            
+
         }
 
         private void InitLoad()
-        { 
+        {
             // 페이지 로드시 호출되는 것 커스텀
         }
+        #endregion
 
+        #region Command
+        /// <summary>
+        /// OnLoginAsync : 로그인 버튼 커맨드
+        /// </summary>
+        /// <returns></returns>
         private async Task OnLoginAsync()
         {
             // id, pwd 입력 검증
@@ -58,8 +60,8 @@ namespace Rutinus.ViewModels
             }
 
             // id, pwd 조회
-            string encrytedPwd= SHA512Helper.EncryptSHA512(LoginPwd);
-            
+            string encrytedPwd = SHA512Helper.EncryptSHA512(LoginPwd);
+
             ApiResponse<UserModel> response = await _service.GetUserUseIdPwd(LoginId, encrytedPwd);
             if (response.Data != null)
             {
@@ -83,11 +85,19 @@ namespace Rutinus.ViewModels
 
         }
 
+
+        /// <summary>
+        /// OnSignUpAsync : 회원가입 버튼 커맨드
+        /// </summary>
+        /// <returns></returns>
         private async Task OnSignUpAsync()
         {
             // 회원가입 홈페이지 이동
             await Shell.Current.GoToAsync("///SignUpPage");
         }
+        #endregion
+
+
 
 
     }

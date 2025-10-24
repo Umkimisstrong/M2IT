@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui.Controls;
 using Rutinus.Models;
 using Rutinus.Services;
 using System.Collections.ObjectModel;
@@ -8,6 +7,9 @@ using System.Diagnostics;
 
 namespace Rutinus.ViewModels
 {
+    /// <summary>
+    /// TrainingSaveListViewModel : TrainingSaveList 에서 사용되는 ViewModel
+    /// </summary>
     public partial class TrainingSaveListViewModel : ObservableObject
     {
         #region Init

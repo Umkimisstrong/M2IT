@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Models
+﻿namespace Rutinus.Models
 {
+    /// <summary>
+    /// ScheduleModel : 일정 테이블과 매치
+    /// </summary>
     public class ScheduleModel
     {
         public int ScheduleId { get; set; } = 0;

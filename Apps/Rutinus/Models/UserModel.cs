@@ -1,5 +1,8 @@
 ﻿namespace Rutinus.Models
 {
+    /// <summary>
+    /// UserModel : 유저 테이블과 매치
+    /// </summary>
     public class UserModel
     {
         public string UserId { get; set; } = string.Empty;

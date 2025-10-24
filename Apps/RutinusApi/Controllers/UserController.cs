@@ -5,6 +5,9 @@ using RutinusApi.Repositories;
 
 namespace RutinusApi.Controllers
 {
+    /// <summary>
+    /// UserController : 유저 컨트롤러
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class UserController : ControllerBase
@@ -17,6 +20,12 @@ namespace RutinusApi.Controllers
         }
 
 
+        /// <summary>
+        /// GetUserUseIdPwd : 사용자 ID, PASSWORD 로 정보 조회
+        /// </summary>
+        /// <param name="userId">사용자 ID</param>
+        /// <param name="userPwd">사용자 PASSWORD</param>
+        /// <returns></returns>
         [HttpGet("getuseruseidpwd")]
         public async Task<ActionResult<UserDto>> GetUserUseIdPwd(string userId, string userPwd)
         { 
@@ -24,6 +33,11 @@ namespace RutinusApi.Controllers
             return Ok(entity);
         }
 
+        /// <summary>
+        /// GetDuplicateUser : 사용자 ID로 중복된 사용자 조회
+        /// </summary>
+        /// <param name="userId">사용자 ID</param>
+        /// <returns></returns>
         [HttpGet("getduplicateuser")]
         public async Task<ActionResult<UserDto>> GetDuplicateUser(string userId)
         { 
@@ -31,6 +45,11 @@ namespace RutinusApi.Controllers
             return Ok(entity);
         }
 
+        /// <summary>
+        /// InsertUserAsync : 사용자 정보 입력
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost("insertuser")]
         public async Task<IActionResult> InsertUserAsync([FromBody] UserDto request)
         {
@@ -72,7 +91,7 @@ namespace RutinusApi.Controllers
                     }
                      
                 }
-                );
+            );
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿namespace RutinusApi.Models
 {
+    /// <summary>
+    /// UserDto : 통신에 사용될 유저 모델
+    /// </summary>
     public class UserDto
     {
         public string UserId { get; set; } = string.Empty;

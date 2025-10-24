@@ -15,7 +15,7 @@ namespace RutinusApi.Repositories
         private readonly string _connectionString;
 
         /// <summary>
-        /// CodeRepository : 생성자
+        /// TrainingRepository : 생성자
         /// </summary>
         /// <param name="context">DbContext</param>
         /// <param name="config">Configuration</param>

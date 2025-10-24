@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Models
+﻿namespace Rutinus.Models
 {
+    /// <summary>
+    /// AppLoginUserInfo : 앱 전역으로 쓰이는 로그인 유저정보
+    /// </summary>
     public class AppLoginUserInfo
     {
         public string LoginUserId { get; set; }

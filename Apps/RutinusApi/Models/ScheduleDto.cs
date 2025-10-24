@@ -1,5 +1,8 @@
 ﻿namespace RutinusApi.Models
 {
+    /// <summary>
+    /// ScheduleDto : 통신에 사용될 일정 모델
+    /// </summary>
     public class ScheduleDto
     {
         public int ScheduleId { get; set; } = 0;

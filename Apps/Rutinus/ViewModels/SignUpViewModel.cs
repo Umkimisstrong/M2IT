@@ -3,18 +3,17 @@ using CommunityToolkit.Mvvm.Input;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Rutinus.ViewModels
 {
     
+    /// <summary>
+    /// SignUpViewModel : SignUp 에서 사용하는 ViewModel
+    /// </summary>
     public partial class SignUpViewModel : ObservableObject
     {
+        #region Init
+
         private UserService _service;
 
         [ObservableProperty]
@@ -65,25 +64,15 @@ namespace Rutinus.ViewModels
         }
 
         private void InitLoad()
-        { 
+        {
             // 페이지 로드시 호출되는 것 커스텀
         }
 
-        /// <summary>
-        /// ResetFields : 필드 비우기(외부에서 실행)
-        /// </summary>
-        public void ResetFields()
-        {
-            LoginId = string.Empty;
-            LoginPwd = string.Empty;
-            LoginPwdCheck = string.Empty;
-            LoginEmail = string.Empty;
-            LoginNm = string.Empty;
+        #endregion
 
-            ToggleDuplicateId("DEFAULT");
 
-        }
 
+        #region Command
         /// <summary>
         /// OnSignUpAsync : 회원가입 진행
         /// </summary>
@@ -135,10 +124,10 @@ namespace Rutinus.ViewModels
 
 
             // pwd 조회 암호화
-            string encrytedPwd= SHA512Helper.EncryptSHA512(LoginPwd);
+            string encrytedPwd = SHA512Helper.EncryptSHA512(LoginPwd);
 
             UserModel userModel = new UserModel()
-            { 
+            {
                 UserId = LoginId,
                 UserPwd = encrytedPwd,
                 UserNm = LoginNm,
@@ -175,7 +164,7 @@ namespace Rutinus.ViewModels
             if (string.IsNullOrEmpty(LoginId))
             {
                 await App.Current.MainPage.DisplayAlert("주의", "아이디를 입력하세요.", "확인");
-                
+
                 return;
             }
 
@@ -189,7 +178,23 @@ namespace Rutinus.ViewModels
                 ToggleDuplicateId("NOTDUPLICATE");
             }
         }
+        #endregion
 
+        #region Method
+        /// <summary>
+        /// ResetFields : 필드 비우기(외부에서 실행)
+        /// </summary>
+        public void ResetFields()
+        {
+            LoginId = string.Empty;
+            LoginPwd = string.Empty;
+            LoginPwdCheck = string.Empty;
+            LoginEmail = string.Empty;
+            LoginNm = string.Empty;
+
+            ToggleDuplicateId("DEFAULT");
+
+        }
 
         /// <summary>
         /// ToggleDuplicateId : 중복체크 후 이벤트 확인
@@ -216,6 +221,8 @@ namespace Rutinus.ViewModels
                 isDuplicateCheck = false;
             }
         }
+        #endregion
+
 
     }
 }

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Rutinus.Global
 {
+    /// <summary>
+    /// SHA512Helper : SHA512 문자열을 암호화된 해시문자열로 변환
+    /// </summary>
     public static  class SHA512Helper
     {
         public static string EncryptSHA512(string rawData)
