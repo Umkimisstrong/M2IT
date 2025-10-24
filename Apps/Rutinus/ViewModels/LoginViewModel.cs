@@ -53,7 +53,7 @@ namespace Rutinus.ViewModels
 
             if (string.IsNullOrEmpty(LoginPwd))
             {
-                await App.Current.MainPage.DisplayAlert("주의", "아이디를 입력하세요.", "확인");
+                await App.Current.MainPage.DisplayAlert("주의", "비밀번호를 입력하세요.", "확인");
                 return;
             }
 
@@ -86,6 +86,7 @@ namespace Rutinus.ViewModels
         private async Task OnSignUpAsync()
         {
             // 회원가입 홈페이지 이동
+            await Shell.Current.GoToAsync("///SignUpPage");
         }
 
 

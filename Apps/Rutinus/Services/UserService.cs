@@ -63,7 +63,7 @@ namespace Rutinus.Services
 
             var result = new ApiResponse<UserModel>();
 
-            if (response.IsSuccessStatusCode)
+            if (response.IsSuccessStatusCode && response.Content != null && response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 var list = await response.Content.ReadFromJsonAsync<UserModel>();
                 result.Success = true;

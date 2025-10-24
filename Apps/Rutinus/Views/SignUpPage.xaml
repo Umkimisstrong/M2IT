@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+             x:Class="Rutinus.SignUpPage"
+             x:DataType="viewmodels:SignUpViewModel">
+
+    <ScrollView
+        MaximumHeightRequest="600"
+        MaximumWidthRequest="400">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            MaximumWidthRequest="600">
+            <!--<Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />-->
+
+            <!--<Label
+                Text="Routinus"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />-->
+
+            <Label
+                Text="회원가입 하세요 ! "
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="아이디" FontSize="15" VerticalOptions="Center"  />
+                <Entry Placeholder="아이디 입력" MinimumWidthRequest="210" Text="{Binding LoginId}" x:Name="loginId"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="0" HorizontalOptions="Start">
+                <Label x:Name="lblDuplicateMessage" Text="{Binding DuplicateMessage}" FontSize="15" 
+                       VerticalOptions="Center" Margin="70, 0, 10, 1"
+                       IsVisible="True" TextColor="{Binding DuplicateLabelColor}" />
+                <Button
+                    x:Name="btnDuplicateCheck"
+                    Text="중복확인" 
+                    Command="{Binding DuplicateCommand}"
+                    MaximumWidthRequest="300"
+                            MinimumWidthRequest="10"
+                    BackgroundColor="#b05da5"
+                    />  
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="5">
+                <Label Text="비밀번호" FontSize="15" VerticalOptions="Center" />
+                <Entry Placeholder="비밀번호 입력" MinimumWidthRequest="210" IsPassword="True" Text="{Binding LoginPwd}" x:Name="loginPwd"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="5">
+                <Label Text="비밀번호" FontSize="15" VerticalOptions="Center"  />
+                <Entry Placeholder="비밀번호 확인" MinimumWidthRequest="210" IsPassword="True" Text="{Binding LoginPwdCheck}" x:Name="loginPwdCheck"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="35">
+                <Label Text="이름" FontSize="15" VerticalOptions="Center" />
+                <Entry Placeholder="이름 입력" MinimumWidthRequest="210" Text="{Binding LoginNm}" x:Name="loginNm"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="20">
+                <Label Text="e-Mail" FontSize="15" VerticalOptions="Center" />
+                <Entry Placeholder="e-Mail 입력" MinimumWidthRequest="210"  Text="{Binding LoginEmail}" x:Name="loginEmail"/>
+            </HorizontalStackLayout>
+
+            <!--<Button
+                x:Name="CounterBtn"
+                Text="로그인" 
+                Command="{Binding LoginCommand}"
+                MaximumWidthRequest="300"
+                BackgroundColor="#2196f3"
+                />-->
+            <Button
+                x:Name="btnTodayExcercise"
+                Text="회원가입" 
+                Command="{Binding SignUpCommand}"
+                MaximumWidthRequest="210"
+                BackgroundColor="#0baf4d"
+                />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
