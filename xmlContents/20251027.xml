@@ -1,0 +1,16 @@
+<root>
+  <item>
+    <idx>0</idx>
+    <content>내용정리</content>
+    <writer>김상기</writer>
+    <date>08:49:08</date>
+    <check>False</check>
+  </item>
+  <item>
+    <idx>1</idx>
+    <content>일기쓰기</content>
+    <writer>김상기</writer>
+    <date>08:56:49</date>
+    <check>False</check>
+  </item>
+</root>
