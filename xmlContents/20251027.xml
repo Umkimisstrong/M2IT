@@ -13,4 +13,11 @@
     <date>08:56:49</date>
     <check>False</check>
   </item>
+  <item>
+    <idx>2</idx>
+    <content>Commit 하기</content>
+    <writer>김상기</writer>
+    <date>08:57:05</date>
+    <check>True</check>
+  </item>
 </root>

@@ -18,6 +18,7 @@ namespace Rutinus.ViewModels
         /* 변수 */
         private RoutineService _service;
         private TrainingService _trainingService;
+        private bool _isLoading = true;
         /* 관측속성 */
 
         [ObservableProperty]
@@ -39,7 +40,7 @@ namespace Rutinus.ViewModels
         public RoutineListViewModel()
         {
             InitVariables();
-            InitLoad();
+            //InitLoad();
 
             RefreshCommand = new AsyncRelayCommand(LoadRoutinesAsync);
             EditCommand = new Command<int>(OnEditRoutine);
@@ -76,15 +77,32 @@ namespace Rutinus.ViewModels
         {
             try
             {
+              
                 IsRefreshing = true;
 
                 var response = await _service.GetRoutineListAsync(_loginUserId);
+
+                
                 if (response.Success && response.Data != null)
                 {
+                    
                     Routines.Clear();
-
                     foreach (var item in response.Data)
                     {
+                        var trainingResponse = await _trainingService.GetTrainingListAsync(item.RoutineId);
+                        
+                        if (trainingResponse.Success && trainingResponse.Data != null && trainingResponse.Data.Count>0)
+                        {
+                            int i = 0;
+                            var observableCollection = new ObservableCollection<TrainingModel>();
+                            foreach(var trainingItem in  trainingResponse.Data)
+                            {
+                                observableCollection.Add(trainingItem);
+                                i++;
+                            }
+                            item.Trainings = observableCollection;
+                        }
+
                         Routines.Add(item);
                     }
                 }
@@ -100,6 +118,7 @@ namespace Rutinus.ViewModels
             finally
             {
                 IsRefreshing = false;
+                _isLoading = false;
             }
         }
 

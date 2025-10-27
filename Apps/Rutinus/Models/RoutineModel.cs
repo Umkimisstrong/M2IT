@@ -1,4 +1,7 @@
-﻿namespace Rutinus.Models
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.Collections.ObjectModel;
+
+namespace Rutinus.Models
 {
     /// <summary>
     /// RoutineModel : 루틴 테이블과 매치
@@ -16,5 +19,7 @@
         public string CreatedBy { get; set; } = "";
         public string UpdatedBy { get; set; } = "";
 
+        
+        public ObservableCollection<TrainingModel> Trainings { get; set; } = new ObservableCollection<TrainingModel>();
     }
 }

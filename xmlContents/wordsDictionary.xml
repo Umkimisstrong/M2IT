@@ -22,195 +22,209 @@
   </item>
   <item>
     <idx>3</idx>
+    <kor>기업 설계자</kor>
+    <eng>Enterprise Architect</eng>
+    <kor_short>이에이</kor_short>
+    <eng_short>EA</eng_short>
+  </item>
+  <item>
+    <idx>4</idx>
     <kor>깃 허브</kor>
     <eng>Git Hub</eng>
     <kor_short>깃</kor_short>
     <eng_short>Git</eng_short>
   </item>
   <item>
-    <idx>4</idx>
+    <idx>5</idx>
     <kor>다중 플랫폼 앱</kor>
     <eng>Multi Platform App UI</eng>
     <kor_short>마우이</kor_short>
     <eng_short>MAUI</eng_short>
   </item>
   <item>
-    <idx>5</idx>
+    <idx>6</idx>
     <kor>데이터 설계자</kor>
     <eng>Data Architect</eng>
     <kor_short>디에이</kor_short>
     <eng_short>DA</eng_short>
   </item>
   <item>
-    <idx>6</idx>
+    <idx>7</idx>
     <kor>방사선 정보 시스템</kor>
     <eng>Radiology Information System</eng>
     <kor_short>알아이에스</kor_short>
     <eng_short>RIS</eng_short>
   </item>
   <item>
-    <idx>7</idx>
+    <idx>8</idx>
     <kor>병원정보시스템</kor>
     <eng>Hospital Information System</eng>
     <kor_short>히스(에이치아이에스)</kor_short>
     <eng_short>HIS</eng_short>
   </item>
   <item>
-    <idx>8</idx>
+    <idx>9</idx>
+    <kor>비즈니스 설계자</kor>
+    <eng>Business Architect</eng>
+    <kor_short>비에이</kor_short>
+    <eng_short>BA</eng_short>
+  </item>
+  <item>
+    <idx>10</idx>
     <kor>사용자 경험</kor>
     <eng>User Experience</eng>
     <kor_short>유엑스</kor_short>
     <eng_short>UX</eng_short>
   </item>
   <item>
-    <idx>9</idx>
+    <idx>11</idx>
     <kor>사용자 인터페이스</kor>
     <eng>User Interface</eng>
     <kor_short>유아이</kor_short>
     <eng_short>UI</eng_short>
   </item>
   <item>
-    <idx>10</idx>
+    <idx>12</idx>
     <kor>솔루션 설계자</kor>
     <eng>Solutions Architect</eng>
     <kor_short>에스에이</kor_short>
     <eng_short>SA</eng_short>
   </item>
   <item>
-    <idx>11</idx>
+    <idx>13</idx>
     <kor>애플리케이션 설계자</kor>
     <eng>Application Architect</eng>
     <kor_short>에이에이</kor_short>
     <eng_short>AA</eng_short>
   </item>
   <item>
-    <idx>12</idx>
+    <idx>14</idx>
     <kor>애플리케이션 프로그래밍 인터페이스</kor>
     <eng>Application Programming Interface</eng>
     <kor_short>에이피아이</kor_short>
     <eng_short>API</eng_short>
   </item>
   <item>
-    <idx>13</idx>
+    <idx>15</idx>
     <kor>업무 분류 체계</kor>
     <eng>Work Breakdown Structure</eng>
     <kor_short>더블유비에스</kor_short>
     <eng_short>WBS</eng_short>
   </item>
   <item>
-    <idx>14</idx>
+    <idx>16</idx>
     <kor>역할과 책임</kor>
     <eng>Roles And Responsibilities</eng>
     <kor_short>알앤알</kor_short>
     <eng_short>RNR</eng_short>
   </item>
   <item>
-    <idx>15</idx>
+    <idx>17</idx>
     <kor>의료영상저장전송시스템</kor>
     <eng>Picture Archiving and Communication System</eng>
     <kor_short>팍스</kor_short>
     <eng_short>PACS</eng_short>
   </item>
   <item>
-    <idx>16</idx>
+    <idx>18</idx>
     <kor>전사적 자원 관리</kor>
     <eng>Enterprise Resource Planning</eng>
     <kor_short>이알피</kor_short>
     <eng_short>ERP</eng_short>
   </item>
   <item>
-    <idx>17</idx>
+    <idx>19</idx>
     <kor>전자의무기록</kor>
     <eng>Electronic Medical Record</eng>
     <kor_short>이엠알</kor_short>
     <eng_short>EMR</eng_short>
   </item>
   <item>
-    <idx>18</idx>
+    <idx>20</idx>
     <kor>정보시스템서비스관리</kor>
     <eng>Information System Service Management</eng>
     <kor_short>아이티에스엠</kor_short>
     <eng_short>ITSM</eng_short>
   </item>
   <item>
-    <idx>19</idx>
+    <idx>21</idx>
     <kor>정보화 전략 계획</kor>
     <eng>Information Strategy Planning</eng>
     <kor_short>아이에스피</kor_short>
     <eng_short>ISP</eng_short>
   </item>
   <item>
-    <idx>20</idx>
+    <idx>22</idx>
     <kor>제안요청서</kor>
     <eng>Request for Proposal</eng>
     <kor_short>제안요청서</kor_short>
     <eng_short>RFP</eng_short>
   </item>
   <item>
-    <idx>21</idx>
+    <idx>23</idx>
     <kor>진단검사의학과 정보 시스템</kor>
     <eng>Laboratory Information System</eng>
     <kor_short>진검</kor_short>
     <eng_short>LIS</eng_short>
   </item>
   <item>
-    <idx>22</idx>
+    <idx>24</idx>
     <kor>처방 전달 시스템</kor>
     <eng>Order Communication System</eng>
     <kor_short>오씨에스</kor_short>
     <eng_short>OCS</eng_short>
   </item>
   <item>
-    <idx>23</idx>
+    <idx>25</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
     <eng_short>Kick Off</eng_short>
   </item>
   <item>
-    <idx>24</idx>
+    <idx>26</idx>
     <kor>품질 담당자</kor>
     <eng>Quality Architect</eng>
     <kor_short>큐에이</kor_short>
     <eng_short>QA</eng_short>
   </item>
   <item>
-    <idx>25</idx>
+    <idx>27</idx>
     <kor>프로덕트 오너</kor>
     <eng>Product Owner</eng>
     <kor_short>피오</kor_short>
     <eng_short>PO</eng_short>
   </item>
   <item>
-    <idx>26</idx>
+    <idx>28</idx>
     <kor>프로젝트 관리 사무소</kor>
     <eng>Project Management Office</eng>
     <kor_short>피엠오</kor_short>
     <eng_short>PMO</eng_short>
   </item>
   <item>
-    <idx>27</idx>
+    <idx>29</idx>
     <kor>프로젝트 관리 시스템</kor>
     <eng>Project Management System</eng>
     <kor_short>피엠에스</kor_short>
     <eng_short>PMS</eng_short>
   </item>
   <item>
-    <idx>28</idx>
+    <idx>30</idx>
     <kor>프로젝트 리더</kor>
     <eng>Project Leader</eng>
     <kor_short>피엘</kor_short>
     <eng_short>PL</eng_short>
   </item>
   <item>
-    <idx>29</idx>
+    <idx>31</idx>
     <kor>프로젝트 매니저</kor>
     <eng>Project Manager</eng>
     <kor_short>피엠</kor_short>
     <eng_short>PM</eng_short>
   </item>
   <item>
-    <idx>30</idx>
+    <idx>32</idx>
     <kor>프로젝트 실무자</kor>
     <eng>Project Assitant</eng>
     <kor_short>피에이</kor_short>

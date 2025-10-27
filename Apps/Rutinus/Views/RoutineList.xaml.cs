@@ -23,7 +23,9 @@ namespace Rutinus
                 Shell.Current.GoToAsync("///LoginPage");
             }
 
-            _viewModel.RefreshCommand.Execute(null);
+            if (_viewModel.Routines.Count == 0)
+                _viewModel.RefreshCommand.Execute(null);
+            
         }
 
         private async void OnRoutineSelected(object sender, SelectionChangedEventArgs e)

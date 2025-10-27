@@ -1,8 +1,12 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
+using System.Net.Mail;
 
 namespace Rutinus.ViewModels
 {
@@ -122,7 +126,7 @@ namespace Rutinus.ViewModels
                 return;
             }
 
-
+            //await SendEmailAsync(LoginEmail, LoginNm);
             // pwd 조회 암호화
             string encrytedPwd = SHA512Helper.EncryptSHA512(LoginPwd);
 
@@ -152,6 +156,23 @@ namespace Rutinus.ViewModels
             {
                 await App.Current.MainPage.DisplayAlert("실패", "회원가입에 실패하였습니다.", "확인");
                 return;
+            }
+        }
+
+        public async Task SendEmailAsync(string toMail, string toNm)
+        {
+            try
+            {
+              
+
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("오류", ex.Message, "확인");
+            }
+            finally 
+            {
+            
             }
         }
 
