@@ -2,13 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+             xmlns:views="clr-namespace:Rutinus"
              x:Class="Rutinus.SignUpPage"
              x:DataType="viewmodels:SignUpViewModel">
-
+    
     <ScrollView
         MaximumHeightRequest="600"
         MaximumWidthRequest="400">
-        <VerticalStackLayout
+
+       
+            <VerticalStackLayout
             Padding="30,0"
             Spacing="25"
             MaximumWidthRequest="600">
@@ -22,7 +25,8 @@
                 Text="Routinus"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />-->
-
+            <!-- ✅ 공통 뒤로가기 버튼 -->
+            <views:BackButtonView />
             <Label
                 Text="회원가입 하세요 ! "
                 Style="{StaticResource SubHeadline}"
