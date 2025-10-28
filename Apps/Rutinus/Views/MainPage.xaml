@@ -15,12 +15,10 @@
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
-
             <!--<Label
                 Text="Routinus"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />-->
-
             <Label
                 Text="나만의 루틴 만들기"
                 Style="{StaticResource SubHeadline}"

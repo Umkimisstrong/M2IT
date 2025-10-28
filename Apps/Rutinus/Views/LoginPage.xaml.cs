@@ -4,7 +4,6 @@ namespace Rutinus
 {
     public partial class LoginPage : ContentPage
     {
-
         private readonly LoginViewModel _loginViewModel;
 
         public LoginPage()
@@ -18,9 +17,6 @@ namespace Rutinus
             base.OnNavigatedTo(args);
 
             _loginViewModel.ResetFields();
-
         }
-
-
     }
 }

@@ -8,6 +8,11 @@ namespace Rutinus.Global
     /// </summary>
     public static  class SHA512Helper
     {
+        /// <summary>
+        /// EncryptSHA512 : A문자열을 넣으면 암호화된 문자열이 반환됨
+        /// </summary>
+        /// <param name="rawData"></param>
+        /// <returns></returns>
         public static string EncryptSHA512(string rawData)
         {
             string result = string.Empty;
