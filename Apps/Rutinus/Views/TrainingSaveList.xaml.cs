@@ -22,7 +22,7 @@ namespace Rutinus
             if (!((App)Application.Current).IsUserLoggedIn())
             {
                 DisplayAlert("알림", "로그인 후 이용 가능합니다.", "확인");
-                Shell.Current.GoToAsync("///LoginPage");
+                Shell.Current.GoToAsync("//LoginPage");
             }
         }
 

@@ -49,6 +49,14 @@
                 BackgroundColor="DimGray"
                 
                 />
+            <Button
+                x:Name="btnLogout"
+                Text="로그아웃" 
+                Clicked="OnLogout_Click"
+                MaximumWidthRequest="300"
+                BackgroundColor="#2196f3"
+    
+                />
             
         </VerticalStackLayout>
     </ScrollView>

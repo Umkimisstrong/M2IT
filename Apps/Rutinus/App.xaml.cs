@@ -5,19 +5,7 @@ namespace Rutinus
     public partial class App : Application
     {
         public AppLoginUserInfo CurrentUser { get; set; }
-
-        public void Logout()
-        { 
-            CurrentUser= null;
-            MainPage = new LoginPage();
-        }
-
-        public bool IsUserLoggedIn()
-        {
-            // 예: App.CurrentUser가 null인지 체크
-            return CurrentUser != null;
-        }
-
+      
         public App()
         {
             InitializeComponent();
@@ -25,7 +13,37 @@ namespace Rutinus
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var window = new Window(new AppShell());
+
+            // 앱 실행 시 로그인 상태에 따라 이동
+            window.Created += async (_, _) =>
+            {
+                if (IsUserLoggedIn())
+                {
+                    // 로그인된 상태 → 메인페이지로 바로 이동
+                    await Shell.Current.GoToAsync("//MainPage");
+                }
+                else
+                {
+                    // 로그인 안 됨 → 로그인 페이지로 이동
+                    await Shell.Current.GoToAsync("//LoginPage");
+                }
+            };
+
+            return window;
         }
+
+        public void Logout()
+        {
+            CurrentUser = null;
+            // 로그아웃 시 로그인 페이지로 이동
+            Shell.Current.GoToAsync("//LoginPage");
+        }
+
+        public bool IsUserLoggedIn()
+        {
+            return CurrentUser != null;
+        }
+
     }
 }

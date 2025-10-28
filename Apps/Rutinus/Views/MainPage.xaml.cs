@@ -13,14 +13,14 @@
             if (!((App)Application.Current).IsUserLoggedIn() )
             {
                 DisplayAlert("알림", "로그인 후 이용 가능합니다.", "확인");
-                Shell.Current.GoToAsync("///LoginPage");
+                Shell.Current.GoToAsync("//LoginPage");
             }
         }
 
         private async void OnRoutineCreate_Click(object? sender, EventArgs e)
         {
             //await Navigation.PushAsync(new RoutineList());
-            await Shell.Current.GoToAsync("///RoutineList");
+            await Shell.Current.GoToAsync(nameof(RoutineList));
         }
 
        
@@ -39,6 +39,15 @@
             if (confirmed)
             {
 
+            }
+        }
+
+        private async void OnLogout_Click(object? sender, EventArgs e)
+        {
+            bool confirmed = await DisplayAlert("확인", "로그아웃 하시겠습니까?", "예", "아니오");
+            if (confirmed)
+            {
+                ((App)Application.Current).Logout();
             }
         }
 

@@ -4,7 +4,8 @@
              xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
              xmlns:views="clr-namespace:Rutinus"
              x:Class="Rutinus.SignUpPage"
-             x:DataType="viewmodels:SignUpViewModel">
+             x:DataType="viewmodels:SignUpViewModel"
+             Shell.BackButtonBehavior="{StaticResource DefaultBackButton}">
     
     <ScrollView
         MaximumHeightRequest="600"
@@ -25,8 +26,6 @@
                 Text="Routinus"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />-->
-            <!-- ✅ 공통 뒤로가기 버튼 -->
-            <views:BackButtonView />
             <Label
                 Text="회원가입 하세요 ! "
                 Style="{StaticResource SubHeadline}"

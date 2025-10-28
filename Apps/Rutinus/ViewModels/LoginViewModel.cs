@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MailKit;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
@@ -73,7 +74,7 @@ namespace Rutinus.ViewModels
                 info.LoginUserEmail = response.Data.UserEmail;
                 ((App)Application.Current).CurrentUser = info;
 
-                await Shell.Current.GoToAsync("///MainPage");
+                await Shell.Current.GoToAsync("//MainPage");
                 return;
             }
             else
@@ -93,7 +94,16 @@ namespace Rutinus.ViewModels
         private async Task OnSignUpAsync()
         {
             // 회원가입 홈페이지 이동
-            await Shell.Current.GoToAsync("///SignUpPage");
+            await Shell.Current.GoToAsync(nameof(SignUpPage));
+        }
+
+        /// <summary>
+        /// ResetFields : 필드 비우기(외부에서 실행)
+        /// </summary>
+        public void ResetFields()
+        {
+            LoginId = string.Empty;
+            LoginPwd = string.Empty;
         }
         #endregion
 

@@ -149,7 +149,7 @@ namespace Rutinus.ViewModels
                 info.LoginUserEmail = LoginEmail;
                 ((App)Application.Current).CurrentUser = info;
 
-                await Shell.Current.GoToAsync("///MainPage");
+                await Shell.Current.GoToAsync("//MainPage");
                 return;
             }
             else

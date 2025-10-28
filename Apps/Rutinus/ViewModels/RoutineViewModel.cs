@@ -165,7 +165,7 @@ namespace Rutinus.ViewModels
                 if (result.Success)
                 {
                     await App.Current.MainPage.DisplayAlert("성공", "루틴이 저장되었습니다.", "확인");
-                    await Shell.Current.GoToAsync("///RoutineList");
+                    await Shell.Current.GoToAsync(nameof(RoutineList));
                 }
                 else
                 {

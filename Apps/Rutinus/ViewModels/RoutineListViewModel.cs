@@ -129,7 +129,7 @@ namespace Rutinus.ViewModels
         private async void OnEditRoutine(int routineId)
         {
             // 네비게이션으로 루틴 수정 페이지로 이동, routineId 전달
-            await Shell.Current.GoToAsync($"///RoutineSave?routineId={routineId.ToString()}");
+            await Shell.Current.GoToAsync($"RoutineSave?routineId={routineId.ToString()}");
         }
         /// <summary>
         /// DeleteRoutinesAsync : 삭제 버튼 커맨드
@@ -175,7 +175,7 @@ namespace Rutinus.ViewModels
         private async void OnTrainingAdd(int routineId)
         {
             // 네비게이션으로 루틴 수정 페이지로 이동, routineId 전달
-            await Shell.Current.GoToAsync($"///TrainingSaveList?routineId={routineId}");
+            await Shell.Current.GoToAsync($"TrainingSaveList?routineId={routineId}");
         }
         #endregion
 

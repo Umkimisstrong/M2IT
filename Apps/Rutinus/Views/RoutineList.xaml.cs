@@ -40,7 +40,7 @@ namespace Rutinus
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("///RoutineSave");
+            await Shell.Current.GoToAsync(nameof(RoutineSave));
         }
     }
 }

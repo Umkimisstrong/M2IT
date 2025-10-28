@@ -213,7 +213,7 @@ namespace Rutinus.ViewModels
                     if (insertResult.Success)
                     {
                         await App.Current.MainPage.DisplayAlert("성공", "훈련 종목을 저장했습니다.", "확인");
-                        await Shell.Current.GoToAsync("///RoutineList");
+                        await Shell.Current.GoToAsync(nameof(RoutineList));
                     }
                     else
                     {
