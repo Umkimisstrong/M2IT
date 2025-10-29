@@ -8,6 +8,7 @@ using Rutinus.Models;
 using Rutinus.Services;
 using System.Net.Mail;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace Rutinus.ViewModels
 {
@@ -206,7 +207,22 @@ namespace Rutinus.ViewModels
                 return;
             }
 
+            // 버튼 클릭 시 포커스 유지
+            RequestFocus("loginId");
             ApiResponse<UserModel> response = await _service.GetDuplicateUser(LoginId);
+            // 메인 스레드에서 UI 갱신
+            await MainThread.InvokeOnMainThreadAsync(() =>
+            {
+                if (response.Data != null)
+                {
+                    ToggleDuplicateId("DUPLICATE");
+                }
+                else
+                {
+                    ToggleDuplicateId("NOTDUPLICATE");
+                }
+            });
+            /*
             if (response.Data != null)
             {
                 ToggleDuplicateId("DUPLICATE");
@@ -215,6 +231,7 @@ namespace Rutinus.ViewModels
             {
                 ToggleDuplicateId("NOTDUPLICATE");
             }
+            */
         }
         #endregion
 
@@ -251,6 +268,7 @@ namespace Rutinus.ViewModels
                 DuplicateMessage = "사용 가능합니다.";
                 DuplicateLabelColor = Color.FromArgb("#0baf4d"); // 녹색
                 isDuplicateCheck = true;
+                RequestFocus("loginPwd");
             }
             else
             {

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
              xmlns:views="clr-namespace:Rutinus"
+             xmlns:global="clr-namespace:Rutinus.Global"
              x:Class="Rutinus.SignUpPage"
              x:DataType="viewmodels:SignUpViewModel"
              Shell.BackButtonBehavior="{StaticResource DefaultBackButton}">
@@ -32,7 +33,11 @@
                 SemanticProperties.HeadingLevel="Level2"/>
             <HorizontalStackLayout Spacing="20">
                 <Label Text="아이디" FontSize="15" VerticalOptions="Center"  />
-                <Entry Placeholder="아이디 입력" MinimumWidthRequest="210" Text="{Binding LoginId}" x:Name="loginId"/>
+                <Entry Placeholder="아이디 입력" MinimumWidthRequest="210" Text="{Binding LoginId}" x:Name="loginId" ReturnType="Done">
+                    <Entry.Behaviors>
+                        <global:EntryCompletedBehavior Command="{Binding DuplicateCommand}"></global:EntryCompletedBehavior>
+                    </Entry.Behaviors>
+                </Entry>
             </HorizontalStackLayout>
             <HorizontalStackLayout Spacing="0" HorizontalOptions="Start">
                 <Label x:Name="lblDuplicateMessage" Text="{Binding DuplicateMessage}" FontSize="15" 
