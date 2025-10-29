@@ -7,6 +7,9 @@ using System.Windows.Input;
 
 namespace Rutinus.Global
 {
+    /// <summary>
+    /// EntryCompletedBehavior : Entry 컨트롤의 Completed Behavior 커스텀
+    /// </summary>
     public class EntryCompletedBehavior : Behavior<Entry>
     {
         public static readonly BindableProperty CommandProperty =

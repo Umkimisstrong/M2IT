@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Rutinus.Global
 {
+    /// <summary>
+    /// GlobalSystemSettings : 시스템 변수 
+    /// </summary>
     public class GlobalSystemSettings
     {
         public string SystemName { get; set; } = string.Empty;

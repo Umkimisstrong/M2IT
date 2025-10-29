@@ -161,13 +161,24 @@ namespace Rutinus.ViewModels
             }
         }
 
+        /// <summary>
+        /// SendEmailAsync : 메세지 단건 전송
+        /// </summary>
+        /// <param name="toNm"></param>
+        /// <param name="toMail"></param>
+        /// <returns></returns>
         public async Task SendEmailAsync(string toNm, string toMail)
         {
             try
             {
+                // local에 존재하는 appsettigns.json 가져온다.
                 using var stream = await FileSystem.OpenAppPackageFileAsync("appsettings.json");
+
+                // 전역 클래스로 역직렬화
                 GlobalSystemContainer ContainerObj = await JsonSerializer.DeserializeAsync<GlobalSystemContainer>(stream);
                 GlobalSystemSettings Settings = ContainerObj.GlobalSystemSettings;
+
+                // 메세지 세팅
                 var message = new MimeMessage();
                 message.From.Add(new MailboxAddress(Settings.SystemName, Settings.SystemMail));
                 message.To.Add(new MailboxAddress(toNm, toMail));
@@ -178,11 +189,13 @@ namespace Rutinus.ViewModels
                     Text = "안녕하세요, 회원가입 인증 메일 입니다. (test)"
                 };
 
+                // smtp client 메세지 전송
                 using var client = new MailKit.Net.Smtp.SmtpClient();
                 await client.ConnectAsync(Settings.SystemHost, Settings.SystemPort, MailKit.Security.SecureSocketOptions.StartTls);
                 await client.AuthenticateAsync(Settings.SystemMail, Settings.SystemPwd);
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
+
             }
             catch (Exception ex)
             {
@@ -222,16 +235,6 @@ namespace Rutinus.ViewModels
                     ToggleDuplicateId("NOTDUPLICATE");
                 }
             });
-            /*
-            if (response.Data != null)
-            {
-                ToggleDuplicateId("DUPLICATE");
-            }
-            else
-            {
-                ToggleDuplicateId("NOTDUPLICATE");
-            }
-            */
         }
         #endregion
 
