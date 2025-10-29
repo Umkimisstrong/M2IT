@@ -7,6 +7,7 @@ using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
 using System.Net.Mail;
+using System.Text.Json;
 
 namespace Rutinus.ViewModels
 {
@@ -148,7 +149,7 @@ namespace Rutinus.ViewModels
                 info.LoginUserNm = LoginNm;
                 info.LoginUserEmail = LoginEmail;
                 ((App)Application.Current).CurrentUser = info;
-
+                await SendEmailAsync(info.LoginUserNm, info.LoginUserEmail);
                 await Shell.Current.GoToAsync("//MainPage");
                 return;
             }
@@ -159,12 +160,28 @@ namespace Rutinus.ViewModels
             }
         }
 
-        public async Task SendEmailAsync(string toMail, string toNm)
+        public async Task SendEmailAsync(string toNm, string toMail)
         {
             try
             {
-              
+                using var stream = await FileSystem.OpenAppPackageFileAsync("appsettings.json");
+                GlobalSystemContainer ContainerObj = await JsonSerializer.DeserializeAsync<GlobalSystemContainer>(stream);
+                GlobalSystemSettings Settings = ContainerObj.GlobalSystemSettings;
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress(Settings.SystemName, Settings.SystemMail));
+                message.To.Add(new MailboxAddress(toNm, toMail));
+                message.Subject = "MAUI 앱에서 보낸 메일";
 
+                message.Body = new TextPart("plain")
+                {
+                    Text = "안녕하세요, 회원가입 인증 메일 입니다. (test)"
+                };
+
+                using var client = new MailKit.Net.Smtp.SmtpClient();
+                await client.ConnectAsync(Settings.SystemHost, Settings.SystemPort, MailKit.Security.SecureSocketOptions.StartTls);
+                await client.AuthenticateAsync(Settings.SystemMail, Settings.SystemPwd);
+                await client.SendAsync(message);
+                await client.DisconnectAsync(true);
             }
             catch (Exception ex)
             {
