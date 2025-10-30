@@ -1,4 +1,5 @@
-﻿using RutinusApi.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using RutinusApi.Data;
 using RutinusApi.Entities;
 using RutinusApi.Models;
 
@@ -33,6 +34,23 @@ namespace RutinusApi.Repositories
         { 
             _context.Users.Add(userEntity);
             return await _context.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// ActivateUserAsync : 사용자 정보 활성화
+        /// </summary>
+        /// <param name="userEntity"></param>
+        /// <returns></returns>
+        public async Task<int> ActivateUserAsync(string userId)
+        {
+            
+            return await _context.Users
+                        .Where(r => r.UserId == userId)
+                        .ExecuteUpdateAsync(setters => setters
+                                            .SetProperty(r=> r.ActivatedDt, DateTime.Now)
+                                            .SetProperty(r=> r.UpdatedAt, DateTime.Now)
+                                            .SetProperty(r => r.UpdatedBy, userId)
+                                            );
         }
 
         /// <summary>

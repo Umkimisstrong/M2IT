@@ -150,7 +150,7 @@ namespace Rutinus.ViewModels
                 info.LoginUserNm = LoginNm;
                 info.LoginUserEmail = LoginEmail;
                 ((App)Application.Current).CurrentUser = info;
-                await SendEmailAsync(info.LoginUserNm, info.LoginUserEmail);
+                await SendEmailAsync(info.LoginUserNm, info.LoginUserEmail, info.LoginUserId);
                 await Shell.Current.GoToAsync("//MainPage");
                 return;
             }
@@ -167,7 +167,7 @@ namespace Rutinus.ViewModels
         /// <param name="toNm"></param>
         /// <param name="toMail"></param>
         /// <returns></returns>
-        public async Task SendEmailAsync(string toNm, string toMail)
+        public async Task SendEmailAsync(string toNm, string toMail, string toId)
         {
             try
             {
@@ -184,10 +184,36 @@ namespace Rutinus.ViewModels
                 message.To.Add(new MailboxAddress(toNm, toMail));
                 message.Subject = "MAUI 앱에서 보낸 메일";
 
-                message.Body = new TextPart("plain")
-                {
-                    Text = "안녕하세요, 회원가입 인증 메일 입니다. (test)"
+                string activateUrl = "https://localhost:7049/api/user/activateuser?userId=" + toId;
+                string htmlBody = $@"
+                    <html>
+                        <body style='font-family:Arial;'>
+                            <h2>안녕하세요</h2>
+                            <p>아래 버튼을 클릭하여 인증을 완료해주세요.</p>
+                            <a href='{activateUrl}'
+                                style='display:inline-block;
+                                      background-color:#007BFF;
+                                      color:white;
+                                      padding:12px 24px;
+                                      text-decoration:none;
+                                      border-radius:6px;'>
+                                인증하기
+                            </a>
+                        </body>
+                    </html>
+                ";
+
+                var bodyBuilder = new BodyBuilder()
+                { 
+                    HtmlBody = htmlBody
                 };
+
+                //message.Body = new TextPart("plain")
+                //{
+                //    Text = "안녕하세요, 회원가입 인증 메일 입니다. (test)"
+                //};
+
+                message.Body = bodyBuilder.ToMessageBody();
 
                 // smtp client 메세지 전송
                 using var client = new MailKit.Net.Smtp.SmtpClient();
