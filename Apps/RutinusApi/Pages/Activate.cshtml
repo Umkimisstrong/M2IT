@@ -1,0 +1,16 @@
+﻿@page
+@model RutinusApi.Pages.ActivateModel
+@{
+}
+
+
+<h2>계정 활성화</h2>
+
+@if (Model.IsSuccess)
+{
+    <p>🎉 @Model.resultMessage</p>
+}
+else
+{
+    <p>❌ @Model.resultMessage</p>
+}

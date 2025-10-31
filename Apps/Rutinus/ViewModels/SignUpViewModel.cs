@@ -184,7 +184,8 @@ namespace Rutinus.ViewModels
                 message.To.Add(new MailboxAddress(toNm, toMail));
                 message.Subject = "MAUI 앱에서 보낸 메일";
 
-                string activateUrl = "https://localhost:7049/api/user/activateuser?userId=" + toId;
+                //string activateUrl = "https://localhost:7049/api/user/activateuser?userId=" + toId;
+                string activateUrl = "https://localhost:7049/Activate?Token=" + toId;   // URL 변경
                 string htmlBody = $@"
                     <html>
                         <body style='font-family:Arial;'>

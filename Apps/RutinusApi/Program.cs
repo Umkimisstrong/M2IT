@@ -16,6 +16,7 @@ builder.Services.AddScoped<RutinusApi.Repositories.UserRepository>();
 builder.Services.AddScoped<RutinusApi.Repositories.ScheduleRepository>();
 
 builder.Services.AddControllers();
+builder.Services.AddRazorPages();   /* View Page 를 추가한다. */
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -34,5 +35,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapRazorPages(); /* View Page 와 연동되는 Razor Page 라우트 를 추가한다. */
+
 
 app.Run();
