@@ -11,6 +11,8 @@
             Routing.RegisterRoute(nameof(RoutineList), typeof(RoutineList));
             Routing.RegisterRoute(nameof(TrainingSaveList), typeof(TrainingSaveList));
             Routing.RegisterRoute(nameof(RoutineList), typeof(RoutineList));
+            Routing.RegisterRoute(nameof(ScheduleList), typeof(ScheduleList));
         }
     }
 }
+

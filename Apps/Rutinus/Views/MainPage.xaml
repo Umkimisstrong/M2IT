@@ -34,7 +34,7 @@
                 />
             <Button
                 x:Name="btnTodayExcercise"
-                Text="오늘의 운동 기록" 
+                Text="일정만들기" 
                 Clicked="OnTodayExcercise_Click"
                 MaximumWidthRequest="300"
                 BackgroundColor="DimGray"

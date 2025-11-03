@@ -1,0 +1,72 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rutinus.ViewModels"
+             x:Class="Rutinus.ScheduleList">
+
+    <ContentPage.BindingContext>
+        <local:ScheduleListViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:DateColorConverter x:Key="DateColorConverter"/>
+            <local:DateBackgroundConverter x:Key="DateBackgroundConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Padding="20" Spacing="10" Margin="0,30,0,0">
+
+        <!-- 월 이동 -->
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="◀" Command="{Binding PreviousMonthCommand}" />
+            <Label Text="{Binding MonthText}" FontSize="20" HorizontalOptions="Center"/>
+            <Button Text="▶" Command="{Binding NextMonthCommand}" />
+        </HorizontalStackLayout>
+
+        <!-- 요일 헤더 -->
+        <Grid ColumnSpacing="5" RowSpacing="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Sun" Grid.Column="0" HorizontalOptions="Center"/>
+            <Label Text="Mon" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label Text="Tue" Grid.Column="2" HorizontalOptions="Center"/>
+            <Label Text="Wed" Grid.Column="3" HorizontalOptions="Center"/>
+            <Label Text="Thu" Grid.Column="4" HorizontalOptions="Center"/>
+            <Label Text="Fri" Grid.Column="5" HorizontalOptions="Center"/>
+            <Label Text="Sat" Grid.Column="6" HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- 달력 영역 -->
+        <CollectionView ItemsSource="{Binding Dates}" SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="7" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="#ccc"
+                            StrokeThickness="1"
+                            HeightRequest="60"
+                            WidthRequest="60"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="{Binding ., Converter={StaticResource DateBackgroundConverter}}">
+                        <Label Text="{Binding ., StringFormat='{0:dd}'}"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="{Binding ., 
+                                           Converter={StaticResource DateColorConverter}, 
+                                           ConverterParameter={Binding Source={RelativeSource AncestorType={x:Type local:ScheduleListViewModel}}, Path=CurrentMonth}}" />
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>

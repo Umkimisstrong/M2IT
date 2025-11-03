@@ -29,7 +29,7 @@
             bool confirmed = await DisplayAlert("확인", "운동기록을 하시겠습니까?", "예", "아니오");
             if (confirmed)
             {
-
+                await Shell.Current.GoToAsync(nameof(ScheduleList));
             }
         }
 
