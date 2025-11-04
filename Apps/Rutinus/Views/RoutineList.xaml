@@ -126,8 +126,8 @@
                                 </HorizontalStackLayout>-->
                                 <VerticalStackLayout BindableLayout.ItemsSource="{Binding Trainings}" Spacing="5">
                                     <BindableLayout.ItemTemplate>
-                                        <DataTemplate>
-                                            <Label Text="{Binding TrainingCdName, StringFormat='＃{0}'}" FontSize="14" TextColor="#0baf4d"/>
+                                        <DataTemplate x:DataType="models:TrainingModel">
+                                            <Label Text="{Binding TrainingCdName}" FontSize="14" TextColor="#0baf4d"/>
                                         </DataTemplate>
                                     </BindableLayout.ItemTemplate>
                                 </VerticalStackLayout>

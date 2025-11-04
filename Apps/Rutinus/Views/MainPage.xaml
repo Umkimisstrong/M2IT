@@ -37,7 +37,7 @@
                 Text="일정만들기" 
                 Clicked="OnTodayExcercise_Click"
                 MaximumWidthRequest="300"
-                BackgroundColor="DimGray"
+                BackgroundColor="#2196f3"
                 />
             <Button
                 x:Name="btnHistory"

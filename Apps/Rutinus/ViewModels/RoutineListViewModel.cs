@@ -93,14 +93,11 @@ namespace Rutinus.ViewModels
                         
                         if (trainingResponse.Success && trainingResponse.Data != null && trainingResponse.Data.Count>0)
                         {
-                            int i = 0;
-                            var observableCollection = new ObservableCollection<TrainingModel>();
-                            foreach(var trainingItem in  trainingResponse.Data)
+                            item.Trainings.Clear();
+                            MainThread.BeginInvokeOnMainThread(() =>
                             {
-                                observableCollection.Add(trainingItem);
-                                i++;
-                            }
-                            item.Trainings = observableCollection;
+                                item.Trainings = new ObservableCollection<TrainingModel>(trainingResponse.Data);
+                            });
                         }
 
                         Routines.Add(item);

@@ -6,7 +6,7 @@ namespace Rutinus.Models
     /// <summary>
     /// RoutineModel : 루틴 테이블과 매치
     /// </summary>
-    public class RoutineModel
+    public partial class RoutineModel : ObservableObject
     {
         public int RoutineId { get; set; }
         public string RoutineName { get; set; } = "";
@@ -19,7 +19,8 @@ namespace Rutinus.Models
         public string CreatedBy { get; set; } = "";
         public string UpdatedBy { get; set; } = "";
 
-        
-        public ObservableCollection<TrainingModel> Trainings { get; set; } = new ObservableCollection<TrainingModel>();
+        // ✅ 필드 이름은 소문자, public이 아님!
+        [ObservableProperty]
+        private ObservableCollection<TrainingModel> trainings = new();
     }
 }

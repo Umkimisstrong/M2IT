@@ -17,22 +17,33 @@
             }
         }
 
+        /// <summary>
+        /// OnRoutineCreate_Click : 루틴 생성 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnRoutineCreate_Click(object? sender, EventArgs e)
         {
             //await Navigation.PushAsync(new RoutineList());
             await Shell.Current.GoToAsync(nameof(RoutineList));
         }
 
-       
+
+        /// <summary>
+        /// OnTodayExcercise_Click : 운동기록 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnTodayExcercise_Click(object? sender, EventArgs e)
         {
-            bool confirmed = await DisplayAlert("확인", "운동기록을 하시겠습니까?", "예", "아니오");
-            if (confirmed)
-            {
-                await Shell.Current.GoToAsync(nameof(ScheduleList));
-            }
+            await Shell.Current.GoToAsync(nameof(ScheduleList));
         }
 
+        /// <summary>
+        /// OnHistory_Click : 히스토리 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnHistory_Click(object? sender, EventArgs e)
         {
             bool confirmed = await DisplayAlert("확인", "히스토리보시겠습니까?", "예", "아니오");
@@ -42,6 +53,11 @@
             }
         }
 
+        /// <summary>
+        /// OnLogout_Click : 로그아웃 클릭
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnLogout_Click(object? sender, EventArgs e)
         {
             bool confirmed = await DisplayAlert("확인", "로그아웃 하시겠습니까?", "예", "아니오");
