@@ -286,4 +286,11 @@
     <kor_short>피아이</kor_short>
     <eng_short>PI</eng_short>
   </item>
+  <item>
+    <idx>41</idx>
+    <kor>핵심 성과 지표</kor>
+    <eng>Key Performance Indicator</eng>
+    <kor_short>케이피아이</kor_short>
+    <eng_short>KPI</eng_short>
+  </item>
 </root>
