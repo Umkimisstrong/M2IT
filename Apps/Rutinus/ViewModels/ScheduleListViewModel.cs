@@ -6,13 +6,16 @@ using System.Globalization;
 
 namespace Rutinus.ViewModels
 {
+    /// <summary>
+    /// ScheduleListViewModel : ScheduleList 에서 사용되는 ViewModel 
+    /// </summary>
     public partial class ScheduleListViewModel : ObservableObject
     {
         [ObservableProperty]
         private DateTime currentMonth = DateTime.Today;
 
         [ObservableProperty]
-        private ObservableCollection<DateTime> dates = new();
+        private ObservableCollection<CalendarDate> dates = new();
 
         public string MonthText => CurrentMonth.ToString("yyyy년 M월");
 
@@ -21,6 +24,9 @@ namespace Rutinus.ViewModels
             GenerateCalendar();
         }
 
+        /// <summary>
+        /// PreviousMonth : 이전 달 클릭
+        /// </summary>
         [RelayCommand]
         private void PreviousMonth()
         {
@@ -29,6 +35,9 @@ namespace Rutinus.ViewModels
             OnPropertyChanged(nameof(MonthText));
         }
 
+        /// <summary>
+        /// NextMonth : 다음 달 클릭
+        /// </summary>
         [RelayCommand]
         private void NextMonth()
         {
@@ -37,6 +46,9 @@ namespace Rutinus.ViewModels
             OnPropertyChanged(nameof(MonthText));
         }
 
+        /// <summary>
+        /// GenerateCalendar : 달력 그리기
+        /// </summary>
         public void GenerateCalendar()
         {
             Dates.Clear();
@@ -51,46 +63,46 @@ namespace Rutinus.ViewModels
             for (int i = 0; i < 42; i++)
             {
                 int dayNum = i - startOffset + 1;
+                DateTime date;
+
                 if (dayNum <= 0) // 이전 달
-                    Dates.Add(new DateTime(prevMonth.Year, prevMonth.Month, daysInPrevMonth + dayNum));
+                    date = new DateTime(prevMonth.Year, prevMonth.Month, daysInPrevMonth + dayNum);
                 else if (dayNum > daysInMonth) // 다음 달
-                    Dates.Add(new DateTime(CurrentMonth.AddMonths(1).Year, CurrentMonth.AddMonths(1).Month, dayNum - daysInMonth));
+                    date = new DateTime(CurrentMonth.AddMonths(1).Year, CurrentMonth.AddMonths(1).Month, dayNum - daysInMonth);
                 else // 이번 달
-                    Dates.Add(new DateTime(CurrentMonth.Year, CurrentMonth.Month, dayNum));
+                    date = new DateTime(CurrentMonth.Year, CurrentMonth.Month, dayNum);
+
+                // 색상 계산
+                Color textColor;
+                Color backgroundColor = Colors.Transparent;
+
+                if (date.Month != CurrentMonth.Month)
+                    textColor = Colors.LightGray; // 이번 달이 아닌 날짜
+                else if (date.Date == DateTime.Today)
+                {
+                    textColor = Colors.White;
+                    backgroundColor = Colors.Blue; // 오늘
+                }
+                else
+                    textColor = Colors.Black;
+
+                Dates.Add(new CalendarDate
+                {
+                    Date = date,
+                    TextColor = textColor,
+                    BackgroundColor = backgroundColor
+                });
             }
         }
     }
 
-    public class DateColorConverter : IValueConverter
+    /// <summary>
+    /// CalendarDate : 바인딩 되는 달력 속성
+    /// </summary>
+    public class CalendarDate
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is DateTime date && parameter is DateTime currentMonth)
-            {
-                if (date.Month != currentMonth.Month) return Colors.Gray;   // 이전/다음 달
-                if (date.Date == DateTime.Today) return Colors.White;      // 오늘 강조
-                return Colors.Black;                                       // 이번 달
-            }
-            return Colors.Black;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-            => throw new NotImplementedException();
-    }
-
-    public class DateBackgroundConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is DateTime date)
-            {
-                if (date.Date == DateTime.Today)
-                    return Colors.Blue; // 오늘 강조
-            }
-            return Colors.Transparent;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-            => throw new NotImplementedException();
+        public DateTime Date { get; set; }
+        public Color TextColor { get; set; }
+        public Color BackgroundColor { get; set; }
     }
 }

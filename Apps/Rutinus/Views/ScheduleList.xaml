@@ -7,13 +7,6 @@
         <local:ScheduleListViewModel />
     </ContentPage.BindingContext>
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:DateColorConverter x:Key="DateColorConverter"/>
-            <local:DateBackgroundConverter x:Key="DateBackgroundConverter"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <VerticalStackLayout Padding="20" Spacing="10" Margin="0,30,0,0">
 
         <!-- 월 이동 -->
@@ -44,7 +37,7 @@
         </Grid>
 
         <!-- 달력 영역 -->
-        <CollectionView ItemsSource="{Binding Dates}" SelectionMode="None">
+        <CollectionView ItemsSource="{Binding Dates}" SelectionMode="Single">
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="7" />
             </CollectionView.ItemsLayout>
@@ -56,13 +49,11 @@
                             WidthRequest="60"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            BackgroundColor="{Binding ., Converter={StaticResource DateBackgroundConverter}}">
-                        <Label Text="{Binding ., StringFormat='{0:dd}'}"
+                            BackgroundColor="{Binding BackgroundColor}">
+                        <Label Text="{Binding Date, StringFormat='{0:dd}'}"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
-                               TextColor="{Binding ., 
-                                           Converter={StaticResource DateColorConverter}, 
-                                           ConverterParameter={Binding Source={RelativeSource AncestorType={x:Type local:ScheduleListViewModel}}, Path=CurrentMonth}}" />
+                               TextColor="{Binding TextColor}" />
                     </Border>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
