@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MailKit;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;

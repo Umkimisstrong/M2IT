@@ -1,14 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MailKit.Net.Smtp;
-using MailKit.Security;
 using MimeKit;
 using Rutinus.Global;
 using Rutinus.Models;
 using Rutinus.Services;
-using System.Net.Mail;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Rutinus.ViewModels
 {

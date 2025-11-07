@@ -19,7 +19,6 @@ namespace Rutinus.Models
         public string CreatedBy { get; set; } = "";
         public string UpdatedBy { get; set; } = "";
 
-        // ✅ 필드 이름은 소문자, public이 아님!
         [ObservableProperty]
         private ObservableCollection<TrainingModel> trainings = new();
     }

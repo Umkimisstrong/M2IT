@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rutinus.Global
+﻿namespace Rutinus.Global
 {
     /// <summary>
     /// GlobalSystemSettings : 시스템 변수 
