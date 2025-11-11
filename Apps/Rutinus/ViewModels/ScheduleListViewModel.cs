@@ -1,4 +1,6 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Extensions;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
@@ -14,6 +16,24 @@ namespace Rutinus.ViewModels
 
         [ObservableProperty]
         private ObservableCollection<CalendarDate> dates = new();
+
+        [ObservableProperty]
+        private CalendarDate selectedDate;
+
+
+        partial void OnSelectedDateChanged(CalendarDate value)
+        {
+            if (value == null)
+                return;
+
+            foreach (var date in Dates)
+            {
+                if (date.BackgroundColor == Colors.Green)
+                    date.BackgroundColor = date.Date == DateTime.Today ? Colors.Blue : Colors.Transparent;
+            }
+
+            value.BackgroundColor = Color.FromArgb("#0baf4d");
+        }
 
         public string MonthText => CurrentMonth.ToString("yyyy년 M월");
 
@@ -44,6 +64,15 @@ namespace Rutinus.ViewModels
             OnPropertyChanged(nameof(MonthText));
         }
 
+        [RelayCommand]
+        private async void CreateSchedule()
+        {
+            if (SelectedDate == null)
+            {
+                await App.Current.MainPage.DisplayAlert("오류", "날짜를 선택해주세요", "확인");
+            }
+
+        }
         /// <summary>
         /// GenerateCalendar : 달력 그리기
         /// </summary>
@@ -97,10 +126,14 @@ namespace Rutinus.ViewModels
     /// <summary>
     /// CalendarDate : 바인딩 되는 달력 속성
     /// </summary>
-    public class CalendarDate
+    public partial class CalendarDate : ObservableObject
     {
+
         public DateTime Date { get; set; }
-        public Color TextColor { get; set; }
-        public Color BackgroundColor { get; set; }
+        [ObservableProperty]
+        private Color textColor;
+
+        [ObservableProperty]
+        private Color backgroundColor;
     }
 }

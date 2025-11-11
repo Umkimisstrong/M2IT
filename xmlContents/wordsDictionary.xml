@@ -225,97 +225,104 @@
   </item>
   <item>
     <idx>32</idx>
+    <kor>진료의뢰서</kor>
+    <eng>AMC Referral Center</eng>
+    <kor_short>에이알씨</kor_short>
+    <eng_short>ARC</eng_short>
+  </item>
+  <item>
+    <idx>33</idx>
     <kor>처방 전달 시스템</kor>
     <eng>Order Communication System</eng>
     <kor_short>오씨에스</kor_short>
     <eng_short>OCS</eng_short>
   </item>
   <item>
-    <idx>33</idx>
+    <idx>34</idx>
     <kor>컴퓨터 전화 통합</kor>
     <eng>Computer Telephony Integration</eng>
     <kor_short>씨티아이</kor_short>
     <eng_short>CTI</eng_short>
   </item>
   <item>
-    <idx>34</idx>
+    <idx>35</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
     <eng_short>Kick Off</eng_short>
   </item>
   <item>
-    <idx>35</idx>
+    <idx>36</idx>
     <kor>태변흡인증후군</kor>
     <eng>Meconium Aspiration Syndrome</eng>
     <kor_short>엠에이에스</kor_short>
     <eng_short>MAS</eng_short>
   </item>
   <item>
-    <idx>36</idx>
+    <idx>37</idx>
     <kor>표현 상태 전송</kor>
     <eng>Representational State Transfer</eng>
     <kor_short>레스트풀</kor_short>
     <eng_short>RESTful</eng_short>
   </item>
   <item>
-    <idx>37</idx>
+    <idx>38</idx>
     <kor>품질 담당자</kor>
     <eng>Quality Architect</eng>
     <kor_short>큐에이</kor_short>
     <eng_short>QA</eng_short>
   </item>
   <item>
-    <idx>38</idx>
+    <idx>39</idx>
     <kor>프로덕트 오너</kor>
     <eng>Product Owner</eng>
     <kor_short>피오</kor_short>
     <eng_short>PO</eng_short>
   </item>
   <item>
-    <idx>39</idx>
+    <idx>40</idx>
     <kor>프로젝트 관리 사무소</kor>
     <eng>Project Management Office</eng>
     <kor_short>피엠오</kor_short>
     <eng_short>PMO</eng_short>
   </item>
   <item>
-    <idx>40</idx>
+    <idx>41</idx>
     <kor>프로젝트 관리 시스템</kor>
     <eng>Project Management System</eng>
     <kor_short>피엠에스</kor_short>
     <eng_short>PMS</eng_short>
   </item>
   <item>
-    <idx>41</idx>
+    <idx>42</idx>
     <kor>프로젝트 리더</kor>
     <eng>Project Leader</eng>
     <kor_short>피엘</kor_short>
     <eng_short>PL</eng_short>
   </item>
   <item>
-    <idx>42</idx>
+    <idx>43</idx>
     <kor>프로젝트 매니저</kor>
     <eng>Project Manager</eng>
     <kor_short>피엠</kor_short>
     <eng_short>PM</eng_short>
   </item>
   <item>
-    <idx>43</idx>
+    <idx>44</idx>
     <kor>프로젝트 실무자</kor>
     <eng>Project Assitant</eng>
     <kor_short>피에이</kor_short>
     <eng_short>PA</eng_short>
   </item>
   <item>
-    <idx>44</idx>
+    <idx>45</idx>
     <kor>프로젝트 혁신</kor>
     <eng>Project Innovation</eng>
     <kor_short>피아이</kor_short>
     <eng_short>PI</eng_short>
   </item>
   <item>
-    <idx>45</idx>
+    <idx>46</idx>
     <kor>핵심 성과 지표</kor>
     <eng>Key Performance Indicator</eng>
     <kor_short>케이피아이</kor_short>

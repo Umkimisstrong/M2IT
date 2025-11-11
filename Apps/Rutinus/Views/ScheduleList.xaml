@@ -9,6 +9,10 @@
 
     <VerticalStackLayout Padding="20" Spacing="10" Margin="0,30,0,0">
 
+        <HorizontalStackLayout HorizontalOptions="End">
+            <Button Text="일정생성" Command="{Binding CreateScheduleCommand}"/>
+        </HorizontalStackLayout>
+
         <!-- 월 이동 -->
         <HorizontalStackLayout HorizontalOptions="Center">
             <Button Text="◀" Command="{Binding PreviousMonthCommand}" />
@@ -37,7 +41,7 @@
         </Grid>
 
         <!-- 달력 영역 -->
-        <CollectionView ItemsSource="{Binding Dates}" SelectionMode="Single">
+        <CollectionView ItemsSource="{Binding Dates}" SelectionMode="Single" SelectedItem="{Binding SelectedDate}">
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="7" />
             </CollectionView.ItemsLayout>
@@ -58,6 +62,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
+       
     </VerticalStackLayout>
 </ContentPage>
