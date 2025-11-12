@@ -1,4 +1,5 @@
-﻿using Rutinus.Models;
+﻿using CommunityToolkit.Maui.Extensions;
+using Rutinus.Models;
 using Rutinus.ViewModels;
 using System.Threading.Tasks;
 
@@ -14,6 +15,11 @@ namespace Rutinus
             InitializeComponent();
         }
 
-
+        private void CreateScheduleBtn_Clicked(object sender, EventArgs e)
+        {
+            ScheduleSave popUp = new ScheduleSave();
+            this.ShowPopup(popUp);
+            
+        }
     }
 }

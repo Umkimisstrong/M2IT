@@ -10,7 +10,7 @@
     <VerticalStackLayout Padding="20" Spacing="10" Margin="0,30,0,0">
 
         <HorizontalStackLayout HorizontalOptions="End">
-            <Button Text="일정생성" Command="{Binding CreateScheduleCommand}"/>
+            <Button x:Name="CreateScheduleBtn" Text="일정생성" Clicked="CreateScheduleBtn_Clicked"/>
         </HorizontalStackLayout>
 
         <!-- 월 이동 -->

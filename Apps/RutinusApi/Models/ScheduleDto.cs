@@ -10,6 +10,22 @@
         public string ScheduleYmd { get; set; } = string.Empty;
         public string ScheduleHms { get; set; } = string.Empty;
         public string ScheduleUser { get; set; } = string.Empty;
+
+        public string RoutineName { get; set; } = "";
+        public string RoutineDescription { get; set; } = "";
+        public string RoutinePart { get; set; } = "";
+        public string AlertYn { get; set; } = "N";
+        public string RoutinePartName { get; set; } = "";
+
+        public int TrainingId { get; set; } = 0;
+        public string TrainingNm { get; set; } = "";
+        public string TrainingDesc { get; set; } = "";
+        public string TrainingCd { get; set; } = "";
+        public string TrainingCdName { get; set; } = "";
+        public int TrainingSet { get; set; } = 0;
+        public int TrainingReps { get; set; } = 0;
+        public int TrainingWeight { get; set; } = 0;
+
         public DateTime? NoticeDt { get; set; }
         public DateTime? StartDt { get; set; }
         public DateTime? EndDt { get; set; }

@@ -82,6 +82,9 @@
 	  <Compile Update="Views\BackButtonView.xaml.cs">
 	    <DependentUpon>BackButtonView.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\ScheduleSave.xaml.cs">
+	    <DependentUpon>ScheduleSave.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\SignUpPage.xaml.cs">
 	    <DependentUpon>SignUpPage.xaml</DependentUpon>
 	  </Compile>
@@ -104,6 +107,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\BackButtonView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ScheduleSave.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignUpPage.xaml">
