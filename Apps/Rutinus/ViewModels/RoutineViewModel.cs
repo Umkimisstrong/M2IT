@@ -34,6 +34,9 @@ namespace Rutinus.ViewModels
 
         public IAsyncRelayCommand SaveCommand { get; }
 
+        /// <summary>
+        /// RoutineViewModel : 생성자
+        /// </summary>
         public RoutineViewModel()
         {
             InitVariables();

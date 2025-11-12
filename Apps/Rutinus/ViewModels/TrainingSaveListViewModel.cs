@@ -29,7 +29,9 @@ namespace Rutinus.ViewModels
         private int _routineId;
         private string _loginUserId;
 
-
+        /// <summary>
+        /// TrainingSaveListViewModel : 생성자
+        /// </summary>
         public TrainingSaveListViewModel()
         {
             _service = new TrainingService();

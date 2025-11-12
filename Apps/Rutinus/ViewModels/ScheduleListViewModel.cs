@@ -1,6 +1,4 @@
-﻿using CommunityToolkit.Maui;
-using CommunityToolkit.Maui.Extensions;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
@@ -20,22 +18,11 @@ namespace Rutinus.ViewModels
         [ObservableProperty]
         private CalendarDate selectedDate;
 
-
-        partial void OnSelectedDateChanged(CalendarDate value)
-        {
-            if (value == null)
-                return;
-
-            foreach (var date in Dates)
-            {
-                if (date.BackgroundColor == Colors.Green)
-                    date.BackgroundColor = date.Date == DateTime.Today ? Colors.Blue : Colors.Transparent;
-            }
-
-            value.BackgroundColor = Color.FromArgb("#0baf4d");
-        }
-
         public string MonthText => CurrentMonth.ToString("yyyy년 M월");
+
+        /// <summary>
+        /// ScheduleListViewModel : 생성자
+        /// </summary>
 
         public ScheduleListViewModel()
         {
@@ -64,6 +51,9 @@ namespace Rutinus.ViewModels
             OnPropertyChanged(nameof(MonthText));
         }
 
+        /// <summary>
+        /// CreateSchedule : 일정 생성 클릭
+        /// </summary>
         [RelayCommand]
         private async void CreateSchedule()
         {
@@ -72,6 +62,24 @@ namespace Rutinus.ViewModels
                 await App.Current.MainPage.DisplayAlert("오류", "날짜를 선택해주세요", "확인");
             }
 
+        }
+
+        /// <summary>
+        /// OnSelectedDateChanged : 선택 시 색상을 바꾼다.
+        /// </summary>
+        /// <param name="value"></param>
+        partial void OnSelectedDateChanged(CalendarDate value)
+        {
+            if (value == null)
+                return;
+
+            foreach (var date in Dates)
+            {
+                if (date.BackgroundColor == Colors.Green)
+                    date.BackgroundColor = date.Date == DateTime.Today ? Colors.Blue : Colors.Transparent;
+            }
+
+            value.BackgroundColor = Color.FromArgb("#0baf4d");
         }
         /// <summary>
         /// GenerateCalendar : 달력 그리기
@@ -128,7 +136,6 @@ namespace Rutinus.ViewModels
     /// </summary>
     public partial class CalendarDate : ObservableObject
     {
-
         public DateTime Date { get; set; }
         [ObservableProperty]
         private Color textColor;

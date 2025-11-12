@@ -53,6 +53,9 @@ namespace Rutinus.ViewModels
             FocusRequested?.Invoke(focusName);
         }
 
+        /// <summary>
+        /// SignUpViewModel : 생성자
+        /// </summary>
         public SignUpViewModel()
         {
             InitVariables();

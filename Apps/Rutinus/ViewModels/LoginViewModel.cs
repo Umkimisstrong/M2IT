@@ -21,6 +21,10 @@ namespace Rutinus.ViewModels
 
         public IAsyncRelayCommand LoginCommand { get; }
         public IAsyncRelayCommand SignUpCommand { get; }
+
+        /// <summary>
+        /// LoginViewModel : 생성자
+        /// </summary>
         public LoginViewModel()
         {
             InitVariables();
