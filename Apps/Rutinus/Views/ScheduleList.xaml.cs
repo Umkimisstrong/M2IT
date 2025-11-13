@@ -9,16 +9,24 @@ namespace Rutinus
     {
 
         public string? RoutineId { get; set; }
+        private string _loginUserId = string.Empty;
 
         public ScheduleList()
         {
             InitializeComponent();
+            _loginUserId = ((App)(Application.Current)).CurrentUser.LoginUserId;
         }
 
         private void CreateScheduleBtn_Clicked(object sender, EventArgs e)
         {
-            ScheduleSave popUp = new ScheduleSave();
-            this.ShowPopup(popUp);
+            if (BindingContext is ScheduleListViewModel vm)
+            { 
+                var selectedDate= vm.SelectedDate;
+                string ymd = selectedDate.Date.ToString("yyyyMMdd");
+                ScheduleSave popUp = new ScheduleSave(ymd, _loginUserId);
+                this.ShowPopup(popUp);
+            }
+            
             
         }
     }

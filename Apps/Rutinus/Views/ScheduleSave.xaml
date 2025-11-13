@@ -2,7 +2,10 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewmodels="clr-namespace:Rutinus.ViewModels"
+    xmlns:models="clr-namespace:Rutinus.Models"
     x:Class="Rutinus.ScheduleSave"
+    x:DataType="viewmodels:ScheduleSaveViewModel"
     CanBeDismissedByTappingOutsideOfPopup="True"
     
     WidthRequest="350"
@@ -18,37 +21,64 @@
         <Grid RowDefinitions="Auto,Auto,Auto,*,Auto" RowSpacing="15">
 
             <!-- 1. 상단 헤더 -->
-            <Grid Row="0" ColumnDefinitions="*,Auto">
+            <Grid Row="0" ColumnDefinitions="85,*,Auto">
+
+
+
+                <!-- 왼쪽: 헤더 -->
                 <Label x:Name="lblHeader"
-                       Text="루틴 일정 추가"
+                       Text="일정 추가"
                        FontSize="18"
                        FontAttributes="Bold"
-                       VerticalOptions="Center"/>
-                <Button Text="✕"
+                       VerticalOptions="End"
+                       Grid.Column="0"/>
+
+                            <!-- 가운데: 날짜 -->
+                            <Label Text="{Binding ScheduleYmd}"
+                           FontSize="13"
+                           TextColor="DimGray"
+                           VerticalOptions="End"
+                           HorizontalOptions="Start"
+                           Grid.Column="1"/>
+
+                            <!-- 오른쪽: 닫기 버튼 -->
+                            <Button Text="✕"
                         BackgroundColor="Transparent"
                         FontSize="20"
                         TextColor="Gray"
                         HorizontalOptions="End"
+                        VerticalOptions="Center"
                         x:Name="btnClose"
-                        Clicked="btnClose_Clicked"/>
+                        Clicked="btnClose_Clicked"
+                        Grid.Column="2"/>
             </Grid>
 
             <!-- 2. 루틴 목록 -->
             <Border Grid.Row="1"
-                    Stroke="LightGray"
-                    StrokeShape="RoundRectangle 8"
-                    Padding="10">
+        Stroke="LightGray"
+        StrokeShape="RoundRectangle 8"
+        Padding="10">
                 <VerticalStackLayout>
                     <Label Text="루틴 목록" FontAttributes="Bold" Margin="0,0,0,5"/>
-                    <CollectionView x:Name="RoutineList" SelectionMode="Multiple">
+
+                    <!-- 높이 제한 추가 -->
+                    <CollectionView x:Name="RoutineList" 
+                        SelectionMode="Single" 
+                        ItemsSource="{Binding RoutineModels}"
+                        HeightRequest="100">
                         <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid ColumnDefinitions="Auto,*" Padding="5">
-                                    <CheckBox IsChecked="{Binding IsSelected}" />
-                                    <VerticalStackLayout Grid.Column="1" Spacing="2">
-                                        <Label Text="{Binding RoutineName}" FontAttributes="Bold"/>
-                                        <Label Text="{Binding RoutinePartName}" FontSize="12" TextColor="Gray"/>
-                                    </VerticalStackLayout>
+                            <DataTemplate x:DataType="models:RoutineModel">
+                                <Grid ColumnDefinitions="Auto,*" Padding="2" ColumnSpacing="10">
+                                    <CheckBox Grid.Column="0"
+                                  WidthRequest="12"
+                                  HeightRequest="12"
+                                  HorizontalOptions="Center"
+                                  VerticalOptions="Center" />
+                                    <Label Grid.Column="1"
+                               Text="{Binding RoutineName}"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               FontSize="12"/>
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
@@ -58,8 +88,8 @@
 
             <!-- 3. 상하 버튼 (▲▼) -->
             <VerticalStackLayout Grid.Row="2" HorizontalOptions="Center" Spacing="10">
-                <Button Text="▲" WidthRequest="40" Clicked="OnAddRoutineClicked"/>
-                <Button Text="▼" WidthRequest="40" Clicked="OnRemoveRoutineClicked"/>
+                <Button Text="▲" WidthRequest="40" />
+                <Button Text="▼" WidthRequest="40" />
             </VerticalStackLayout>
 
             <!-- 4. 추가된 루틴 목록 -->
@@ -69,21 +99,47 @@
                     Padding="10">
                 <VerticalStackLayout>
                     <Label Text="추가된 루틴" FontAttributes="Bold" Margin="0,0,0,5"/>
-                    <CollectionView x:Name="SelectedRoutineList">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid ColumnDefinitions="*,Auto" Padding="5" ColumnSpacing="10">
-                                    <VerticalStackLayout>
-                                        <Label Text="{Binding RoutineName}" FontAttributes="Bold"/>
-                                        <Label Text="{Binding TrainingNm}" FontSize="12" TextColor="Gray"/>
-                                    </VerticalStackLayout>
 
-                                    <!-- 시간 선택 -->
-                                    <Picker Grid.Column="1"
-                                            ItemsSource="{Binding TimeSlots}"
-                                            SelectedItem="{Binding ScheduleHms}"
-                                            WidthRequest="120"/>
-                                </Grid>
+                    <!-- 높이 제한 및 스크롤 가능 -->
+                    <CollectionView x:Name="SelectedRoutineList" 
+                        ItemsSource="{Binding RoutineGroupModels}"
+                        HeightRequest="110">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="viewmodels:RoutineGroupModel">
+                                <VerticalStackLayout Spacing="5">
+                                    <!-- 루틴 이름 + 시간 Picker -->
+                                    <Grid ColumnDefinitions="Auto,*,Auto" Padding="0" ColumnSpacing="10">
+                                        <CheckBox Grid.Column="0"
+                                          WidthRequest="20"
+                                          HeightRequest="20"
+                                          VerticalOptions="Center"/>
+                                            <Label Grid.Column="1"
+                                       Text="{Binding RoutinePartName}"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center"
+                                       Margin="25,0,0,0"/>
+                                        <Picker Grid.Column="2"
+                                        WidthRequest="120"
+                                        ItemsSource="{Binding AvailableTimes}" 
+                                        SelectedItem="{Binding SelectedTime}"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center"/>
+                                    </Grid>
+
+                                    <!-- Trainings 리스트를 수평으로 표시 -->
+                                    <ScrollView Orientation="Horizontal">
+                                        <HorizontalStackLayout Spacing="10">
+                                            <Label TextColor="Gray" FontSize="12"
+                                       Text="{Binding Trainings[0]}" />
+                                            <Label TextColor="Gray" FontSize="12"
+                                       Text="{Binding Trainings[1]}" />
+                                            <Label TextColor="Gray" FontSize="12"
+                                       Text="{Binding Trainings[2]}" />
+                                            <!-- 필요 시 BindableLayout 활용 가능 -->
+                                        </HorizontalStackLayout>
+                                    </ScrollView>
+
+                                </VerticalStackLayout>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -92,9 +148,9 @@
 
             <!-- 5. 하단 버튼 -->
             <Grid Grid.Row="4" ColumnDefinitions="Auto,Auto" ColumnSpacing="10" HorizontalOptions="Center">
-                <Button Text="초기화" Clicked="OnResetClicked"
+                <Button Text="초기화" 
                         BackgroundColor="#EEEEEE" TextColor="Black" WidthRequest="100"/>
-                <Button Text="저장" Clicked="OnSaveClicked"
+                <Button Text="저장" 
                         BackgroundColor="#007AFF" TextColor="White" WidthRequest="100"/>
             </Grid>
 

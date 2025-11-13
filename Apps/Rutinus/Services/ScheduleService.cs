@@ -11,21 +11,22 @@ namespace Rutinus.Services
         public ScheduleService() { }
 
         /// <summary>
-        /// GetTrainingListAsync : 훈련 목록 조회
+        /// GetScheduleListAsync : 
         /// </summary>
-        /// <param name="routineId">루틴 id</param>
+        /// <param name="scheduleYmd"></param>
+        /// <param name="scheduleUser"></param>
         /// <returns></returns>
-        public async Task<ApiResponse<List<TrainingModel>>> GetTrainingListAsync(int routineId)
+        public async Task<ApiResponse<List<ScheduleModel>>> GetScheduleListAsync(string scheduleYmd, string scheduleUser)
         {
-            var response = await _http.GetAsync($"/api/training/gettrainings?routineid={routineId}");
+            var response = await _http.GetAsync($"/api/schedule/gettschedules?scheduleYmd={scheduleYmd}&scheduleUser={scheduleUser}");
 
-            var result = new ApiResponse<List<TrainingModel>>();
+            var result = new ApiResponse<List<ScheduleModel>>();
 
             if (response.IsSuccessStatusCode)
             {
-                var list = await response.Content.ReadFromJsonAsync<List<TrainingModel>>();
+                var list = await response.Content.ReadFromJsonAsync<List<ScheduleModel>>();
                 result.Success = true;
-                result.Data = list ?? new List<TrainingModel>();
+                result.Data = list ?? new List<ScheduleModel>();
                 result.Message = "Success";
             }
             else
@@ -39,18 +40,17 @@ namespace Rutinus.Services
         }
 
         /// <summary>
-        /// SaveTraining : 훈련 저장
+        /// SaveSchedule : 일정 저장
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        /// <exception cref="Exception"></exception>
-        public async Task<ApiResponse<TrainingModel>> SaveTraining(List<TrainingModel> request)
+        public async Task<ApiResponse<ScheduleModel>> SaveSchedule(List<ScheduleModel> request)
         {
-            var response = await _http.PostAsJsonAsync("/api/training/savetraining", request);
-            var result = new ApiResponse<TrainingModel>();
+            var response = await _http.PostAsJsonAsync("/api/schedule/saveschedule", request);
+            var result = new ApiResponse<ScheduleModel>();
             if (response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadFromJsonAsync<TrainingModel>();
+                var data = await response.Content.ReadFromJsonAsync<ScheduleModel>();
                 result.Success = true;
                 result.Message = "Success";
                 result.Data = data;
@@ -65,17 +65,17 @@ namespace Rutinus.Services
         }
 
         /// <summary>
-        /// DeleteTraining : 훈련 삭제
+        /// 
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        public async Task<ApiResponse<TrainingModel>> DeleteTraining(TrainingModel request)
+        public async Task<ApiResponse<ScheduleModel>> DeleteSchedule(ScheduleModel request)
         {
-            var response = await _http.PostAsJsonAsync("/api/training/deletetraining", request);
-            var result = new ApiResponse<TrainingModel>();
+            var response = await _http.PostAsJsonAsync("/api/schedule/deleteschedule", request);
+            var result = new ApiResponse<ScheduleModel>();
             if (response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadFromJsonAsync<TrainingModel>();
+                var data = await response.Content.ReadFromJsonAsync<ScheduleModel>();
                 result.Success = true;
                 result.Message = "Success";
                 result.Data = data;

@@ -1,9 +1,11 @@
-﻿namespace Rutinus.Models
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace Rutinus.Models
 {
     /// <summary>
     /// ScheduleModel : 일정 테이블과 매치
     /// </summary>
-    public class ScheduleModel
+    public class ScheduleModel : ObservableObject
     {
         public int ScheduleId { get; set; } = 0;
         public int RoutineId { get; set; } = 0;
@@ -37,5 +39,6 @@
         // 팝업에서 사용하기 위한 추가 속성
         public bool IsSelected { get; set; } = false;
         public List<string> TimeSlots { get; set; } = new();
+        public List<string> Trainings { get; set; } // ex: ["벤치프레스", "덤벨프레스", "펙덱플라이"]
     }
 }
