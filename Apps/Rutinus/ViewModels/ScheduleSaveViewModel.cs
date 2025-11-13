@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Rutinus.Models;
 using Rutinus.Services;
 using System.Collections.ObjectModel;
@@ -24,6 +25,7 @@ namespace Rutinus.ViewModels
 
         [ObservableProperty]
         private string scheduleYmd = string.Empty;
+        private string _scheduleUser = string.Empty;
 
         /// <summary>
         /// 생성자
@@ -32,6 +34,40 @@ namespace Rutinus.ViewModels
         {
             _service = new ScheduleService();
             _routineService = new RoutineService();
+        }
+
+        [RelayCommand]
+        private async Task SaveSchedule()
+        {
+            if (RoutineModels != null && RoutineModels.Count > 0)
+            {
+                List<ScheduleModel> list = new List<ScheduleModel>();
+                for (int i = 0; i < RoutineModels.Count; i++)
+                {
+                    if (RoutineModels[i] != null && RoutineModels[i].IsSelected == true)
+                    { 
+                        ScheduleModel scheduleModel = new ScheduleModel();
+                        scheduleModel.RoutineId = RoutineModels[i].RoutineId;
+                        scheduleModel.ScheduleYmd = ScheduleYmd;
+                        scheduleModel.ScheduleUser = _scheduleUser;
+                        scheduleModel.CreatedBy = _scheduleUser;
+                        scheduleModel.CreatedAt = DateTime.Now;
+                        scheduleModel.UpdatedBy = _scheduleUser;
+                        scheduleModel.UpdatedAt = DateTime.Now;
+
+                        list.Add(scheduleModel);
+                    }
+                }
+
+
+                var response = await _service.SaveSchedule(list);
+                if (response != null && response.Success) 
+                {
+                    await InitLoadScheduleAsync(ScheduleYmd, _scheduleUser);
+                }
+
+            }
+            
         }
 
         /// <summary>
@@ -73,7 +109,7 @@ namespace Rutinus.ViewModels
         public async Task InitLoadScheduleAsync(string scheduleYmd, string scheduleUser)
         {
             ScheduleYmd = scheduleYmd;
-
+            _scheduleUser = scheduleUser;
             // 1. 기존 스케줄 불러오기
             var schedule = await _service.GetScheduleListAsync(scheduleYmd, scheduleUser);
             ScheduleModels.Clear();

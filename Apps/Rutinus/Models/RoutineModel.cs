@@ -21,5 +21,9 @@ namespace Rutinus.Models
 
         [ObservableProperty]
         private ObservableCollection<TrainingModel> trainings = new();
+
+
+        // 팝업에서 사용하기 위한 추가 속성
+        public bool IsSelected { get; set; } = false;
     }
 }

@@ -75,11 +75,12 @@ namespace Rutinus.ViewModels
 
             foreach (var date in Dates)
             {
-                if (date.BackgroundColor == Colors.Green)
+                // 전체 날짜 중 특정 색상이면 오늘인지 아닌지 확인후 원래값으로 되돌린다.
+                if (date.BackgroundColor.ToHex() == "#0BAF4D")
                     date.BackgroundColor = date.Date == DateTime.Today ? Colors.Blue : Colors.Transparent;
             }
 
-            value.BackgroundColor = Color.FromArgb("#0baf4d");
+            value.BackgroundColor = Color.FromArgb("#0BAF4D");
         }
         /// <summary>
         /// GenerateCalendar : 달력 그리기
