@@ -4,20 +4,20 @@
     <content>회의록정리</content>
     <writer>김상기</writer>
     <date>13:18:54</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>1</idx>
     <content>용어정리</content>
     <writer>김상기</writer>
     <date>13:19:05</date>
-    <check>False</check>
+    <check>True</check>
   </item>
   <item>
     <idx>2</idx>
     <content>commit</content>
     <writer>김상기</writer>
     <date>13:19:06</date>
-    <check>False</check>
+    <check>True</check>
   </item>
 </root>
