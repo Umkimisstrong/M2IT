@@ -1,0 +1,16 @@
+<root>
+  <item>
+    <idx>0</idx>
+    <content>PMS 확인</content>
+    <writer>김상기</writer>
+    <date>15:05:45</date>
+    <check>False</check>
+  </item>
+  <item>
+    <idx>1</idx>
+    <content>매핑정의서확인</content>
+    <writer>김상기</writer>
+    <date>15:05:59</date>
+    <check>False</check>
+  </item>
+</root>
