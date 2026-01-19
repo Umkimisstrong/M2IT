@@ -1,0 +1,23 @@
+<root>
+  <item>
+    <idx>0</idx>
+    <content>용어정리</content>
+    <writer>김상기</writer>
+    <date>09:47:57</date>
+    <check>True</check>
+  </item>
+  <item>
+    <idx>1</idx>
+    <content>커밋</content>
+    <writer>김상기</writer>
+    <date>09:47:58</date>
+    <check>True</check>
+  </item>
+  <item>
+    <idx>2</idx>
+    <content>이사</content>
+    <writer>김상기</writer>
+    <date>09:48:01</date>
+    <check>False</check>
+  </item>
+</root>
