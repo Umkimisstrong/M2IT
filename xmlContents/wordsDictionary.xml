@@ -281,251 +281,258 @@
   </item>
   <item>
     <idx>40</idx>
+    <kor>위내시경</kor>
+    <eng>Gastrofiberscope</eng>
+    <kor_short>쥐에프에스</kor_short>
+    <eng_short>GFS</eng_short>
+  </item>
+  <item>
+    <idx>41</idx>
     <kor>의료영상저장전송시스템</kor>
     <eng>Picture Archiving and Communication System</eng>
     <kor_short>팍스</kor_short>
     <eng_short>PACS</eng_short>
   </item>
   <item>
-    <idx>41</idx>
+    <idx>42</idx>
     <kor>의약품안전사용서비스</kor>
     <eng>Drug Utilization Review</eng>
     <kor_short>디유알</kor_short>
     <eng_short>DUR</eng_short>
   </item>
   <item>
-    <idx>42</idx>
+    <idx>43</idx>
     <kor>인공지능</kor>
     <eng>Artificial Intelligence</eng>
     <kor_short>에이아이</kor_short>
     <eng_short>AI</eng_short>
   </item>
   <item>
-    <idx>43</idx>
+    <idx>44</idx>
     <kor>인프라 설계자</kor>
     <eng>Infrastructure Architect</eng>
     <kor_short>아이에이</kor_short>
     <eng_short>IA</eng_short>
   </item>
   <item>
-    <idx>44</idx>
+    <idx>45</idx>
     <kor>일반외과</kor>
     <eng>General Surgery</eng>
     <kor_short>일반외과</kor_short>
     <eng_short>GS</eng_short>
   </item>
   <item>
-    <idx>45</idx>
+    <idx>46</idx>
     <kor>작업 분할 구조</kor>
     <eng>Work Breakdown Structure</eng>
     <kor_short>더블유비에스</kor_short>
     <eng_short>WBS</eng_short>
   </item>
   <item>
-    <idx>46</idx>
+    <idx>47</idx>
     <kor>전사적 자원 관리</kor>
     <eng>Enterprise Resource Planning</eng>
     <kor_short>이알피</kor_short>
     <eng_short>ERP</eng_short>
   </item>
   <item>
-    <idx>47</idx>
+    <idx>48</idx>
     <kor>전송 제어 프로토콜</kor>
     <eng>Transmission Control Protocol</eng>
     <kor_short>티씨피</kor_short>
     <eng_short>TCP</eng_short>
   </item>
   <item>
-    <idx>48</idx>
+    <idx>49</idx>
     <kor>전자의무기록</kor>
     <eng>Electronic Medical Record</eng>
     <kor_short>이엠알</kor_short>
     <eng_short>EMR</eng_short>
   </item>
   <item>
-    <idx>49</idx>
+    <idx>50</idx>
     <kor>정보시스템서비스관리</kor>
     <eng>Information System Service Management</eng>
     <kor_short>아이티에스엠</kor_short>
     <eng_short>ITSM</eng_short>
   </item>
   <item>
-    <idx>50</idx>
+    <idx>51</idx>
     <kor>정보화 전략 계획</kor>
     <eng>Information Strategy Planning</eng>
     <kor_short>아이에스피</kor_short>
     <eng_short>ISP</eng_short>
   </item>
   <item>
-    <idx>51</idx>
+    <idx>52</idx>
     <kor>정형외과</kor>
     <eng>Orthopedic Surgery</eng>
     <kor_short>정형외과</kor_short>
     <eng_short>OS</eng_short>
   </item>
   <item>
-    <idx>52</idx>
+    <idx>53</idx>
     <kor>제안요청서</kor>
     <eng>Request for Proposal</eng>
     <kor_short>제안요청서</kor_short>
     <eng_short>RFP</eng_short>
   </item>
   <item>
-    <idx>53</idx>
+    <idx>54</idx>
     <kor>중추신경계</kor>
     <eng>Central Nervous System</eng>
     <kor_short>씨엔에스</kor_short>
     <eng_short>CNS</eng_short>
   </item>
   <item>
-    <idx>54</idx>
+    <idx>55</idx>
     <kor>진단</kor>
     <eng>Diagnosis</eng>
     <kor_short>디엑스</kor_short>
     <eng_short>Dx</eng_short>
   </item>
   <item>
-    <idx>55</idx>
+    <idx>56</idx>
     <kor>진단검사의학과 정보 시스템</kor>
     <eng>Laboratory Information System</eng>
     <kor_short>진검</kor_short>
     <eng_short>LIS</eng_short>
   </item>
   <item>
-    <idx>56</idx>
+    <idx>57</idx>
     <kor>진료의뢰서</kor>
     <eng>AMC Referral Center</eng>
     <kor_short>에이알씨</kor_short>
     <eng_short>ARC</eng_short>
   </item>
   <item>
-    <idx>57</idx>
+    <idx>58</idx>
     <kor>처방 전달 시스템</kor>
     <eng>Order Communication System</eng>
     <kor_short>오씨에스</kor_short>
     <eng_short>OCS</eng_short>
   </item>
   <item>
-    <idx>58</idx>
+    <idx>59</idx>
     <kor>처방전(예후)</kor>
     <eng>Prognosis</eng>
     <kor_short>피엑스</kor_short>
     <eng_short>Px</eng_short>
   </item>
   <item>
-    <idx>59</idx>
+    <idx>60</idx>
     <kor>치료 및 요법</kor>
     <eng>Treatment</eng>
     <kor_short>티엑스</kor_short>
     <eng_short>Tx</eng_short>
   </item>
   <item>
-    <idx>60</idx>
+    <idx>61</idx>
     <kor>캐리지 리턴</kor>
     <eng>Carriage Return</eng>
     <kor_short>개행</kor_short>
     <eng_short>CR</eng_short>
   </item>
   <item>
-    <idx>61</idx>
+    <idx>62</idx>
     <kor>컴퓨터 전화 통합</kor>
     <eng>Computer Telephony Integration</eng>
     <kor_short>씨티아이</kor_short>
     <eng_short>CTI</eng_short>
   </item>
   <item>
-    <idx>62</idx>
+    <idx>63</idx>
     <kor>킥오프</kor>
     <eng>Kick Off</eng>
     <kor_short>킥오프</kor_short>
     <eng_short>Kick Off</eng_short>
   </item>
   <item>
-    <idx>63</idx>
+    <idx>64</idx>
     <kor>태변흡인증후군</kor>
     <eng>Meconium Aspiration Syndrome</eng>
     <kor_short>엠에이에스</kor_short>
     <eng_short>MAS</eng_short>
   </item>
   <item>
-    <idx>64</idx>
+    <idx>65</idx>
     <kor>표현 상태 전송</kor>
     <eng>Representational State Transfer</eng>
     <kor_short>레스트풀</kor_short>
     <eng_short>RESTful</eng_short>
   </item>
   <item>
-    <idx>65</idx>
+    <idx>66</idx>
     <kor>품질 담당자</kor>
     <eng>Quality Architect</eng>
     <kor_short>큐에이</kor_short>
     <eng_short>QA</eng_short>
   </item>
   <item>
-    <idx>66</idx>
+    <idx>67</idx>
     <kor>프로덕트 오너</kor>
     <eng>Product Owner</eng>
     <kor_short>피오</kor_short>
     <eng_short>PO</eng_short>
   </item>
   <item>
-    <idx>67</idx>
+    <idx>68</idx>
     <kor>프로젝트 관리 사무소</kor>
     <eng>Project Management Office</eng>
     <kor_short>피엠오</kor_short>
     <eng_short>PMO</eng_short>
   </item>
   <item>
-    <idx>68</idx>
+    <idx>69</idx>
     <kor>프로젝트 관리 시스템</kor>
     <eng>Project Management System</eng>
     <kor_short>피엠에스</kor_short>
     <eng_short>PMS</eng_short>
   </item>
   <item>
-    <idx>69</idx>
+    <idx>70</idx>
     <kor>프로젝트 리더</kor>
     <eng>Project Leader</eng>
     <kor_short>피엘</kor_short>
     <eng_short>PL</eng_short>
   </item>
   <item>
-    <idx>70</idx>
+    <idx>71</idx>
     <kor>프로젝트 매니저</kor>
     <eng>Project Manager</eng>
     <kor_short>피엠</kor_short>
     <eng_short>PM</eng_short>
   </item>
   <item>
-    <idx>71</idx>
+    <idx>72</idx>
     <kor>프로젝트 실무자</kor>
     <eng>Project Assitant</eng>
     <kor_short>피에이</kor_short>
     <eng_short>PA</eng_short>
   </item>
   <item>
-    <idx>72</idx>
+    <idx>73</idx>
     <kor>프로젝트 혁신</kor>
     <eng>Project Innovation</eng>
     <kor_short>피아이</kor_short>
     <eng_short>PI</eng_short>
   </item>
   <item>
-    <idx>73</idx>
+    <idx>74</idx>
     <kor>핵심 성과 지표</kor>
     <eng>Key Performance Indicator</eng>
     <kor_short>케이피아이</kor_short>
     <eng_short>KPI</eng_short>
   </item>
   <item>
-    <idx>74</idx>
+    <idx>75</idx>
     <kor>호흡기내과</kor>
     <eng>Pulmonology</eng>
     <kor_short>호흡기내과</kor_short>
     <eng_short>IMP</eng_short>
   </item>
   <item>
-    <idx>75</idx>
+    <idx>76</idx>
     <kor>M2 피루브산 키나아제검사</kor>
     <eng>M2-Pyruvate Kinase</eng>
     <kor_short>엠투피케이</kor_short>
