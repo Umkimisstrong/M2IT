@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = HM_GZ_IL.exe HM_GZ_CD.exe SampleForm.exe TMSD7.bpl
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+HM_GZ_IL.exe: HM_GZ_IL\HM_GZ_IL.dpr
+  $(DCC)
+
+HM_GZ_CD.exe: HM_GZ_CD\HM_GZ_CD.dpr
+  $(DCC)
+
+SampleForm.exe: ..\..\..\..\..\..\PROJECTS\하나로의료재단 차세대\000. SETTINGS\DrawFormSample\SampleForm.dpr
+  $(DCC)
+
+TMSD7.bpl: ..\..\..\..\..\..\PROJECTS\하나로의료재단 차세대\000. SETTINGS\TMSPACK\TMSD7.dpk
+  $(DCC)
+
+
