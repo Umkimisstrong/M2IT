@@ -8,7 +8,14 @@ uses
   VHMGRRV034S in 'VHMGRRV034S.pas' {Form7},
   VHMGRRV037S in 'VHMGRRV037S.pas' {Form8},
   VHMGRRV047S in 'VHMGRRV047S.pas' {Form9},
-  VHMGRRV048S in 'VHMGRRV048S.pas' {Form10};
+  VHMGRRV048S in 'VHMGRRV048S.pas' {Form10},
+  VHMGRRV016S01 in 'VHMGRRV016S01.pas' {Form11},
+  VHMGRRV016S05 in 'VHMGRRV016S05.pas' {Form12},
+  VHMGRRV016S07 in 'VHMGRRV016S07.pas' {Form13},
+  VHMGRRV016S08 in 'VHMGRRV016S08.pas' {Form14},
+  VHMGRRV016S09 in 'VHMGRRV016S09.pas' {Form15},
+  VHMGRRV016S11 in 'VHMGRRV016S11.pas' {Form16},
+  VHMGRRV016S13 in 'VHMGRRV016S13.pas' {Form17};
 
 {$R *.res}
 
@@ -21,5 +28,12 @@ begin
   Application.CreateForm(TForm8, Form8);
   Application.CreateForm(TForm9, Form9);
   Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TForm14, Form14);
+  Application.CreateForm(TForm15, Form15);
+  Application.CreateForm(TForm16, Form16);
+  Application.CreateForm(TForm17, Form17);
   Application.Run;
 end.

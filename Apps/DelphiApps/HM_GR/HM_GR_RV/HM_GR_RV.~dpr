@@ -2,12 +2,36 @@ program HM_GR_RV;
 
 uses
   Forms,
-  VHMGRRV016S in 'VHMGRRV016S.pas' {Form1};
+  VHMGRRV016S in 'VHMGRRV016S.pas' {Form1},
+  VHMGRRV018S in 'VHMGRRV018S.pas' {Form5},
+  VHMGRRV020S in 'VHMGRRV020S.pas' {Form6},
+  VHMGRRV034S in 'VHMGRRV034S.pas' {Form7},
+  VHMGRRV037S in 'VHMGRRV037S.pas' {Form8},
+  VHMGRRV047S in 'VHMGRRV047S.pas' {Form9},
+  VHMGRRV048S in 'VHMGRRV048S.pas' {Form10},
+  VHMGRRV016S01 in 'VHMGRRV016S01.pas' {Form11},
+  VHMGRRV016S05 in 'VHMGRRV016S05.pas' {Form12},
+  VHMGRRV016S07 in 'VHMGRRV016S07.pas' {Form13},
+  VHMGRRV016S08 in 'VHMGRRV016S08.pas' {Form14},
+  VHMGRRV016S09 in 'VHMGRRV016S09.pas' {Form15},
+  VHMGRRV016S11 in 'VHMGRRV016S11.pas' {Form16};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TForm14, Form14);
+  Application.CreateForm(TForm15, Form15);
+  Application.CreateForm(TForm16, Form16);
   Application.Run;
 end.

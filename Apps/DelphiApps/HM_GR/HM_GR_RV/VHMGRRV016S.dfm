@@ -65,7 +65,8 @@ object Form1: TForm1
       object FlatLabel3: TFlatLabel
         Left = 11
         Top = 5
-        Width = 87
+        Width = 69
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -84,7 +85,8 @@ object Form1: TForm1
       object FlatLabel1: TFlatLabel
         Left = 413
         Top = 6
-        Width = 68
+        Width = 55
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -103,7 +105,8 @@ object Form1: TForm1
       object FlatLabel2: TFlatLabel
         Left = 204
         Top = 6
-        Width = 101
+        Width = 80
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -122,7 +125,8 @@ object Form1: TForm1
       object FlatLabel5: TFlatLabel
         Left = 600
         Top = 5
-        Width = 68
+        Width = 63
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -326,6 +330,7 @@ object Form1: TForm1
           Top = 8
           Width = 99
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -601,6 +606,7 @@ object Form1: TForm1
           Top = 8
           Width = 87
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -626,9 +632,10 @@ object Form1: TForm1
         TabOrder = 1
         UseDockManager = True
         object FlatLabel7: TFlatLabel
-          Left = 56
+          Left = 48
           Top = 7
           Width = 72
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -661,9 +668,10 @@ object Form1: TForm1
           Layout = tlCenter
         end
         object FlatLabel8: TFlatLabel
-          Left = 261
+          Left = 257
           Top = 6
-          Width = 76
+          Width = 69
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -680,9 +688,10 @@ object Form1: TForm1
           ShowEssential = True
         end
         object FlatLabel9: TFlatLabel
-          Left = 285
+          Left = 281
           Top = 31
-          Width = 51
+          Width = 44
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -701,7 +710,8 @@ object Form1: TForm1
         object FlatLabel10: TFlatLabel
           Left = 499
           Top = 31
-          Width = 74
+          Width = 66
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -752,7 +762,8 @@ object Form1: TForm1
         object FlatLabel12: TFlatLabel
           Left = 510
           Top = 6
-          Width = 59
+          Width = 57
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -881,9 +892,10 @@ object Form1: TForm1
           Layout = tlCenter
         end
         object FlatLabel13: TFlatLabel
-          Left = 54
+          Left = 46
           Top = 31
           Width = 74
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -918,7 +930,8 @@ object Form1: TForm1
         object FlatLabel11: TFlatLabel
           Left = 704
           Top = 7
-          Width = 78
+          Width = 64
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3631,6 +3644,7 @@ object Form1: TForm1
           Top = 8
           Width = 116
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3902,6 +3916,7 @@ object Form1: TForm1
         Top = 8
         Width = 116
         BorderColor = clWhite
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
