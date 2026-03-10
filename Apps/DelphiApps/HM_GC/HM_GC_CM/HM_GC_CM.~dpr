@@ -1,0 +1,13 @@
+program HM_GC_CM;
+
+uses
+  Forms,
+  VHMGCCM001S in 'VHMGCCM001S.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

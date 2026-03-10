@@ -1,0 +1,100 @@
+unit VHMGCPJ009S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, BaseGrid, AdvGrid, TFlatRadioButtonUnit, StdCtrls,
+  TFlatComboBoxUnit, TFlatButtonUnit, TFlatLabelUnit, ExtCtrls,
+  TFlatPanelUnit, TFlatEditUnit;
+
+type
+  TForm54 = class(TForm)
+    FlatPanel4: TFlatPanel;
+    FlatPanel1: TFlatPanel;
+    FlatLabel2: TFlatLabel;
+    FlatLabel1: TFlatLabel;
+    FlatLabel5: TFlatLabel;
+    FlatButton7: TFlatButton;
+    FlatComboBox1: TFlatComboBox;
+    FlatComboBox2: TFlatComboBox;
+    FlatPanel10: TFlatPanel;
+    FlatRadioButton1: TFlatRadioButton;
+    FlatRadioButton6: TFlatRadioButton;
+    FlatPanel5: TFlatPanel;
+    FlatComboBox14: TFlatComboBox;
+    FlatPanel3: TFlatPanel;
+    FlatPanel6: TFlatPanel;
+    AdvStringGrid4: TAdvStringGrid;
+    FlatPanel8: TFlatPanel;
+    FlatLabel3: TFlatLabel;
+    FlatRadioButton2: TFlatRadioButton;
+    FlatPanel2: TFlatPanel;
+    FlatLabel4: TFlatLabel;
+    FlatPanel7: TFlatPanel;
+    Label10: TLabel;
+    FlatEdit4: TFlatEdit;
+    Label1: TLabel;
+    FlatEdit1: TFlatEdit;
+    Label2: TLabel;
+    FlatEdit2: TFlatEdit;
+    Label3: TLabel;
+    FlatEdit3: TFlatEdit;
+    Label4: TLabel;
+    FlatEdit5: TFlatEdit;
+    Label5: TLabel;
+    FlatEdit6: TFlatEdit;
+    Label6: TLabel;
+    FlatEdit7: TFlatEdit;
+    Label7: TLabel;
+    FlatEdit8: TFlatEdit;
+    Label8: TLabel;
+    FlatEdit9: TFlatEdit;
+    FlatPanel9: TFlatPanel;
+    FlatLabel6: TFlatLabel;
+    FlatPanel11: TFlatPanel;
+    Label9: TLabel;
+    FlatEdit10: TFlatEdit;
+    Label11: TLabel;
+    FlatPanel12: TFlatPanel;
+    FlatRadioButton3: TFlatRadioButton;
+    FlatRadioButton4: TFlatRadioButton;
+    FlatRadioButton5: TFlatRadioButton;
+    Label12: TLabel;
+    FlatEdit11: TFlatEdit;
+    Label13: TLabel;
+    FlatPanel13: TFlatPanel;
+    FlatRadioButton7: TFlatRadioButton;
+    FlatRadioButton8: TFlatRadioButton;
+    FlatRadioButton9: TFlatRadioButton;
+    Label14: TLabel;
+    FlatPanel14: TFlatPanel;
+    FlatRadioButton10: TFlatRadioButton;
+    FlatRadioButton11: TFlatRadioButton;
+    FlatRadioButton12: TFlatRadioButton;
+    Label15: TLabel;
+    FlatPanel15: TFlatPanel;
+    FlatRadioButton13: TFlatRadioButton;
+    FlatRadioButton15: TFlatRadioButton;
+    Label16: TLabel;
+    FlatEdit12: TFlatEdit;
+    FlatPanel27: TFlatPanel;
+    FlatButton3: TFlatButton;
+    FlatButton1: TFlatButton;
+    FlatButton2: TFlatButton;
+    FlatButton4: TFlatButton;
+    FlatButton5: TFlatButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form54: TForm54;
+
+implementation
+
+{$R *.dfm}
+
+end.

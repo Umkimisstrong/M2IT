@@ -9,7 +9,8 @@ MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
 DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
-PROJECTS = HM_GR_RV.exe SampleForm.exe HM_GZ_CD.exe HM_GS_RC.exe HM_GC_PJ.exe
+PROJECTS = HM_GR_RV.exe SampleForm.exe HM_GZ_CD.exe HM_GS_RC.exe HM_GC_PJ.exe \
+  HM_GX_EX.exe HM_GX_RS.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -27,6 +28,12 @@ HM_GS_RC.exe: ..\HM_GS\HM_GS_RC\HM_GS_RC.dpr
   $(DCC)
 
 HM_GC_PJ.exe: ..\HM_GC\HM_GC_PJ\HM_GC_PJ.dpr
+  $(DCC)
+
+HM_GX_EX.exe: ..\HM_GX\HM_GX_EX\HM_GX_EX.dpr
+  $(DCC)
+
+HM_GX_RS.exe: ..\HM_GX\HM_GX_RS\HM_GX_RS.dpr
   $(DCC)
 
 

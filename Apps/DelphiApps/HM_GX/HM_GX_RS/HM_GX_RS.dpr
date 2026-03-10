@@ -1,0 +1,29 @@
+program HM_GX_RS;
+
+uses
+  Forms,
+  VHMGXRS004S in 'VHMGXRS004S.pas' {Form1},
+  VHMGXRS005S in 'VHMGXRS005S.pas' {Form33},
+  VHMGXRS013S in 'VHMGXRS013S.pas' {Form34},
+  VHMGXRS016S in 'VHMGXRS016S.pas' {Form35},
+  VHMGXRS023S in 'VHMGXRS023S.pas' {Form36},
+  VHMGXRS023S01 in 'VHMGXRS023S01.pas' {Form37},
+  VHMGXRS023S02 in 'VHMGXRS023S02.pas' {Form38},
+  VHMGXRS023S03 in 'VHMGXRS023S03.pas' {Form39},
+  VHMGXRS023S04 in 'VHMGXRS023S04.pas' {Form40};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm33, Form33);
+  Application.CreateForm(TForm34, Form34);
+  Application.CreateForm(TForm35, Form35);
+  Application.CreateForm(TForm36, Form36);
+  Application.CreateForm(TForm37, Form37);
+  Application.CreateForm(TForm38, Form38);
+  Application.CreateForm(TForm39, Form39);
+  Application.CreateForm(TForm40, Form40);
+  Application.Run;
+end.
