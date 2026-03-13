@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 2119
-  Top = 0
+  Left = 137
+  Top = 39
   Width = 1661
   Height = 974
   ActiveControl = FlatRadioButton10

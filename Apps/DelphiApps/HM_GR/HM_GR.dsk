@@ -1,23 +1,18 @@
 [Closed Files]
-File_0=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ037S.pas',0,1,1,1,1,0,1
-File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GR\HM_GR_RV\VHMGRRV016S13.pas',0,1,1,1,1,3,0
-File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ035S.pas',0,1,1,5,11,3,0
-File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ077S.pas',0,1,1,1,1,3,0
-File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ034S.pas',0,1,1,1,1,0,1
-File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ043S.pas',0,1,1,1,1,0,0
-File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ039S.pas',0,1,1,1,1,0,0
-File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ044S.pas',0,1,1,1,1,0,1
-File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ040S.pas',0,1,34,1,1,0,0
+File_0=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ021S.pas',0,1,1,1,1,0,1
+File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GR\HM_GR_RV\VHMGRRV016S.pas',0,1,1,1,1,0,1
+File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GZ\HM_GZ_CD\VHMGZCD017S.pas',0,1,1,1,1,3,0
+File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ082S.pas',0,1,1,1,1,3,0
+File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ011S.pas',0,1,1,1,1,0,1
+File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ007S.pas',0,1,1,1,1,3,0
+File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ042S.pas',0,1,1,1,1,0,0
+File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ006S.pas',0,1,1,1,1,0,0
+File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ063S.pas',0,1,1,1,1,3,0
+File_9=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ022S.pas',0,1,1,1,1,4,1
 
 [Modules]
-Module0=C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ033S.pas
-Count=1
-EditWindowCount=1
-
-[C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ033S.pas]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
+Count=0
+EditWindowCount=0
 
 [C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_CM\HM_GC_CM.dpr]
 FormState=0
@@ -54,38 +49,6 @@ FormOnTop=0
 [C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GX\HM_GX_RS\HM_GX_RS.dpr]
 FormState=0
 FormOnTop=0
-
-[EditWindow0]
-ViewCount=1
-CurrentView=0
-View0=0
-CodeExplorer=CodeExplorer@EditWindow0
-MessageView=MessageView@EditWindow0
-Create=1
-Visible=1
-State=0
-Left=2120
-Top=140
-Width=1302
-Height=682
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=1286
-ClientHeight=643
-LeftPanelSize=140
-LeftPanelClients=CodeExplorer@EditWindow0
-LeftPanelData=000004000000000000000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
-RightPanelSize=0
-BottomPanelSize=0
-BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
-
-[View0]
-Module=C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ033S.pas
-CursorX=1
-CursorY=1
-TopLine=1
-LeftCol=1
 
 [Watches]
 Count=0
@@ -157,7 +120,7 @@ LRDockWidth=190
 Dockable=1
 SplitPos=81
 ArrangeBy=Name
-SelectedItem=Caption
+SelectedItem=
 ExpandedItems=
 HiddenCategories=
 
@@ -177,38 +140,6 @@ TBDockHeight=861
 LRDockWidth=190
 Dockable=1
 
-[CodeExplorer@EditWindow0]
-Create=1
-Visible=1
-State=0
-Left=0
-Top=12
-Width=140
-Height=631
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=140
-ClientHeight=631
-TBDockHeight=305
-LRDockWidth=140
-Dockable=1
-
-[MessageView@EditWindow0]
-Create=1
-Visible=0
-State=0
-Left=-1930
-Top=-707
-Width=443
-Height=85
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=443
-ClientHeight=85
-TBDockHeight=85
-LRDockWidth=443
-Dockable=1
-
 [DockHosts]
 DockHostCount=1
 
@@ -217,8 +148,8 @@ DockSiteType=1
 Create=1
 Visible=1
 State=0
-Left=1909
-Top=107
+Left=1929
+Top=111
 Width=395
 Height=890
 MaxLeft=-1

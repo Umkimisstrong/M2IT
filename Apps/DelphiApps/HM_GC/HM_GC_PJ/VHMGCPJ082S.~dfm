@@ -213,7 +213,7 @@ object Form1: TForm1
         Height = 23
         Alignment = taRightJustify
         AutoSize = False
-        Caption = #49324#50629#51088#48264#54840
+        Caption = #49324#50629#51109#48264#54840
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -13

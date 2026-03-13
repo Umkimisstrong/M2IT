@@ -1088,7 +1088,7 @@ object Form1: TForm1
   end
   object FlatPanel27: TFlatPanel
     Left = 1168
-    Top = 180
+    Top = 164
     Width = 77
     Height = 113
     ParentColor = True
