@@ -35,7 +35,30 @@ uses
   VHMGCPJ033S in 'VHMGCPJ033S.pas' {Form70},
   VHMGCPJ032S in 'VHMGCPJ032S.pas' {Form71},
   VHMGCPJ031S in 'VHMGCPJ031S.pas' {Form72},
-  VHMGCPJ030S in 'VHMGCPJ030S.pas' {Form73};
+  VHMGCPJ030S in 'VHMGCPJ030S.pas' {Form73},
+  VHMGCPJ029S in 'VHMGCPJ029S.pas' {Form74},
+  VHMGCPJ028S in 'VHMGCPJ028S.pas' {Form75},
+  VHMGCPJ027S in 'VHMGCPJ027S.pas' {Form76},
+  VHMGCPJ026S in 'VHMGCPJ026S.pas' {Form77},
+  VHMGCPJ025S in 'VHMGCPJ025S.pas' {Form78},
+  VHMGCPJ024S in 'VHMGCPJ024S.pas' {Form79},
+  VHMGCPJ023S in 'VHMGCPJ023S.pas' {Form80},
+  VHMGCPJ022S in 'VHMGCPJ022S.pas' {Form81},
+  VHMGCPJ021S in 'VHMGCPJ021S.pas' {Form82},
+  VHMGCPJ019S in 'VHMGCPJ019S.pas' {Form83},
+  VHMGCPJ017S in 'VHMGCPJ017S.pas' {Form84},
+  VHMGCPJ016S in 'VHMGCPJ016S.pas' {Form85},
+  VHMGCPJ015S in 'VHMGCPJ015S.pas' {Form86},
+  VHMGCPJ014S in 'VHMGCPJ014S.pas' {Form87},
+  VHMGCPJ013S in 'VHMGCPJ013S.pas' {Form88},
+  VHMGCPJ012S in 'VHMGCPJ012S.pas' {Form89},
+  VHMGCPJ011S in 'VHMGCPJ011S.pas' {Form90},
+  VHMGCPJ048S in 'VHMGCPJ048S.pas' {Form91},
+  VHMGCPJ049S in 'VHMGCPJ049S.pas' {Form92},
+  VHMGCPJ050S in 'VHMGCPJ050S.pas' {Form93},
+  VHMGCPJ051S in 'VHMGCPJ051S.pas' {Form94},
+  VHMGCPJ052S in 'VHMGCPJ052S.pas' {Form95},
+  VHMGCPJ053S in 'VHMGCPJ053S.pas' {Form96};
 
 {$R *.res}
 
@@ -75,5 +98,28 @@ begin
   Application.CreateForm(TForm71, Form71);
   Application.CreateForm(TForm72, Form72);
   Application.CreateForm(TForm73, Form73);
+  Application.CreateForm(TForm74, Form74);
+  Application.CreateForm(TForm75, Form75);
+  Application.CreateForm(TForm76, Form76);
+  Application.CreateForm(TForm77, Form77);
+  Application.CreateForm(TForm78, Form78);
+  Application.CreateForm(TForm79, Form79);
+  Application.CreateForm(TForm80, Form80);
+  Application.CreateForm(TForm81, Form81);
+  Application.CreateForm(TForm82, Form82);
+  Application.CreateForm(TForm83, Form83);
+  Application.CreateForm(TForm84, Form84);
+  Application.CreateForm(TForm85, Form85);
+  Application.CreateForm(TForm86, Form86);
+  Application.CreateForm(TForm87, Form87);
+  Application.CreateForm(TForm88, Form88);
+  Application.CreateForm(TForm89, Form89);
+  Application.CreateForm(TForm90, Form90);
+  Application.CreateForm(TForm91, Form91);
+  Application.CreateForm(TForm92, Form92);
+  Application.CreateForm(TForm93, Form93);
+  Application.CreateForm(TForm94, Form94);
+  Application.CreateForm(TForm95, Form95);
+  Application.CreateForm(TForm96, Form96);
   Application.Run;
 end.

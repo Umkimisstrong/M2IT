@@ -52,7 +52,21 @@ uses
   VHMGCPJ014S in 'VHMGCPJ014S.pas' {Form87},
   VHMGCPJ013S in 'VHMGCPJ013S.pas' {Form88},
   VHMGCPJ012S in 'VHMGCPJ012S.pas' {Form89},
-  VHMGCPJ011S in 'VHMGCPJ011S.pas' {Form90};
+  VHMGCPJ011S in 'VHMGCPJ011S.pas' {Form90},
+  VHMGCPJ048S in 'VHMGCPJ048S.pas' {Form91},
+  VHMGCPJ049S in 'VHMGCPJ049S.pas' {Form92},
+  VHMGCPJ050S in 'VHMGCPJ050S.pas' {Form93},
+  VHMGCPJ051S in 'VHMGCPJ051S.pas' {Form94},
+  VHMGCPJ052S in 'VHMGCPJ052S.pas' {Form95},
+  VHMGCPJ053S in 'VHMGCPJ053S.pas' {Form96},
+  VHMGCPJ054S in 'VHMGCPJ054S.pas' {Form97},
+  VHMGCPJ055S in 'VHMGCPJ055S.pas' {Form98},
+  VHMGCPJ056S in 'VHMGCPJ056S.pas' {Form99},
+  VHMGCPJ057S in 'VHMGCPJ057S.pas' {Form100},
+  VHMGCPJ058S in 'VHMGCPJ058S.pas' {Form101},
+  VHMGCPJ059S in 'VHMGCPJ059S.pas' {Form102},
+  VHMGCPJ060S in 'VHMGCPJ060S.pas' {Form103},
+  VHMGCPJ061S in 'VHMGCPJ061S.pas' {Form104};
 
 {$R *.res}
 
@@ -109,5 +123,19 @@ begin
   Application.CreateForm(TForm88, Form88);
   Application.CreateForm(TForm89, Form89);
   Application.CreateForm(TForm90, Form90);
+  Application.CreateForm(TForm91, Form91);
+  Application.CreateForm(TForm92, Form92);
+  Application.CreateForm(TForm93, Form93);
+  Application.CreateForm(TForm94, Form94);
+  Application.CreateForm(TForm95, Form95);
+  Application.CreateForm(TForm96, Form96);
+  Application.CreateForm(TForm97, Form97);
+  Application.CreateForm(TForm98, Form98);
+  Application.CreateForm(TForm99, Form99);
+  Application.CreateForm(TForm100, Form100);
+  Application.CreateForm(TForm101, Form101);
+  Application.CreateForm(TForm102, Form102);
+  Application.CreateForm(TForm103, Form103);
+  Application.CreateForm(TForm104, Form104);
   Application.Run;
 end.
