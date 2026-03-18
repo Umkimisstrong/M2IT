@@ -1,14 +1,14 @@
 [Closed Files]
-File_0=SourceModule,'C:\Program Files (x86)\Borland\Delphi7\Projects\Unit97.pas',0,1,1,1,1,0,0
-File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ052S.pas',0,1,1,1,1,0,0
-File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ048S.pas',0,1,1,1,1,1,1
-File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ049S.pas',0,1,1,1,1,1,1
-File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ050S.pas',0,1,1,1,1,1,1
-File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ051S.pas',0,1,1,1,1,1,1
-File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ053S.pas',0,1,1,1,1,0,0
-File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ021S.pas',0,1,1,1,1,0,1
-File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GR\HM_GR_RV\VHMGRRV016S.pas',0,1,1,1,1,0,1
-File_9=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GZ\HM_GZ_CD\VHMGZCD017S.pas',0,1,1,1,1,3,0
+File_0=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ060S.pas',0,1,1,1,1,1,1
+File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ058S.pas',0,1,1,1,1,1,1
+File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ057S.pas',0,1,1,1,1,1,1
+File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ056S.pas',0,1,1,1,1,1,1
+File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ055S.pas',0,1,1,1,1,1,1
+File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ054S.pas',0,1,1,1,1,1,1
+File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ053S.pas',0,1,1,1,1,1,1
+File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ052S.pas',0,1,1,1,1,1,1
+File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ051S.pas',0,1,1,1,1,1,1
+File_9=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_PJ\VHMGCPJ050S.pas',0,1,1,1,1,1,1
 
 [Modules]
 Count=0
@@ -66,7 +66,7 @@ State=2
 Left=2123
 Top=306
 Width=136
-Height=123
+Height=0
 MaxLeft=-1
 MaxTop=-1
 MaxWidth=1936

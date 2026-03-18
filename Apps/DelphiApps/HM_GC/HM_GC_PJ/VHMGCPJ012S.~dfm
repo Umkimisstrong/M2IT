@@ -1,6 +1,6 @@
 object Form89: TForm89
   Left = 2306
-  Top = 117
+  Top = 125
   Width = 1300
   Height = 675
   Caption = 'SCL'#44208#44284' '#51060#48120#51648#50672#46041' [VHMGCPJ012S]'

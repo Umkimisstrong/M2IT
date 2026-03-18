@@ -58,7 +58,15 @@ uses
   VHMGCPJ050S in 'VHMGCPJ050S.pas' {Form93},
   VHMGCPJ051S in 'VHMGCPJ051S.pas' {Form94},
   VHMGCPJ052S in 'VHMGCPJ052S.pas' {Form95},
-  VHMGCPJ053S in 'VHMGCPJ053S.pas' {Form96};
+  VHMGCPJ053S in 'VHMGCPJ053S.pas' {Form96},
+  VHMGCPJ054S in 'VHMGCPJ054S.pas' {Form97},
+  VHMGCPJ055S in 'VHMGCPJ055S.pas' {Form98},
+  VHMGCPJ056S in 'VHMGCPJ056S.pas' {Form99},
+  VHMGCPJ057S in 'VHMGCPJ057S.pas' {Form100},
+  VHMGCPJ058S in 'VHMGCPJ058S.pas' {Form101},
+  VHMGCPJ059S in 'VHMGCPJ059S.pas' {Form102},
+  VHMGCPJ060S in 'VHMGCPJ060S.pas' {Form103},
+  VHMGCPJ061S in 'VHMGCPJ061S.pas' {Form104};
 
 {$R *.res}
 
@@ -121,5 +129,13 @@ begin
   Application.CreateForm(TForm94, Form94);
   Application.CreateForm(TForm95, Form95);
   Application.CreateForm(TForm96, Form96);
+  Application.CreateForm(TForm97, Form97);
+  Application.CreateForm(TForm98, Form98);
+  Application.CreateForm(TForm99, Form99);
+  Application.CreateForm(TForm100, Form100);
+  Application.CreateForm(TForm101, Form101);
+  Application.CreateForm(TForm102, Form102);
+  Application.CreateForm(TForm103, Form103);
+  Application.CreateForm(TForm104, Form104);
   Application.Run;
 end.

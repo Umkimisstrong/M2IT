@@ -1,8 +1,8 @@
 object Form98: TForm98
-  Left = 2351
-  Top = 225
-  Width = 1012
-  Height = 205
+  Left = 1912
+  Top = -8
+  Width = 1936
+  Height = 1048
   Caption = #44592#52488' '#44160#49324' [VHMGCPJ055S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET

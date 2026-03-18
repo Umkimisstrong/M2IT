@@ -1,8 +1,8 @@
 object Form101: TForm101
-  Left = 2467
-  Top = 262
-  Width = 1012
-  Height = 550
+  Left = 1912
+  Top = -8
+  Width = 1936
+  Height = 1048
   ActiveControl = FlatCheckBox2
   Caption = #54792#50529' 9'#51333' [VHMGCPJ058S]'
   Color = clWhite
