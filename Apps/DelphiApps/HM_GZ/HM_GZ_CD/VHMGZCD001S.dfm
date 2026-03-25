@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 231
-  Top = 66
-  Width = 1484
+  Left = -8
+  Top = -8
+  Width = 1936
   Height = 1048
   ActiveControl = FlatTabControl2
   Caption = #44160#49324#53076#46300' '#46321#47197' [VHMGZCD001S]'
@@ -272,6 +272,7 @@ object Form1: TForm1
           Top = 8
           Width = 108
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1083,6 +1084,7 @@ object Form1: TForm1
           Left = 33
           Top = 8
           Width = 72
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1102,6 +1104,7 @@ object Form1: TForm1
           Left = 19
           Top = 32
           Width = 87
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1903,6 +1906,7 @@ object Form1: TForm1
           Left = 11
           Top = 8
           Width = 108
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1940,6 +1944,7 @@ object Form1: TForm1
           Left = 11
           Top = 8
           Width = 108
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -2743,6 +2748,7 @@ object Form1: TForm1
           Left = 11
           Top = 8
           Width = 126
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3134,6 +3140,7 @@ object Form1: TForm1
           Left = 11
           Top = 8
           Width = 108
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3398,6 +3405,7 @@ object Form1: TForm1
           Left = 11
           Top = 8
           Width = 108
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3664,6 +3672,7 @@ object Form1: TForm1
           Left = 2
           Top = 8
           Width = 108
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone

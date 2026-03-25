@@ -14,7 +14,8 @@ uses
   VHMGRRV016S07 in 'VHMGRRV016S07.pas' {Form13},
   VHMGRRV016S08 in 'VHMGRRV016S08.pas' {Form14},
   VHMGRRV016S09 in 'VHMGRRV016S09.pas' {Form15},
-  VHMGRRV016S11 in 'VHMGRRV016S11.pas' {Form16};
+  VHMGRRV016S11 in 'VHMGRRV016S11.pas' {Form16},
+  VHMGRRV016S13 in 'VHMGRRV016S13.pas' {Form17};
 
 {$R *.res}
 
@@ -33,5 +34,6 @@ begin
   Application.CreateForm(TForm14, Form14);
   Application.CreateForm(TForm15, Form15);
   Application.CreateForm(TForm16, Form16);
+  Application.CreateForm(TForm17, Form17);
   Application.Run;
 end.

@@ -10,7 +10,7 @@ DCC = $(ROOT)\bin\dcc32.exe $**
 BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
 PROJECTS = HM_GR_RV.exe SampleForm.exe HM_GZ_CD.exe HM_GS_RC.exe HM_GC_PJ.exe \
-  HM_GX_EX.exe HM_GX_RS.exe
+  HM_GX_EX.exe HM_GX_RS.exe HM_GC_CM.exe HM_GS_CS.exe HM_GR_MJ.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -34,6 +34,15 @@ HM_GX_EX.exe: ..\HM_GX\HM_GX_EX\HM_GX_EX.dpr
   $(DCC)
 
 HM_GX_RS.exe: ..\HM_GX\HM_GX_RS\HM_GX_RS.dpr
+  $(DCC)
+
+HM_GC_CM.exe: ..\HM_GC\HM_GC_CM\HM_GC_CM.dpr
+  $(DCC)
+
+HM_GS_CS.exe: ..\HM_GS\HM_GS_CS\HM_GS_CS.dpr
+  $(DCC)
+
+HM_GR_MJ.exe: HM_GR_MJ\HM_GR_MJ.dpr
   $(DCC)
 
 
