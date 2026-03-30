@@ -1,0 +1,47 @@
+unit VHMGSCS011S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, BaseGrid, AdvGrid, TFlatRadioButtonUnit, TFlatButtonUnit,
+  StdCtrls, TFlatComboBoxUnit, TFlatLabelUnit, ExtCtrls, TFlatPanelUnit;
+
+type
+  TForm151 = class(TForm)
+    FlatPanel4: TFlatPanel;
+    FlatPanel1: TFlatPanel;
+    FlatLabel2: TFlatLabel;
+    FlatLabel1: TFlatLabel;
+    FlatLabel4: TFlatLabel;
+    FlatComboBox1: TFlatComboBox;
+    FlatComboBox2: TFlatComboBox;
+    FlatButton7: TFlatButton;
+    FlatComboBox3: TFlatComboBox;
+    FlatPanel5: TFlatPanel;
+    FlatComboBox14: TFlatComboBox;
+    FlatPanel10: TFlatPanel;
+    AdvStringGrid4: TAdvStringGrid;
+    FlatPanel9: TFlatPanel;
+    FlatLabel6: TFlatLabel;
+    FlatPanel2: TFlatPanel;
+    FlatLabel3: TFlatLabel;
+    FlatPanel3: TFlatPanel;
+    FlatPanel27: TFlatPanel;
+    FlatButton4: TFlatButton;
+    FlatButton1: TFlatButton;
+    AdvStringGrid1: TAdvStringGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form151: TForm151;
+
+implementation
+
+{$R *.dfm}
+
+end.

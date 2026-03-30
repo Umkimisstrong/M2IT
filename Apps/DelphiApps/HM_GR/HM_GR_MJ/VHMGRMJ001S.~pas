@@ -78,6 +78,7 @@ type
     FlatEdit20: TFlatEdit;
     FlatPanel27: TFlatPanel;
     FlatButton4: TFlatButton;
+    FlatTabControl2: TFlatTabControl;
   private
     { Private declarations }
   public

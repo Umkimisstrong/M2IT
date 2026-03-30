@@ -768,7 +768,7 @@ object Form5: TForm5
         object FlatLabel6: TFlatLabel
           Left = 5
           Top = 8
-          Width = 87
+          Width = 115
           BorderColor = clWhite
           TextBorder = 2
           BevelInner = beNone

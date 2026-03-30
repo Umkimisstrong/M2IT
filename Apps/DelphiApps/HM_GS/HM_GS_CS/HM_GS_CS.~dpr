@@ -2,12 +2,22 @@ program HM_GS_CS;
 
 uses
   Forms,
-  VHMGSCS002S in 'VHMGSCS002S.pas' {Form1};
+  VHMGSCS002S in 'VHMGSCS002S.pas' {Form1},
+  VHMGSCS005S in 'VHMGSCS005S.pas' {Form2},
+  VHMGSCS006S in 'VHMGSCS006S.pas' {Form3},
+  VHMGSCS007S in 'VHMGSCS007S.pas' {Form148},
+  VHMGSCS008S in 'VHMGSCS008S.pas' {Form149},
+  VHMGSCS010S in 'VHMGSCS010S.pas' {Form150};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TForm148, Form148);
+  Application.CreateForm(TForm149, Form149);
+  Application.CreateForm(TForm150, Form150);
   Application.Run;
 end.

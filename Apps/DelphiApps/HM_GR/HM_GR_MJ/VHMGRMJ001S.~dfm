@@ -1,8 +1,8 @@
 object Form1: TForm1
   Left = 2477
   Top = 269
-  Width = 967
-  Height = 466
+  Width = 1236
+  Height = 733
   Caption = '('#44221#44592#49548#48169#49436#50577#49885')'#47928#51652' '#48143' '#49444#47928' [VHMGRMJ001S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -1209,6 +1209,28 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 14
+      end
+      object FlatTabControl2: TFlatTabControl
+        Left = 4
+        Top = 26
+        Width = 672
+        Height = 22
+        Tabs.Strings = (
+          '1. '#44592#52488#51221#48372
+          '2. '#50808#49345#49324#44148
+          '3. '#50808#49345' '#54980' '#49828#53944#47112#49828
+          '4. '#51020#51452#49845#44288
+          '5. '#50864#50872#51613
+          '6. '#49688#47732
+          '7. '#51221#49888#44148#44053
+          '8. '#45516#51656#54872'/'#45516#50808#49345)
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 15
       end
     end
   end
