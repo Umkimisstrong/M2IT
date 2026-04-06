@@ -1,8 +1,8 @@
 object Form43: TForm43
   Left = 2134
   Top = 77
-  Width = 1621
-  Height = 938
+  Width = 902
+  Height = 779
   Caption = #44160#51652#44256#44061' '#47928#51088#51204#49569' [VHMGCCM004S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET

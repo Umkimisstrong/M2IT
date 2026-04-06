@@ -1,0 +1,16 @@
+object Form159: TForm159
+  Left = 406
+  Top = 117
+  Width = 1305
+  Height = 675
+  Caption = #49440#49688#44552' '#45824#52404' '#52376#47532' [VHMGSRC011S]'
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+end

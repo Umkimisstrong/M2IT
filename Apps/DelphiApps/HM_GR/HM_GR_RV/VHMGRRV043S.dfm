@@ -1,5 +1,5 @@
 object Form144: TForm144
-  Left = 2166
+  Left = 246
   Top = 95
   Width = 1287
   Height = 749

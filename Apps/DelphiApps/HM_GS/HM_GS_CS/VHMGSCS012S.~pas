@@ -43,6 +43,10 @@ type
     AdvStringGrid3: TAdvStringGrid;
     FlatPanel13: TFlatPanel;
     AdvStringGrid5: TAdvStringGrid;
+    FlatPanel27: TFlatPanel;
+    FlatButton4: TFlatButton;
+    FlatButton1: TFlatButton;
+    FlatButton2: TFlatButton;
   private
     { Private declarations }
   public

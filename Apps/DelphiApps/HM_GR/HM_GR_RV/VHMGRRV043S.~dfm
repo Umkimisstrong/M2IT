@@ -1,8 +1,8 @@
 object Form144: TForm144
   Left = 2166
   Top = 95
-  Width = 1544
-  Height = 841
+  Width = 1287
+  Height = 749
   Caption = #45824#54665#49324#48324' '#51217#49688#51060#47141' [VHMGRRV043S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET

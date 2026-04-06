@@ -1,5 +1,5 @@
 object Form133: TForm133
-  Left = 1965
+  Left = 45
   Top = 39
   Width = 1774
   Height = 620

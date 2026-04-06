@@ -89,22 +89,6 @@ object Form151: TForm151
         ShowRect = False
         ShowEssential = True
       end
-      object Label2: TLabel
-        Left = 570
-        Top = 3
-        Width = 57
-        Height = 23
-        Alignment = taRightJustify
-        AutoSize = False
-        Caption = #45812#45817#51032#49324
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = #45208#45588#44256#46357
-        Font.Style = []
-        ParentFont = False
-        Layout = tlCenter
-      end
       object FlatComboBox1: TFlatComboBox
         Left = 76
         Top = 5
@@ -167,22 +151,6 @@ object Form151: TForm151
         ItemHeight = 13
         ParentFont = False
         TabOrder = 3
-        ItemIndex = -1
-      end
-      object FlatComboBox4: TFlatComboBox
-        Left = 631
-        Top = 4
-        Width = 100
-        Height = 21
-        Color = clWindow
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'MS Sans Serif'
-        Font.Style = []
-        ItemHeight = 13
-        ParentFont = False
-        TabOrder = 4
         ItemIndex = -1
       end
     end

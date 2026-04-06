@@ -1,5 +1,5 @@
 object Form46: TForm46
-  Left = 2355
+  Left = 435
   Top = 134
   Width = 901
   Height = 771

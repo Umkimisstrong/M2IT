@@ -1,5 +1,5 @@
 object Form149: TForm149
-  Left = 2211
+  Left = 291
   Top = 120
   Width = 1172
   Height = 623

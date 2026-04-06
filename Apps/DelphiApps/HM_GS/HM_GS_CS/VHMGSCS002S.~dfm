@@ -92,7 +92,7 @@ object Form1: TForm1
         Height = 23
         Alignment = taRightJustify
         AutoSize = False
-        Caption = #44208#44284#51648#48156#49569
+        Caption = 'VIP'#44396#48516
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -13

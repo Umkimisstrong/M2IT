@@ -1,5 +1,5 @@
 object Form41: TForm41
-  Left = 2108
+  Left = 188
   Top = 36
   Width = 1335
   Height = 927

@@ -1,5 +1,5 @@
 object Form43: TForm43
-  Left = 2134
+  Left = 214
   Top = 77
   Width = 902
   Height = 779

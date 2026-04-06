@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 2161
-  Top = 116
+  Left = 2329
+  Top = 193
   Width = 869
   Height = 599
   Caption = '('#50808#47000')'#54840#52636' '#49345#53468' '#54869#51064' [VHMGSDL001S]'
@@ -382,7 +382,7 @@ object Form1: TForm1
       object FlatLabel7: TFlatLabel
         Left = 6
         Top = 8
-        Width = 90
+        Width = 113
         BorderColor = clWhite
         Alignment = taRightJustify
         TextBorder = 2
@@ -393,7 +393,7 @@ object Form1: TForm1
         Font.Height = -13
         Font.Name = #45208#45588#44256#46357
         Font.Style = []
-        Caption = #49688#44160#51088' '#47785#47197
+        Caption = #51032#49324#48324' '#54840#52636#47785#47197
         Color = clWhite
         ParentFont = False
         ParentColor = False
@@ -412,7 +412,7 @@ object Form1: TForm1
       object FlatLabel1: TFlatLabel
         Left = 6
         Top = 8
-        Width = 111
+        Width = 80
         Height = 21
         BorderColor = clWhite
         Alignment = taRightJustify
@@ -424,7 +424,7 @@ object Form1: TForm1
         Font.Height = -13
         Font.Name = #45208#45588#44256#46357
         Font.Style = []
-        Caption = #49688#44160#51088' '#49345#49464#51221#48372
+        Caption = #54840#52636' '#54788#54889
         Color = clWhite
         ParentFont = False
         ParentColor = False

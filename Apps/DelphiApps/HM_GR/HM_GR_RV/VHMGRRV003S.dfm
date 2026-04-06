@@ -1,5 +1,5 @@
 object Form115: TForm115
-  Left = 2436
+  Left = 516
   Top = 181
   Width = 1039
   Height = 747

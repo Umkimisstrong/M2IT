@@ -11,7 +11,7 @@ BRCC = $(ROOT)\bin\brcc32.exe $**
 #------------------------------------------------------------------------------
 PROJECTS = HM_GR_RV.exe SampleForm.exe HM_GZ_CD.exe HM_GS_RC.exe HM_GC_PJ.exe \
   HM_GX_EX.exe HM_GX_RS.exe HM_GC_CM.exe HM_GS_CS.exe HM_GR_MJ.exe HM_GR_OD.exe \
-  HM_GS_DL.exe
+  HM_GS_DL.exe IM_AD_CM.exe IM_EI_EM.exe IM_EI_MA.exe MC_OO_OC.exe WA_WB_PJ.exe
 #------------------------------------------------------------------------------
 default: $(PROJECTS)
 #------------------------------------------------------------------------------
@@ -50,6 +50,21 @@ HM_GR_OD.exe: HM_GR_OD\HM_GR_OD.dpr
   $(DCC)
 
 HM_GS_DL.exe: ..\HM_GS\HM_GS_DL\HM_GS_DL.dpr
+  $(DCC)
+
+IM_AD_CM.exe: ..\IM_AD\IM_AD_CM\IM_AD_CM.dpr
+  $(DCC)
+
+IM_EI_EM.exe: ..\IM_EI\IM_EI_EM\IM_EI_EM.dpr
+  $(DCC)
+
+IM_EI_MA.exe: ..\IM_EI\IM_EI_MA\IM_EI_MA.dpr
+  $(DCC)
+
+MC_OO_OC.exe: ..\MC_OO\MC_OO_OC\MC_OO_OC.dpr
+  $(DCC)
+
+WA_WB_PJ.exe: ..\WA_WB\WA_WB_PJ\WA_WB_PJ.dpr
   $(DCC)
 
 

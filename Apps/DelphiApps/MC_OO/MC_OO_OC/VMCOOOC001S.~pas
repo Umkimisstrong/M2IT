@@ -1,0 +1,54 @@
+unit VMCOOOC001S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, TFlatMemoUnit, Grids, BaseGrid, AdvGrid,
+  TFlatButtonUnit, TFlatLabelUnit, TFlatComboBoxUnit, ExtCtrls,
+  TFlatPanelUnit;
+
+type
+  TForm2 = class(TForm)
+    FlatPanel1: TFlatPanel;
+    FlatPanel5: TFlatPanel;
+    FlatComboBox14: TFlatComboBox;
+    FlatPanel2: TFlatPanel;
+    FlatLabel5: TFlatLabel;
+    FlatLabel3: TFlatLabel;
+    FlatComboBox3: TFlatComboBox;
+    FlatButton7: TFlatButton;
+    FlatComboBox1: TFlatComboBox;
+    FlatPanel9: TFlatPanel;
+    FlatLabel6: TFlatLabel;
+    FlatPanel10: TFlatPanel;
+    AdvStringGrid4: TAdvStringGrid;
+    FlatPanel3: TFlatPanel;
+    AdvStringGrid1: TAdvStringGrid;
+    FlatPanel4: TFlatPanel;
+    FlatLabel1: TFlatLabel;
+    FlatPanel6: TFlatPanel;
+    FlatLabel2: TFlatLabel;
+    FlatPanel7: TFlatPanel;
+    Label10: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    FlatMemo2: TFlatMemo;
+    FlatMemo1: TFlatMemo;
+    FlatMemo3: TFlatMemo;
+    FlatMemo4: TFlatMemo;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+end.

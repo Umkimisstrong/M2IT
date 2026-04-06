@@ -1,0 +1,174 @@
+object Form164: TForm164
+  Left = 2362
+  Top = 478
+  Width = 1305
+  Height = 675
+  Caption = #44053#45224#44160#52404' '#50948#53441#53685#44228' [VHMGSRC018S]'
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object FlatPanel1: TFlatPanel
+    Left = 0
+    Top = 0
+    Width = 466
+    Height = 98
+    ParentColor = True
+    TabOrder = 0
+    UseDockManager = True
+    object FlatPanel5: TFlatPanel
+      Left = 1
+      Top = 34
+      Width = 464
+      Height = 33
+      ParentColor = True
+      TabOrder = 0
+      UseDockManager = True
+      object FlatComboBox14: TFlatComboBox
+        Left = 389
+        Top = 5
+        Width = 69
+        Height = 23
+        Color = clWindow
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        ItemHeight = 15
+        ParentFont = False
+        TabOrder = 0
+        Text = '  Action'
+        ItemIndex = -1
+      end
+    end
+    object FlatPanel2: TFlatPanel
+      Left = 1
+      Top = 1
+      Width = 464
+      Height = 33
+      ParentColor = True
+      TabOrder = 1
+      UseDockManager = True
+      object FlatLabel5: TFlatLabel
+        Left = 15
+        Top = 7
+        Width = 69
+        Alignment = taRightJustify
+        TextBorder = 2
+        BevelInner = beNone
+        BevelOuter = beNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        Caption = #49468#53552#44396#48516
+        Color = clWhite
+        ParentFont = False
+        ParentColor = False
+        ShowRect = False
+        ShowEssential = True
+      end
+      object FlatLabel3: TFlatLabel
+        Left = 188
+        Top = 6
+        Alignment = taRightJustify
+        TextBorder = 2
+        BevelInner = beNone
+        BevelOuter = beNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        Caption = #44160#51652#45380#50900
+        Color = clWhite
+        ParentFont = False
+        ParentColor = False
+        ShowRect = False
+        ShowEssential = True
+      end
+      object FlatComboBox3: TFlatComboBox
+        Left = 83
+        Top = 5
+        Width = 106
+        Height = 21
+        Color = clWindow
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 0
+        ItemIndex = -1
+      end
+      object FlatSpinEditInteger3: TFlatSpinEditInteger
+        Left = 263
+        Top = 6
+        Width = 65
+        Height = 20
+        ColorFlat = clWhite
+        AutoSize = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        MaxValue = 0
+        MinValue = 0
+        ParentFont = False
+        TabOrder = 1
+        Value = 2026
+      end
+      object FlatSpinEditInteger1: TFlatSpinEditInteger
+        Left = 328
+        Top = 6
+        Width = 38
+        Height = 20
+        ColorFlat = clWhite
+        AutoSize = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        MaxValue = 0
+        MinValue = 0
+        ParentFont = False
+        TabOrder = 2
+        Value = 1
+      end
+    end
+    object FlatPanel27: TFlatPanel
+      Left = 382
+      Top = 60
+      Width = 77
+      Height = 25
+      ParentColor = True
+      TabOrder = 2
+      UseDockManager = True
+      object FlatButton3: TFlatButton
+        Left = 0
+        Top = 1
+        Width = 77
+        Height = 23
+        Caption = #50641#49472#45796#50868#47196#46300
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = #45208#45588#44256#46357
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+    end
+  end
+end

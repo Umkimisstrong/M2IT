@@ -1,5 +1,5 @@
 object Form151: TForm151
-  Left = 2117
+  Left = 197
   Top = 127
   Width = 877
   Height = 630

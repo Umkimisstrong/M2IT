@@ -14,12 +14,10 @@ type
     FlatLabel2: TFlatLabel;
     FlatLabel1: TFlatLabel;
     FlatLabel4: TFlatLabel;
-    Label2: TLabel;
     FlatComboBox1: TFlatComboBox;
     FlatComboBox2: TFlatComboBox;
     FlatButton7: TFlatButton;
     FlatComboBox3: TFlatComboBox;
-    FlatComboBox4: TFlatComboBox;
     FlatPanel5: TFlatPanel;
     FlatComboBox14: TFlatComboBox;
     FlatPanel10: TFlatPanel;

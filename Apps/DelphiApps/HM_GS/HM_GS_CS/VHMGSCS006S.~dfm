@@ -434,4 +434,27 @@ object Form3: TForm3
       end
     end
   end
+  object FlatPanel27: TFlatPanel
+    Left = 806
+    Top = 60
+    Width = 77
+    Height = 25
+    ParentColor = True
+    TabOrder = 1
+    UseDockManager = True
+    object FlatButton4: TFlatButton
+      Left = 0
+      Top = 1
+      Width = 77
+      Height = 23
+      Caption = #50641#49472#45796#50868#47196#46300
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = #45208#45588#44256#46357
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
 end

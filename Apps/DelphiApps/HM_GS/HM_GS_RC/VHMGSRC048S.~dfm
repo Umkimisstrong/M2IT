@@ -591,9 +591,9 @@ object Form20: TForm20
       TabOrder = 3
       UseDockManager = True
       object FlatLabel7: TFlatLabel
-        Left = 4
+        Left = 9
         Top = 8
-        Width = 99
+        Width = 155
         BorderColor = clWhite
         Alignment = taRightJustify
         TextBorder = 2
@@ -604,7 +604,7 @@ object Form20: TForm20
         Font.Height = -13
         Font.Name = #45208#45588#44256#46357
         Font.Style = []
-        Caption = #50696#50557#51088' '#47785#47197
+        Caption = #44277#45800#52397#44396' '#48156#54665#54788#54889' '#47785#47197
         Color = clWhite
         ParentFont = False
         ParentColor = False

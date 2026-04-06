@@ -1,0 +1,13 @@
+program IM_AD_CM;
+
+uses
+  Forms,
+  VIMADCM001S in 'VIMADCM001S.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

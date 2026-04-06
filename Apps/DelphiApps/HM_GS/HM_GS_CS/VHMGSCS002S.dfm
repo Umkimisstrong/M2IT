@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = 2208
+  Left = 288
   Top = 115
   Width = 1455
   Height = 629

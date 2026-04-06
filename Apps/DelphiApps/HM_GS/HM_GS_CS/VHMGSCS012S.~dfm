@@ -1521,4 +1521,55 @@ object Form152: TForm152
       end
     end
   end
+  object FlatPanel27: TFlatPanel
+    Left = 1405
+    Top = 59
+    Width = 77
+    Height = 69
+    ParentColor = True
+    TabOrder = 1
+    UseDockManager = True
+    object FlatButton4: TFlatButton
+      Left = 0
+      Top = 1
+      Width = 77
+      Height = 23
+      Caption = #45824#44592#46321#47197
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = #45208#45588#44256#46357
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object FlatButton1: TFlatButton
+      Left = 0
+      Top = 23
+      Width = 77
+      Height = 23
+      Caption = #45824#44592#52712#49548
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = #45208#45588#44256#46357
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object FlatButton2: TFlatButton
+      Left = 0
+      Top = 45
+      Width = 77
+      Height = 23
+      Caption = #50756#47308
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = #45208#45588#44256#46357
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
 end

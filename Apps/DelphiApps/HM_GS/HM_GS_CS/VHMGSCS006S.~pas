@@ -23,6 +23,8 @@ type
     FlatComboBox14: TFlatComboBox;
     FlatPanel7: TFlatPanel;
     FlatLabel7: TFlatLabel;
+    FlatPanel27: TFlatPanel;
+    FlatButton4: TFlatButton;
   private
     { Private declarations }
   public
