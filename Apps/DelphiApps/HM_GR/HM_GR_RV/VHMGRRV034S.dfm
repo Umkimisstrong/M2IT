@@ -1,5 +1,5 @@
 object Form7: TForm7
-  Left = 2325
+  Left = 405
   Top = 105
   Width = 1477
   Height = 886
@@ -49,6 +49,7 @@ object Form7: TForm7
         Left = 11
         Top = 5
         Width = 87
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -224,6 +225,7 @@ object Form7: TForm7
           Top = 8
           Width = 94
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -271,6 +273,7 @@ object Form7: TForm7
           Top = 8
           Width = 108
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -551,6 +554,7 @@ object Form7: TForm7
           Top = 8
           Width = 122
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone

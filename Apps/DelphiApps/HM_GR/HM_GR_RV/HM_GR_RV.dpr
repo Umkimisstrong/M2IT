@@ -50,7 +50,8 @@ uses
   VHMGRRV043S in 'VHMGRRV043S.pas' {Form144},
   VHMGRRV046S in 'VHMGRRV046S.pas' {Form145},
   VHMGRRV049S in 'VHMGRRV049S.pas' {Form146},
-  VHMGRRV050S in 'VHMGRRV050S.pas' {Form147};
+  VHMGRRV050S in 'VHMGRRV050S.pas' {Form147},
+  VHMGRRV049S_NEW in 'VHMGRRV049S_NEW.pas' {Form179};
 
 {$R *.res}
 
@@ -105,5 +106,6 @@ begin
   Application.CreateForm(TForm145, Form145);
   Application.CreateForm(TForm146, Form146);
   Application.CreateForm(TForm147, Form147);
+  Application.CreateForm(TForm179, Form179);
   Application.Run;
 end.

@@ -33,7 +33,8 @@ object Form5: TForm5
       object FlatLabel3: TFlatLabel
         Left = 11
         Top = 5
-        Width = 87
+        Width = 71
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -52,7 +53,8 @@ object Form5: TForm5
       object FlatLabel1: TFlatLabel
         Left = 215
         Top = 6
-        Width = 68
+        Width = 59
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -71,7 +73,8 @@ object Form5: TForm5
       object FlatLabel5: TFlatLabel
         Left = 402
         Top = 5
-        Width = 68
+        Width = 63
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -229,6 +232,7 @@ object Form5: TForm5
           Top = 8
           Width = 99
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -495,6 +499,7 @@ object Form5: TForm5
           Top = 8
           Width = 99
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -770,6 +775,7 @@ object Form5: TForm5
           Top = 8
           Width = 115
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -798,6 +804,7 @@ object Form5: TForm5
           Left = 56
           Top = 9
           Width = 72
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -814,9 +821,10 @@ object Form5: TForm5
           ShowEssential = True
         end
         object FlatLabel8: TFlatLabel
-          Left = 261
-          Top = 30
-          Width = 76
+          Left = 262
+          Top = 31
+          Width = 66
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -836,6 +844,7 @@ object Form5: TForm5
           Left = 77
           Top = 55
           Width = 51
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -852,9 +861,10 @@ object Form5: TForm5
           ShowEssential = True
         end
         object FlatLabel10: TFlatLabel
-          Left = 259
+          Left = 262
           Top = 55
-          Width = 74
+          Width = 67
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -890,6 +900,7 @@ object Form5: TForm5
           Left = 62
           Top = 30
           Width = 59
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1004,7 +1015,8 @@ object Form5: TForm5
         object FlatLabel13: TFlatLabel
           Left = 502
           Top = 8
-          Width = 74
+          Width = 66
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1039,7 +1051,8 @@ object Form5: TForm5
         object FlatLabel11: TFlatLabel
           Left = 704
           Top = 7
-          Width = 78
+          Width = 65
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -1650,7 +1663,8 @@ object Form5: TForm5
         object FlatLabel2: TFlatLabel
           Left = 241
           Top = 9
-          Width = 99
+          Width = 89
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3327,6 +3341,7 @@ object Form5: TForm5
           Top = 8
           Width = 116
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -3598,6 +3613,7 @@ object Form5: TForm5
         Top = 8
         Width = 116
         BorderColor = clWhite
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone

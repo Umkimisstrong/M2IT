@@ -1,0 +1,90 @@
+unit VHMGMCR034S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, TFlatTabControlUnit, StdCtrls, TFlatMemoUnit, TFlatGroupBoxUnit,
+  TFlatCheckBoxUnit, TFlatSpinEditUnit, Grids, BaseGrid, AdvGrid,
+  TFlatComboBoxUnit, TFlatEditUnit, TFlatButtonUnit, TFlatLabelUnit,
+  ExtCtrls, TFlatPanelUnit;
+
+type
+  TForm128 = class(TForm)
+    FlatPanel1: TFlatPanel;
+    FlatPanel5: TFlatPanel;
+    FlatPanel3: TFlatPanel;
+    FlatLabel3: TFlatLabel;
+    FlatLabel2: TFlatLabel;
+    FlatLabel8: TFlatLabel;
+    Label52: TLabel;
+    FlatButton1: TFlatButton;
+    FlatEdit12: TFlatEdit;
+    FlatComboBox4: TFlatComboBox;
+    FlatComboBox3: TFlatComboBox;
+    FlatComboBox5: TFlatComboBox;
+    FlatComboBox2: TFlatComboBox;
+    FlatPanel2: TFlatPanel;
+    FlatLabel5: TFlatLabel;
+    FlatPanel10: TFlatPanel;
+    AdvStringGrid2: TAdvStringGrid;
+    FlatPanel12: TFlatPanel;
+    Label12: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    FlatEdit20: TFlatEdit;
+    FlatEdit21: TFlatEdit;
+    FlatEdit22: TFlatEdit;
+    FlatEdit25: TFlatEdit;
+    FlatEdit1: TFlatEdit;
+    FlatSpinEditInteger1: TFlatSpinEditInteger;
+    FlatSpinEditInteger2: TFlatSpinEditInteger;
+    FlatPanel4: TFlatPanel;
+    FlatCheckBox1: TFlatCheckBox;
+    FlatCheckBox2: TFlatCheckBox;
+    FlatCheckBox3: TFlatCheckBox;
+    FlatCheckBox5: TFlatCheckBox;
+    FlatEdit2: TFlatEdit;
+    FlatGroupBox5: TFlatGroupBox;
+    FlatMemo2: TFlatMemo;
+    FlatTabControl1: TFlatTabControl;
+    FlatGroupBox1: TFlatGroupBox;
+    FlatMemo1: TFlatMemo;
+    FlatGroupBox2: TFlatGroupBox;
+    FlatMemo3: TFlatMemo;
+    FlatPanel13: TFlatPanel;
+    FlatLabel4: TFlatLabel;
+    FlatButton2: TFlatButton;
+    FlatPanel6: TFlatPanel;
+    FlatLabel1: TFlatLabel;
+    FlatPanel7: TFlatPanel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    FlatSpinEditInteger3: TFlatSpinEditInteger;
+    FlatSpinEditInteger4: TFlatSpinEditInteger;
+    FlatComboBox1: TFlatComboBox;
+    FlatComboBox6: TFlatComboBox;
+    FlatEdit3: TFlatEdit;
+    FlatEdit4: TFlatEdit;
+    FlatCheckBox4: TFlatCheckBox;
+    FlatButton3: TFlatButton;
+    FlatButton4: TFlatButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form128: TForm128;
+
+implementation
+
+{$R *.dfm}
+
+end.

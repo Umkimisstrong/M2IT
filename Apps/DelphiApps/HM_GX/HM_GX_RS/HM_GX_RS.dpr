@@ -10,7 +10,13 @@ uses
   VHMGXRS023S01 in 'VHMGXRS023S01.pas' {Form37},
   VHMGXRS023S02 in 'VHMGXRS023S02.pas' {Form38},
   VHMGXRS023S03 in 'VHMGXRS023S03.pas' {Form39},
-  VHMGXRS023S04 in 'VHMGXRS023S04.pas' {Form40};
+  VHMGXRS023S04 in 'VHMGXRS023S04.pas' {Form40},
+  VHMGXRS007S in 'VHMGXRS007S.pas' {Form173},
+  VHMGXRS007S01 in 'VHMGXRS007S01.pas' {Form174},
+  VHMGXRS006S in 'VHMGXRS006S.pas' {Form175},
+  VHMGXRS006S_bas in 'VHMGXRS006S_bas.pas' {Form176},
+  VHMGXRS006_blood in 'VHMGXRS006_blood.pas' {Form177},
+  NEW_ALL_RSLT in 'NEW_ALL_RSLT.pas' {Form178};
 
 {$R *.res}
 
@@ -25,5 +31,11 @@ begin
   Application.CreateForm(TForm38, Form38);
   Application.CreateForm(TForm39, Form39);
   Application.CreateForm(TForm40, Form40);
+  Application.CreateForm(TForm173, Form173);
+  Application.CreateForm(TForm174, Form174);
+  Application.CreateForm(TForm175, Form175);
+  Application.CreateForm(TForm176, Form176);
+  Application.CreateForm(TForm177, Form177);
+  Application.CreateForm(TForm178, Form178);
   Application.Run;
 end.

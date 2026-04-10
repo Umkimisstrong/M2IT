@@ -520,7 +520,7 @@ object Form102: TForm102
           Top = 3
           Width = 79
           Height = 17
-          Caption = #54637#47785#48264#54840#48324
+          Caption = #51217#49688#48264#54840#48324
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -13

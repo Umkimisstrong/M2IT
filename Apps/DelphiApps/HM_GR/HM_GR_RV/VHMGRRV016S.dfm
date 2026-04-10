@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 137
-  Top = 39
-  Width = 1661
-  Height = 974
+  Left = -8
+  Top = -8
+  Width = 1936
+  Height = 1048
   ActiveControl = FlatRadioButton10
   Caption = '1'#52264' '#51217#49688' [VHMGRRV016S]'
   Color = clWhite

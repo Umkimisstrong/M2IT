@@ -1,8 +1,8 @@
 object Form42: TForm42
   Left = 2024
   Top = 31
-  Width = 1638
-  Height = 936
+  Width = 1270
+  Height = 923
   ActiveControl = FlatCheckBox12
   Caption = #45236#50896#49345#45812'/'#51652#47308' '#44284#44144#44208#44284' '#51312#54924' [VHMGCCM003S]'
   Color = clWhite
@@ -17,7 +17,7 @@ object Form42: TForm42
   object FlatPanel1: TFlatPanel
     Left = 0
     Top = 0
-    Width = 1617
+    Width = 1250
     Height = 881
     ParentColor = True
     TabOrder = 0
@@ -474,7 +474,7 @@ object Form42: TForm42
       Left = 407
       Top = 744
       Width = 257
-      Height = 137
+      Height = 136
       ParentColor = True
       TabOrder = 4
       UseDockManager = True
@@ -482,7 +482,7 @@ object Form42: TForm42
         Left = 1
         Top = 1
         Width = 255
-        Height = 135
+        Height = 134
         Cursor = crDefault
         Align = alClient
         ColCount = 5
@@ -797,7 +797,7 @@ object Form42: TForm42
       Left = 664
       Top = 744
       Width = 585
-      Height = 137
+      Height = 136
       ParentColor = True
       TabOrder = 8
       UseDockManager = True
@@ -805,7 +805,7 @@ object Form42: TForm42
         Left = 1
         Top = 1
         Width = 583
-        Height = 135
+        Height = 134
         Cursor = crDefault
         Align = alClient
         ColCount = 6

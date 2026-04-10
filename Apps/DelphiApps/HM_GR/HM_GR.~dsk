@@ -1,20 +1,20 @@
 [Closed Files]
-File_0=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\IM_EI\IM_EI_EM\VIMEIEM001S.pas',0,1,1,1,1,1,1
-File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\IM_EI\IM_EI_MA\VIMEIMA002S.pas',0,1,1,1,1,1,1
-File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\WA_WB\WA_WB_PJ\VWAWBPJ002S.pas',0,1,1,1,1,1,1
-File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\IM_AD\IM_AD_CM\VIMADCM001S.pas',0,1,1,1,1,0,1
-File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\MC_OO\MC_OO_OC\VMCOOOC002S.pas',0,1,1,122,9,1,0
-File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\WA_WB\WA_WB_PJ\VWAWBPJ001S.pas',0,1,1,134,11,0,1
-File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_RC\VHMGSRC011S.pas',0,1,1,1,1,0,0
-File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_RC\VHMGSRC023S.pas',0,1,1,1,1,1,1
-File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_RC\VHMGSRC004S.pas',0,1,1,1,1,0,0
-File_9=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_RC\VHMGSRC016S.pas',0,1,1,1,1,0,0
+File_0=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ014S.pas',0,1,1,1,1,0,1
+File_1=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ010S.pas',0,1,1,130,8,0,0
+File_2=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ008S.pas',0,1,1,1,1,0,1
+File_3=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ012S.pas',0,1,1,1,1,1,1
+File_4=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ011S.pas',0,1,1,1,1,1,1
+File_5=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ009S.pas',0,1,1,1,1,1,1
+File_6=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GC\HM_GC_CM\VHMGCCM005S.pas',0,1,1,1,1,0,0
+File_7=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GR\HM_GR_MJ\VHMGRMJ003S.pas',0,1,1,1,1,0,1
+File_8=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\VSPSSZZ013S.pas',0,1,1,1,1,0,1
+File_9=SourceModule,'C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GM\HM_GM_CR\VHMGMCR032S.pas',0,1,1,1,1,0,0
 
 [Modules]
 Count=0
 EditWindowCount=0
 
-[C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_DL\HM_GS_DL.dpr]
+[C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GM\HM_GM_CR\HM_GM_CR.dpr]
 FormState=0
 FormOnTop=0
 
@@ -66,6 +66,10 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
+[C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\HM_GS\HM_GS_DL\HM_GS_DL.dpr]
+FormState=0
+FormOnTop=0
+
 [C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\IM_AD\IM_AD_CM\IM_AD_CM.dpr]
 FormState=0
 FormOnTop=0
@@ -83,6 +87,10 @@ FormState=0
 FormOnTop=0
 
 [C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\WA_WB\WA_WB_PJ\WA_WB_PJ.dpr]
+FormState=0
+FormOnTop=0
+
+[C:\Users\KIMSANGKI\Desktop\KSK\998. SOURCE\M2IT\Apps\DelphiApps\SP_SS\SP_SS_ZZ\SP_SS_ZZ.dpr]
 FormState=0
 FormOnTop=0
 
@@ -184,8 +192,8 @@ DockSiteType=1
 Create=1
 Visible=1
 State=0
-Left=1929
-Top=111
+Left=1924
+Top=107
 Width=395
 Height=890
 MaxLeft=-1
@@ -196,9 +204,9 @@ TBDockHeight=890
 LRDockWidth=395
 Dockable=1
 TabPosition=2
-ActiveTab=Project Manager
+ActiveTab=Object Inspector
 TabDockClients=ObjectTree,ProjectManager,PropertyInspector
 
 [ActiveProject]
-ActiveProject=15
+ActiveProject=19
 

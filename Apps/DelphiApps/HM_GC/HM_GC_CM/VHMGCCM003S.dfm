@@ -1,6 +1,6 @@
 object Form42: TForm42
-  Left = 2024
-  Top = 31
+  Left = 118
+  Top = 60
   Width = 1270
   Height = 923
   ActiveControl = FlatCheckBox12

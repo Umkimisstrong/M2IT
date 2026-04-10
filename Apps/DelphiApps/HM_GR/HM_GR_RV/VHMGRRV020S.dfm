@@ -1,5 +1,5 @@
 object Form6: TForm6
-  Left = 2312
+  Left = 392
   Top = 123
   Width = 1477
   Height = 885
@@ -49,6 +49,7 @@ object Form6: TForm6
         Left = 11
         Top = 5
         Width = 87
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -68,6 +69,7 @@ object Form6: TForm6
         Left = 435
         Top = 6
         Width = 87
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -87,6 +89,7 @@ object Form6: TForm6
         Left = 216
         Top = 6
         Width = 101
+        Alignment = taRightJustify
         TextBorder = 2
         BevelInner = beNone
         BevelOuter = beNone
@@ -290,6 +293,7 @@ object Form6: TForm6
           Top = 8
           Width = 172
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -559,6 +563,7 @@ object Form6: TForm6
           Top = 8
           Width = 172
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
@@ -828,6 +833,7 @@ object Form6: TForm6
           Top = 8
           Width = 108
           BorderColor = clWhite
+          Alignment = taRightJustify
           TextBorder = 2
           BevelInner = beNone
           BevelOuter = beNone
