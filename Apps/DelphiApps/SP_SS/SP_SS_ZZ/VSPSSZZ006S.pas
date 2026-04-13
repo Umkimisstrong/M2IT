@@ -45,6 +45,10 @@ type
     FlatPanel6: TFlatPanel;
     FlatRadioButton1: TFlatRadioButton;
     FlatRadioButton2: TFlatRadioButton;
+    FlatRadioButton3: TFlatRadioButton;
+    FlatRadioButton4: TFlatRadioButton;
+    FlatPanel35: TFlatPanel;
+    FlatButton1: TFlatButton;
   private
     { Private declarations }
   public

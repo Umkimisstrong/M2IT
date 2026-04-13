@@ -1,8 +1,8 @@
 object Form187: TForm187
-  Left = 2214
-  Top = 96
-  Width = 1507
-  Height = 873
+  Left = 2093
+  Top = 138
+  Width = 1166
+  Height = 621
   Caption = #44160#49324#51109#52824' '#44160#49324#48324' '#44148#49688#51312#54924' [VSPSSZZ006S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -16,15 +16,15 @@ object Form187: TForm187
   object FlatPanel4: TFlatPanel
     Left = 0
     Top = 0
-    Width = 1393
-    Height = 753
+    Width = 1146
+    Height = 580
     ParentColor = True
     TabOrder = 0
     UseDockManager = True
     object FlatPanel1: TFlatPanel
       Left = 1
       Top = 1
-      Width = 1360
+      Width = 1144
       Height = 56
       ParentColor = True
       TabOrder = 0
@@ -50,8 +50,8 @@ object Form187: TForm187
         ShowEssential = True
       end
       object FlatLabel1: TFlatLabel
-        Left = 770
-        Top = 5
+        Left = 482
+        Top = 29
         Width = 66
         Alignment = taRightJustify
         TextBorder = 2
@@ -70,8 +70,8 @@ object Form187: TForm187
         ShowEssential = True
       end
       object Label20: TLabel
-        Left = 933
-        Top = 3
+        Left = 645
+        Top = 27
         Width = 16
         Height = 23
         Alignment = taRightJustify
@@ -118,7 +118,7 @@ object Form187: TForm187
         Layout = tlCenter
       end
       object FlatLabel3: TFlatLabel
-        Left = 482
+        Left = 483
         Top = 5
         Width = 66
         Alignment = taRightJustify
@@ -138,7 +138,7 @@ object Form187: TForm187
         ShowEssential = True
       end
       object Label2: TLabel
-        Left = 644
+        Left = 645
         Top = 2
         Width = 16
         Height = 23
@@ -202,8 +202,8 @@ object Form187: TForm187
         ItemIndex = -1
       end
       object FlatComboBox2: TFlatComboBox
-        Left = 832
-        Top = 4
+        Left = 544
+        Top = 28
         Width = 100
         Height = 21
         Color = clWindow
@@ -218,8 +218,8 @@ object Form187: TForm187
         ItemIndex = -1
       end
       object FlatComboBox4: TFlatComboBox
-        Left = 954
-        Top = 4
+        Left = 666
+        Top = 28
         Width = 100
         Height = 21
         Color = clWindow
@@ -234,8 +234,8 @@ object Form187: TForm187
         ItemIndex = -1
       end
       object FlatButton7: TFlatButton
-        Left = 1285
-        Top = 5
+        Left = 1069
+        Top = 29
         Width = 70
         Height = 23
         Color = clSilver
@@ -304,7 +304,7 @@ object Form187: TForm187
         end
       end
       object FlatComboBox5: TFlatComboBox
-        Left = 543
+        Left = 544
         Top = 4
         Width = 100
         Height = 21
@@ -320,7 +320,7 @@ object Form187: TForm187
         ItemIndex = -1
       end
       object FlatComboBox6: TFlatComboBox
-        Left = 665
+        Left = 666
         Top = 4
         Width = 100
         Height = 21
@@ -418,18 +418,46 @@ object Form187: TForm187
           ParentFont = False
           TabOrder = 1
         end
+        object FlatRadioButton3: TFlatRadioButton
+          Left = 98
+          Top = 3
+          Width = 56
+          Height = 17
+          Caption = 'HILAB'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = #45208#45588#44256#46357
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 2
+        end
+        object FlatRadioButton4: TFlatRadioButton
+          Left = 162
+          Top = 3
+          Width = 82
+          Height = 17
+          Caption = #48148#51060#50724#53076#50500
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = #45208#45588#44256#46357
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 3
+        end
       end
     end
     object FlatPanel5: TFlatPanel
       Left = 1
-      Top = 88
-      Width = 936
+      Top = 57
+      Width = 1144
       Height = 33
       ParentColor = True
       TabOrder = 1
       UseDockManager = True
       object FlatComboBox14: TFlatComboBox
-        Left = 862
+        Left = 1070
         Top = 5
         Width = 69
         Height = 23
@@ -448,8 +476,8 @@ object Form187: TForm187
     end
     object FlatPanel13: TFlatPanel
       Left = 0
-      Top = 152
-      Width = 937
+      Top = 123
+      Width = 1145
       Height = 456
       ParentColor = True
       TabOrder = 2
@@ -457,11 +485,11 @@ object Form187: TForm187
       object AdvStringGrid4: TAdvStringGrid
         Left = 1
         Top = 1
-        Width = 935
+        Width = 1143
         Height = 454
         Cursor = crDefault
         Align = alClient
-        ColCount = 8
+        ColCount = 13
         DefaultRowHeight = 25
         DefaultDrawing = False
         FixedCols = 0
@@ -604,7 +632,7 @@ object Form187: TForm187
         OemConvert = False
         FixedFooters = 0
         FixedRightCols = 0
-        FixedColWidth = 52
+        FixedColWidth = 59
         FixedRowHeight = 32
         FixedFont.Charset = DEFAULT_CHARSET
         FixedFont.Color = clWindowText
@@ -616,14 +644,19 @@ object Form187: TForm187
         IntegralHeight = False
         WordWrap = False
         ColumnHeaders.Strings = (
-          #51217#49688#52376
-          #51217#49688#51068#51088
-          #51217#49688#48264#54840
-          #49457#47749
+          #44160#49324#53076#46300
           #44160#49324#47749
-          #44208#44284#52376#47532#51068
-          'AR_Rack_No'
-          'Pos No')
+          #51032#48372#49688#44032
+          '01.('#50900') '#51217#49688#44148#49688
+          '01.('#50900') '#52509#44160#49324#44148#49688
+          '01.('#50900') '#50896#45236#44160#49324#44148#49688
+          '01.('#50900') '#48120#44160#49324#44148#49688
+          '01.('#50900') '#51648#49324#44148#49688
+          #52509#51217#49688#44148#49688
+          #52509#44160#49324#44148#49688
+          #52509#50896#45236#44148#49688
+          #52509#48120#44160#49324#44148#49688
+          #52509#51648#49324#44148#49688)
         Lookup = False
         LookupCaseSensitive = False
         LookupHistory = False
@@ -634,14 +667,19 @@ object Form187: TForm187
         BackGround.Cells = bcNormal
         Filter = <>
         ColWidths = (
-          52
-          97
-          83
-          168
-          170
+          59
+          77
+          56
+          108
+          110
+          124
+          105
           101
-          126
-          111)
+          77
+          73
+          71
+          82
+          76)
         RowHeights = (
           32
           25
@@ -687,8 +725,8 @@ object Form187: TForm187
     end
     object FlatPanel7: TFlatPanel
       Left = 1
-      Top = 121
-      Width = 936
+      Top = 90
+      Width = 1144
       Height = 33
       ParentColor = True
       TabOrder = 3
@@ -696,7 +734,7 @@ object Form187: TForm187
       object FlatLabel7: TFlatLabel
         Left = 9
         Top = 8
-        Width = 116
+        Width = 189
         BorderColor = clWhite
         Alignment = taRightJustify
         TextBorder = 2
@@ -707,13 +745,36 @@ object Form187: TForm187
         Font.Height = -13
         Font.Name = #45208#45588#44256#46357
         Font.Style = []
-        Caption = 'Allergy '#44160#49324' List'
+        Caption = #44160#49324#51109#52824' '#44160#49324#53076#46300#48324' '#44148#49688#51312#54924
         Color = clWhite
         ParentFont = False
         ParentColor = False
         ShowRect = True
         ShowEssential = False
       end
+    end
+  end
+  object FlatPanel35: TFlatPanel
+    Left = 1063
+    Top = 83
+    Width = 77
+    Height = 25
+    ParentColor = True
+    TabOrder = 1
+    UseDockManager = True
+    object FlatButton1: TFlatButton
+      Left = 0
+      Top = 1
+      Width = 77
+      Height = 23
+      Caption = #50641#49472#45796#50868#47196#46300
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = #45208#45588#44256#46357
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
     end
   end
 end
