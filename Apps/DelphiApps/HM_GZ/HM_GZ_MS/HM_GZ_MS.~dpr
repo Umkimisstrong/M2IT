@@ -1,0 +1,11 @@
+program HM_GZ_MS;
+
+uses
+  Forms;
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Run;
+end.

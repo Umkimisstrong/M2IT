@@ -1,0 +1,24 @@
+unit VSPSSSC001S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm86 = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form86: TForm86;
+
+implementation
+
+{$R *.dfm}
+
+end.

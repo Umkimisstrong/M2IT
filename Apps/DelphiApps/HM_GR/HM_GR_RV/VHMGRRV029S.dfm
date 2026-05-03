@@ -1,5 +1,5 @@
 object Form132: TForm132
-  Left = 1932
+  Left = 12
   Top = 41
   Width = 1774
   Height = 767

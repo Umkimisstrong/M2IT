@@ -1,0 +1,24 @@
+unit VSPSSSP008S;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm95 = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form95: TForm95;
+
+implementation
+
+{$R *.dfm}
+
+end.

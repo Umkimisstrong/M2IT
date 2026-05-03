@@ -1,8 +1,8 @@
 object Form132: TForm132
-  Left = 1969
-  Top = 46
-  Width = 1910
-  Height = 959
+  Left = 1932
+  Top = 41
+  Width = 1774
+  Height = 767
   Caption = 'FNA/'#51312#50689'CT '#50696#50557#54788#54889' [VHMGRRV029S]'
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET

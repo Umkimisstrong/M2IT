@@ -1,6 +1,6 @@
 object Form173: TForm173
-  Left = 2036
-  Top = 37
+  Left = 2018
+  Top = 34
   Width = 1726
   Height = 958
   Caption = #44160#51652#44208#44284' Review'#44288#47532' [VHMGXRS007S]'
