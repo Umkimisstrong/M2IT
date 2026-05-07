@@ -32,6 +32,10 @@
             panel3 = new Panel();
             panel4 = new Panel();
             grdContents = new DataGridView();
+            CONTENT = new DataGridViewTextBoxColumn();
+            WRITER = new DataGridViewTextBoxColumn();
+            DATE = new DataGridViewTextBoxColumn();
+            CHECK = new DataGridViewCheckBoxColumn();
             panel1 = new Panel();
             panel2 = new Panel();
             pnlTitleBar = new Panel();
@@ -41,10 +45,6 @@
             btnForeCast = new Button();
             btnAdd = new Button();
             txtContent = new TextBox();
-            CONTENT = new DataGridViewTextBoxColumn();
-            WRITER = new DataGridViewTextBoxColumn();
-            DATE = new DataGridViewTextBoxColumn();
-            CHECK = new DataGridViewCheckBoxColumn();
             pnlBaseBody.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -64,7 +64,7 @@
             pnlBaseBody.Margin = new Padding(2);
             pnlBaseBody.Name = "pnlBaseBody";
             pnlBaseBody.Padding = new Padding(3);
-            pnlBaseBody.Size = new Size(622, 338);
+            pnlBaseBody.Size = new Size(665, 476);
             pnlBaseBody.TabIndex = 0;
             // 
             // panel3
@@ -75,7 +75,7 @@
             panel3.Location = new Point(3, 71);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(616, 264);
+            panel3.Size = new Size(659, 402);
             panel3.TabIndex = 2;
             // 
             // panel4
@@ -86,7 +86,7 @@
             panel4.Location = new Point(0, 0);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(616, 264);
+            panel4.Size = new Size(659, 402);
             panel4.TabIndex = 2;
             // 
             // grdContents
@@ -101,8 +101,42 @@
             grdContents.Name = "grdContents";
             grdContents.RowHeadersVisible = false;
             grdContents.RowHeadersWidth = 51;
-            grdContents.Size = new Size(616, 264);
+            grdContents.Size = new Size(659, 402);
             grdContents.TabIndex = 0;
+            // 
+            // CONTENT
+            // 
+            CONTENT.DataPropertyName = "CONTENT";
+            CONTENT.HeaderText = "내용";
+            CONTENT.MinimumWidth = 6;
+            CONTENT.Name = "CONTENT";
+            CONTENT.Width = 280;
+            // 
+            // WRITER
+            // 
+            WRITER.DataPropertyName = "WRITER";
+            WRITER.HeaderText = "작성자";
+            WRITER.MinimumWidth = 6;
+            WRITER.Name = "WRITER";
+            WRITER.Width = 125;
+            // 
+            // DATE
+            // 
+            DATE.DataPropertyName = "DATE";
+            DATE.HeaderText = "작성일";
+            DATE.MinimumWidth = 6;
+            DATE.Name = "DATE";
+            DATE.Width = 125;
+            // 
+            // CHECK
+            // 
+            CHECK.DataPropertyName = "CHECK";
+            CHECK.HeaderText = "체크";
+            CHECK.MinimumWidth = 6;
+            CHECK.Name = "CHECK";
+            CHECK.Resizable = DataGridViewTriState.True;
+            CHECK.SortMode = DataGridViewColumnSortMode.Automatic;
+            CHECK.Width = 125;
             // 
             // panel1
             // 
@@ -112,7 +146,7 @@
             panel1.Location = new Point(3, 3);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(616, 68);
+            panel1.Size = new Size(659, 68);
             panel1.TabIndex = 1;
             // 
             // panel2
@@ -126,7 +160,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(616, 68);
+            panel2.Size = new Size(659, 68);
             panel2.TabIndex = 2;
             // 
             // pnlTitleBar
@@ -139,7 +173,7 @@
             pnlTitleBar.Location = new Point(0, 0);
             pnlTitleBar.Margin = new Padding(2);
             pnlTitleBar.Name = "pnlTitleBar";
-            pnlTitleBar.Size = new Size(616, 20);
+            pnlTitleBar.Size = new Size(659, 20);
             pnlTitleBar.TabIndex = 3;
             // 
             // label1
@@ -214,45 +248,11 @@
             txtContent.Size = new Size(445, 31);
             txtContent.TabIndex = 0;
             // 
-            // CONTENT
-            // 
-            CONTENT.DataPropertyName = "CONTENT";
-            CONTENT.HeaderText = "내용";
-            CONTENT.MinimumWidth = 6;
-            CONTENT.Name = "CONTENT";
-            CONTENT.Width = 280;
-            // 
-            // WRITER
-            // 
-            WRITER.DataPropertyName = "WRITER";
-            WRITER.HeaderText = "작성자";
-            WRITER.MinimumWidth = 6;
-            WRITER.Name = "WRITER";
-            WRITER.Width = 125;
-            // 
-            // DATE
-            // 
-            DATE.DataPropertyName = "DATE";
-            DATE.HeaderText = "작성일";
-            DATE.MinimumWidth = 6;
-            DATE.Name = "DATE";
-            DATE.Width = 125;
-            // 
-            // CHECK
-            // 
-            CHECK.DataPropertyName = "CHECK";
-            CHECK.HeaderText = "체크";
-            CHECK.MinimumWidth = 6;
-            CHECK.Name = "CHECK";
-            CHECK.Resizable = DataGridViewTriState.True;
-            CHECK.SortMode = DataGridViewColumnSortMode.Automatic;
-            CHECK.Width = 125;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(622, 338);
+            ClientSize = new Size(665, 476);
             Controls.Add(pnlBaseBody);
             Margin = new Padding(2);
             Name = "Form1";
@@ -278,12 +278,12 @@
         private Panel panel2;
         private Button btnAdd;
         private TextBox txtContent;
-        private DataGridView grdContents;
         private Button btnForeCast;
         private Panel pnlTitleBar;
         private Button btnClose;
         private Button btnHide;
         private Label label1;
+        private DataGridView grdContents;
         private DataGridViewTextBoxColumn CONTENT;
         private DataGridViewTextBoxColumn WRITER;
         private DataGridViewTextBoxColumn DATE;

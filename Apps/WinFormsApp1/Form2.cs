@@ -78,6 +78,13 @@ namespace WinFormsApp1
             this.pnlTitleBar.MouseDown += PnlTitleBar_MouseDown;
             this.btnSearch.Click += BtnSearch_Click;
             this.btnRefresh.Click += BtnRefresh_Click;
+
+            this.txtKor.Click += TxtKor_Click;
+        }
+
+        private void TxtKor_Click(object? sender, EventArgs e)
+        {
+
         }
 
         /// <summary>
@@ -97,13 +104,13 @@ namespace WinFormsApp1
         /// <param name="e"></param>
         private void BtnSearch_Click(object? sender, EventArgs e)
         {
-            if ((   !string.IsNullOrEmpty(txtSearchKor.Text)
+            if ((!string.IsNullOrEmpty(txtSearchKor.Text)
                 || !string.IsNullOrEmpty(txtSearchEng.Text)
                 || !string.IsNullOrEmpty(txtSearchKorShort.Text)
                 || !string.IsNullOrEmpty(txtSearchEngShort.Text)
                 )
                 &&
-                grdContents.Rows.Count>0
+                grdContents.Rows.Count > 0
                 )
             {
                 SearchWords();
@@ -192,7 +199,7 @@ namespace WinFormsApp1
                 }
 
             }
-        
+
         }
 
         /// <summary>
@@ -653,5 +660,7 @@ namespace WinFormsApp1
             }
 
         }
+
+        
     }
 }

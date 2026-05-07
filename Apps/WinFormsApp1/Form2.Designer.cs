@@ -354,6 +354,7 @@
             txtKor.Name = "txtKor";
             txtKor.Size = new Size(110, 31);
             txtKor.TabIndex = 0;
+            txtKor.TextChanged += txtKor_TextChanged;
             // 
             // Form2
             // 
