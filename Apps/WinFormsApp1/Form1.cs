@@ -5,10 +5,13 @@ using System.Xml;
 
 namespace WinFormsApp1
 {
+    /// <summary>
+    /// Form1 : ~~ 화면
+    /// </summary>
     public partial class Form1 : Form
     {
         /// <summary>
-        /// contentDt : 전역 DataTable 변수
+        /// contentDt : 화면에서 사용되는 전역변수 (datatable)
         /// </summary>
         private DataTable contentDt;
 
