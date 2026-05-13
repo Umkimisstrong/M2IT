@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7f921ec5ac63a1d7",
+        "id": "033dddab95ce2c5e",
         "type": "tabs",
         "children": [
           {
-            "id": "85c16a30680358a6",
+            "id": "7ca62a166f16dc17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "환영합니다!.md",
+                "file": "개발메모/할 일.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "환영합니다!"
+              "title": "할 일"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0e4bfb32481d30d8",
@@ -184,8 +183,16 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "85c16a30680358a6",
+  "active": "7ca62a166f16dc17",
   "lastOpenFiles": [
-    "환영합니다!.md"
+    "그냥메모/첫 번째 페이지.md",
+    "개발메모/할 일.md",
+    "개발메모",
+    "첫 번째 페이지 2.md",
+    "무제.md",
+    "2026-05-13.md",
+    "무제.canvas",
+    "그냥메모",
+    "무제 1.md"
   ]
 }
