@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "그냥메모/예약.md",
+                "file": "그냥메모/Commit Message.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "예약"
+              "title": "Commit Message"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "7ca62a166f16dc17",
   "lastOpenFiles": [
-    "개발메모/기록-(20260526-20260529).md",
-    "그냥메모/예약.md",
     "개발메모/기록-(20260713-20260716).md",
+    "그냥메모/Commit Message.md",
+    "개발메모/기록-(20260720-20260724).md",
+    "개발메모/기록-(20260526-20260529).md",
     "개발메모/기록-(20260706-20260710).md",
     "개발메모/기록-(20260629-20260703).md",
     "개발메모/기록-(20260622-20260626).md",
