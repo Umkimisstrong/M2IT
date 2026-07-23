@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "개발메모/기록-(20260720-20260724).md",
+                "file": "Code Analysis Field/VHMGRRV036S01 미검재검항목.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기록-(20260720-20260724)"
+              "title": "VHMGRRV036S01 미검재검항목"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "개발메모/기록-(20260720-20260724).md",
+                "file": "Code Analysis Field/VHMGRRV036S01 미검재검항목.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "기록-(20260720-20260724) 의 백링크"
+              "title": "VHMGRRV036S01 미검재검항목 의 백링크"
             }
           },
           {
@@ -184,8 +184,8 @@
   },
   "active": "7ca62a166f16dc17",
   "lastOpenFiles": [
-    "Code Analysis Field/VHMGRRV036S01 미검재검항목.md",
     "개발메모/기록-(20260720-20260724).md",
+    "Code Analysis Field/VHMGRRV036S01 미검재검항목.md",
     "Code Analysis Field",
     "그냥메모/Commit Message.md",
     "개발메모/기록-(20260713-20260716).md",
