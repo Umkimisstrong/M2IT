@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "개발메모/기록-(20260810-20260814).md",
+                "file": "그냥메모/Commit Message.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기록-(20260810-20260814)"
+              "title": "Commit Message"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "개발메모/기록-(20260810-20260814).md",
+                "file": "그냥메모/Commit Message.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,10 +184,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "eb96fe9e974466a4",
+  "active": "7ca62a166f16dc17",
   "lastOpenFiles": [
-    "개발메모/기록-(20260803-20260807).md",
     "개발메모/기록-(20260810-20260814).md",
+    "개발메모/기록-(20260803-20260807).md",
     "그냥메모/Commit Message.md",
     "개발메모/기록-(20260727-20260731).md",
     "개발메모/기록-(20260720-20260724).md",
