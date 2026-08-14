@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "그냥메모/Commit Message.md",
+                "file": "개발메모/기록-(20260810-20260814).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commit Message"
+              "title": "기록-(20260810-20260814)"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "그냥메모/Commit Message.md",
+                "file": "개발메모/기록-(20260810-20260814).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,10 +186,11 @@
   },
   "active": "7ca62a166f16dc17",
   "lastOpenFiles": [
+    "Code Analysis Field/VHMGRRV027S 거래처 발생현황.md",
+    "그냥메모/Commit Message.md",
     "그냥메모/C-명령.md",
     "Code Analysis Field/VHMGBBZ036S 검진 계약 등록.md",
     "개발메모/기록-(20260810-20260814).md",
-    "그냥메모/Commit Message.md",
     "Code Analysis Field/VHMGRRV036S01 미검재검항목.md",
     "개발메모/기록-(20260803-20260807).md",
     "개발메모/기록-(20260727-20260731).md",
@@ -213,7 +214,6 @@
     "기록-(20260511-20260515).md",
     "개발메모",
     "첫 번째 페이지 2.md",
-    "무제.md",
     "무제.canvas",
     "그냥메모"
   ]
